@@ -1,0 +1,45 @@
+
+登录
+http://172.19.203.92:8080/iqasweb/mobile/ios/user/login.html
+参数
+	 * @param userName 用户名
+	 * @param password 密码
+	 
+
+ 注册
+ http://172.19.203.92:8080/iqasweb/mobile/ios/user/register.html
+参数
+	 * @param userName 用户名，
+	 * @param password 密码，
+	 * @param sex 性别，0：男，1：女
+	 * @param grade 年级  范围1-6
+ 更新用户头像
+ http://172.19.203.92:8080/iqasweb/mobile/ios/user/update/logo.html
+ 参数：
+	 * @param userName 用户名
+	 * @param password 密码
+	 * @param logo 头像文件 
+查询单词
+ http://172.19.203.92:8080/iqasweb/mobile/ios/word/findWord.html
+ 参数：
+ * @param text  查询的单词
+ 
+ 根据主题编号和用户查询用户在该主题下的学习单词
+ http://172.19.203.8:8080/iqasweb/mobile/ios/theme/findWordsByTheme.html
+ 参数：
+	* @param themeNumber    主题编号
+	 * @param userName 用户名
+	 * @param password 密码
+	 
+ 查询子主题
+ http://172.19.203.8:8080/iqasweb/mobile/ios/theme/findChilThemes.html
+参数： * @param themeNumber 主题编号
+
+查询一级主题,根主题
+ http://172.19.203.8:8080/iqasweb/mobile/ios/theme/findRootThemes.html
+ 无参：
+ 
+ 上传作品
+ http://172.19.203.92:8080/iqasweb/mobile/ios/work/uploadWork.html
+ 参数：
+  * @param file 上传文件

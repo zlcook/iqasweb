@@ -1,0 +1,131 @@
+
+手机端访问连接：
+手机端统一访问网址：http://localhost:8080/iqasweb/mobile/**/**.html
+
+
+
+搜索单词：http://localhost:8080/iqasweb/mobile/search/sentence.html
+参数：
+     * text
+搜索句子：http://localhost:8080/iqasweb/mobile/search/sentence.html
+参数：
+     * @param text=Excuse me,Where are you from,ok?
+登录：http://localhost:8080/iqasweb/mobile/user/login.html
+参数：
+     * @param userName 用户名
+	 * @param password 密码
+注册：http://localhost:8080/iqasweb/mobile/user/register.html
+参数
+	 * @param userName 用户名
+	 * @param password 密码
+	 * @param grade    班级 1-6
+	 * @param sex    性别  0:男 1：女
+修改头像
+注册：http://localhost:8080/iqasweb/mobile/user/updateLogo.html
+参数：
+       @param userName 用户名
+	 * @param password 密码
+	 * @param logo 头像文件
+	 
+购买商品;http://localhost:8080/iqasweb/mobile/store/buyCommodity.html  
+参数
+	 * @param userName 用户名
+	 * @param password 密码
+	 * @param id 购买商品的id
+	 
+获取商店商品信息：http://localhost:8080/iqasweb/mobile/store/getStore.html 
+参数： * 获取商店的商品信息及用户的金币数
+	 * @param userName 用户名
+	 * @param password 密码
+获取用户背包：http://localhost:8080/iqasweb/mobile/store/getBag.html
+参数： *
+	 * @param userName 用户名
+	 * @param password 密码
+
+学习记录
+http://172.19.203.197:8080/iqasweb/mobile/user/studyRecord.html
+参数： *
+	 * @param userName 用户名
+	 * @param password 密码
+闯关类型对比
+http://172.19.203.197:8080/iqasweb/mobile/user/gameTypeContrast.html
+参数： *
+	 * @param userName 用户名
+	 * @param password 密码
+通过率对比
+http://172.19.203.197:8080/iqasweb/mobile/user/successRate.html
+参数： *
+	 * @param userName 用户名
+	 * @param password 密码
+最爱的闯关
+http://172.19.203.197:8080/iqasweb/mobile/user/favoriteGameType.html
+参数： *
+	 * @param userName 用户名
+	 * @param password 密码
+玩游戏时间
+http://172.19.203.197:8080/iqasweb/mobile/user/timeOfGame.html
+参数： *
+	 * @param userName 用户名
+	 * @param password 密码
+
+检查用户名是否存在
+http://172.19.203.197:8080/iqasweb/mobile/user/validateUserName.html
+参数： *
+	 * @param userName 用户名
+	 
+	 -----------------好友管理模块---------------
+1.根据账号查找好友 searchFriend
+http://172.19.203.197:8080/iqasweb/mobile/friend/searchFriend.html
+参数： *
+	 * @param userName 好友用户名
+	 
+* 2.发送好友添加请求sendRequest
+http://172.19.203.197:8080/iqasweb/mobile/friend/sendRequest.html
+       @param userName 自己的用户名
+	 * @param password ,密码
+	 * @param friendUserName 好友的用户名
+	 * @param content, 备注
+	 
+* 3.查看好友发过来的添加请求lookRequests
+http://172.19.203.197:8080/iqasweb/mobile/friend/lookRequests.html
+            查看好友发过来的添加请求
+	 * @param userName
+	 * @param password
+	 
+	 
+* 4.接受好友请求receiveRequest
+http://172.19.203.197:8080/iqasweb/mobile/friend/receiveRequest.html
+       @param userName
+	 * @param password
+	 * @param requestId 请求id
+	 
+* 5.拒绝好友请求rejectRequest  
+http://172.19.203.197:8080/iqasweb/mobile/friend/rejectRequest.html
+       @param userName
+	 * @param password
+	 * @param requestId 请求id
+	 
+* 6.删除好友deleteFriend
+http://172.19.203.197:8080/iqasweb/mobile/friend/deleteFriend.html
+      @param userName 自己的用户名
+	 * @param password ,密码
+	 * @param friendRelId 好友关系id
+	 
+* 7.查看自己的好友myFriends
+http://172.19.203.197:8080/iqasweb/mobile/friend/myFriends.html
+        @param userName 自己的用户名
+	 * @param password ,密码
+
+
+
+************单词*******************
+
+1.根据单词查看单词属性
+http://172.19.203.92:8080/iqasweb/mobile/search/sentence.html
+参数：  @param text 查询的单词
+
+	 
+	 
+
+
+	 

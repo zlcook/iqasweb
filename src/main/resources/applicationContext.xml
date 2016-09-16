@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" 
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+       http://www.springframework.org/schema/context 
+       http://www.springframework.org/schema/context/spring-context-4.0.xsd
+       http://www.springframework.org/schema/tx 
+       http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
+       <!-- 实例化的类默认在初始化应用上下文时就实力所有单实例的bean -->
+       
+       
+     <!-- 扫描类包，将标注Spring注解的类自动转化Bean，同时完成Bean的注入,如果没有设置则只能手动在该文件中配置bean -->
+    <context:component-scan base-package="com.user.dao"/>
+    <context:component-scan base-package="com.user.service"/>
+    <context:component-scan base-package="com.cnu.iqas.dao"/>
+    <context:component-scan base-package="com.cnu.iqas.service"/>
+    <context:component-scan base-package="com.cnu.offline.service"/>
+    <context:component-scan base-package="com.cnu.offline.dao"/>
+    <context:component-scan base-package="com.noumenon.OntologyManage"/>
+    <!-- <context:component-scan base-package="com.cnu.iqas.controller"/> -->
+     <!-- 文件加载器，加载类路径下的配置文件jdbc.properties -->
+	<context:property-placeholder location="classpath:jdbc.properties" />
+	<!-- <context:property-placeholder location="classpath:wordnet.properties" />  -->
+	
+	
+	<!-- 配置线程池 -->
+    <bean id="taskExecutor" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+      <!-- 线程池维护线程的最少数量 --> 
+      <property name="corePoolSize" value="5" />
+     <!-- 线程池维护线程所允许的空闲时间 --> 
+      <property name ="keepAliveSeconds" value ="30000" />   
+      <!-- 线程池维护线程的最大数量 -->
+      <property name="maxPoolSize" value="100" />
+     <!-- 线程池所使用的缓冲队列 -->  
+      <property name="queueCapacity" value="200" />
+    </bean>  
+    <!-- 处理文件上传 -->
+	<bean id="multipartResolver"  
+	    class="org.springframework.web.multipart.commons.CommonsMultipartResolver" >  
+	    <property name="defaultEncoding" value="UTF-8"/> <!-- 默认编码 (ISO-8859-1) -->  
+	    <property name="maxInMemorySize" value="10240"/> <!-- 最大内存大小 (10240)-->  
+	    <property name="uploadTempDir" value="/upload/"/> <!-- 上传后的目录名 (WebUtils#TEMP_DIR_CONTEXT_ATTRIBUTE) -->  
+	    <!-- <property name="uploadTempDir" value="upload/temp"/> -->  <!-- 上传文件的临时路径,上传完成后，临时目录中的临时文件会被自动清除 -->  
+	    <property name="maxUploadSize" value="5242880"/> <!-- 最大文件大小5M,-1为无限止(-1) -->  
+	</bean>
+    
+    
+    <!-- 配置数据源 -->
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close" 
+		p:driverClassName="${jdbc.driverClassName}"
+		p:url="${jdbc.url}" 
+		p:username="${jdbc.username}" 
+		p:password="${jdbc.password}" 
+		p:maxIdle= "${jdbc.maxIdle}" 
+		p:initialSize="${jdbc.initialSize}" 
+		p:minIdle="${jdbc.minIdle}"
+		p:minEvictableIdleTimeMillis="${jdbc.minEvictableIdleTimeMillis}"
+		p:maxWait="${jdbc.maxWait}"
+		p:maxActive="${jdbc.maxActive}"
+		/>
+
+<!-- AnnotationSessionFactoryBean扩展了LocalSessionFactoryBean类，可以根据实体类的注解获取ORM（关系对象映射）的配置信息，也可以混合使用Xml配置和注解配置的关系对象映射-->
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean"
+		p:dataSource-ref="dataSource">
+		<!-- Spring提供了一个packagesToScan属性，从而可以通过扫描方式加载带注解（@Entity）的实体类 -->
+		<!-- 将扫描并加载这些包路径（包括子包）的所有的带注解实体类 ，可接受多个包用逗号分隔即可-->
+        <property name="packagesToScan" value="com.cnu.iqas.bean,com.cnu.offline.bean,com.user.entity"/>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.show_sql">false</prop><!-- 显示sql语句 -->
+				<prop key="hibernate.format_sql">true</prop><!-- 规范显示sql语句 -->
+	      		<prop key="hibernate.hbm2ddl.auto">update</prop>   <!-- 每次都更新表 -->
+			</props>
+		</property>
+	</bean>
+	<!-- 配置Jdbc模板  -->
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate"
+		p:dataSource-ref="dataSource" />
+		
+	<!-- Spring校验框架 -->
+	<!--  <bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean"/> 
+	 --> <!-- SpringMvc注解 ，会默认装配好一个LocalValidatorFactoryBean，通过在处理方法的入参上标注@Valid注解即可让SpringMvc在完成数据绑定后执行数据校验工作-->
+	
+	
+	<!-- 配置hibernateTemplate模板  -->
+	<bean id="hibernateTemplate"
+          class="org.springframework.orm.hibernate3.HibernateTemplate"
+          p:sessionFactory-ref="sessionFactory"/>
+	<!-- 在Spring配置文件中配置Hibernate事务管理器，并启用注解驱动事务 -->
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager"
+		p:sessionFactory-ref="sessionFactory" />
+		<!-- 启用注解驱动事务 可以通过@Transactional注解服务类，从而使其中的方法都具有事务性-->
+	<tx:annotation-driven transaction-manager="transactionManager" />
+	
+</beans>

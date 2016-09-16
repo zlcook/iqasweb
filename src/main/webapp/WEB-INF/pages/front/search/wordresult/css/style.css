@@ -1,0 +1,265 @@
+/*--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/* start editing from here */
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+/*end reset*/
+body{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	    background: url(../images/333.jpg) 0px 0px;
+		margin-left:100px;
+		padding-left:20px;
+}
+.header {
+    text-align: left;
+    width: 100%;
+    margin-top: 6%;
+	padding-left:350px;
+	
+}
+.header h1 {
+    font-size: 2.5em;
+    color: #222;
+    text-transform: capitalize;
+	font-family: 'Ubuntu', sans-serif;
+}
+.pricing {
+    float: left;
+    width: 18%;
+    text-align: center;
+    margin-right: 1%;
+	
+    border: 1px solid #eee;
+}
+.pricing-table {
+    margin: 5% auto 0 auto;
+    width: 100%;
+}
+.price-top h2 {
+    font-size: 1.5em;
+    color: #000;
+    text-transform: capitalize;
+    font-weight: 400;
+	font-family: 'Ubuntu', sans-serif;
+}
+.price-top {
+    background: #eee;
+    padding: 2em;
+    border-bottom: 9px solid#B3E03F;
+    background-image: -moz-linear-gradient(#fff,#eee);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+    background-image: -webkit-linear-gradient(#fff, #eee);
+    background-image: -o-linear-gradient(#fff, #eee);
+    background-image: -ms-linear-gradient(#fff, #eee);
+    background-image: linear-gradient(#fff, #eee);
+}
+.top2 {
+    background: #eee;
+    padding: 2em;
+    border-bottom: 9px solid #7BD553;
+    background-image: -moz-linear-gradient(#fff,#eee);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+    background-image: -webkit-linear-gradient(#fff, #eee);
+    background-image: -o-linear-gradient(#fff, #eee);
+    background-image: -ms-linear-gradient(#fff, #eee);
+    background-image: linear-gradient(#fff, #eee);
+}
+.top3 {
+    background: #eee;
+    padding: 2em;
+    border-bottom: 9px solid #3AD5A0;
+    background-image: -moz-linear-gradient(#fff,#eee);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+    background-image: -webkit-linear-gradient(#fff, #eee);
+    background-image: -o-linear-gradient(#fff, #eee);
+    background-image: -ms-linear-gradient(#fff, #eee);
+    background-image: linear-gradient(#fff, #eee);
+}
+.top4 {
+    background: #eee;
+    padding: 2em;
+    border-bottom: 9px solid #45D0DA;
+    background-image: -moz-linear-gradient(#fff,#eee);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+    background-image: -webkit-linear-gradient(#fff, #eee);
+    background-image: -o-linear-gradient(#fff, #eee);
+    background-image: -ms-linear-gradient(#fff, #eee);
+    background-image: linear-gradient(#fff, #eee);
+}
+.price-bottom h3 {
+    font-size: 2.5em;
+    color: #333;
+}
+.price-bottom p {
+    font-size: .9em;
+    text-transform: uppercase;
+    color: #999;
+	margin-bottom: .8em;
+}
+.price-bottom ul li {
+        font-size: .9em;
+    line-height: 1.8em;
+    color: #555;
+    padding: .3em 0;
+}
+.price-bottom b {
+    font-weight: 600;
+    color: #333;
+	font-size: .9em;
+}
+a.button {
+   font-size: .9em;
+    text-transform: uppercase;
+    padding: .5em 1em;
+    background: #B3E03F;
+    color: #fff;
+    display: block;
+    width: 28%;
+    margin: 1.5em auto 0;
+    border-radius: 4px;
+    font-weight: 700;
+}
+.pricing:nth-child(4) {
+    margin-right: 0;
+}
+.price-bottom {
+	
+    background: #fff;
+}
+a.button.but1 {
+    background: #7BD553;
+}
+a.button.but2 {
+    background: #3AD5A0;
+}
+a.button.but3 {
+    background: #45D0DA;
+}
+.footer {
+    text-align: center;
+    padding: 3em 0;
+}
+.footer p {
+    font-size: .9em;
+    color: #222;
+    margin: 0px;
+}
+.footer p a:hover {
+    color: #222;
+}
+.footer p a {
+    color: #222;
+}
+@media(max-width:1280px){
+a.button {
+   width: 31%;
+}
+}
+@media(max-width:1080px){
+.pricing-table {
+    margin: 5% auto 0 auto;
+    width: 81%;
+}
+.price-top h2 {
+    font-size: 1.3em;
+}
+.price-bottom h3 {
+    font-size: 2.2em;
+}
+}
+@media(max-width:991px){
+.header h1 {
+    font-size: 2em;
+}
+.pricing-table {
+    margin: 5% auto 0 auto;
+    width: 100%;
+}
+.pricing {
+    float: left;
+    width: 24.3%;
+    margin-right: 0.5%;
+}
+a.button {
+    width: 34%;
+}
+}
+@media(max-width:640px){
+.pricing {
+    float: left;
+    width: 49%;
+    margin-right: 1%;
+}
+.pricing-table {
+    width: 97%;
+}
+.header h1 {
+    font-size: 1.8em;
+}
+.pricing:nth-child(2) {
+    margin-right: 0;
+}
+.pricing:nth-child(3) {
+    margin-top: .5em;
+}
+.pricing:nth-child(4) {
+    margin-top: .5em;
+}
+a.button {
+    width: 20%;
+}
+}
+@media (max-width:480px){
+.pricing {
+    float: left;
+    width: 49%;
+    margin-right: 1%;
+}
+.footer {
+    text-align: center;
+    padding: 2em 0;
+}
+a.button {
+    width: 27%;
+}
+}
+@media (max-width:320px){
+.header h1 {
+    font-size: 1.5em;
+}
+.pricing {
+    width: 100%;
+    margin-right: 0;
+}
+.pricing:nth-child(2) {
+    margin-right: 0;
+    margin-top: 1em;
+}
+.price-top h2 {
+    font-size: 1.4em;
+}
+}

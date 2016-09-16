@@ -1,0 +1,1371 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:untitled-ontology-31="http://www.semanticweb.org/administrator/ontologies/2015/6/untitled-ontology-31#"
+    xmlns="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#" > 
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;How_about_you?&apos;@zh">
+    <rdfs:label xml:lang="zh">How_about_you?</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_59f55a35_94b6_44ea_a61d_381925840d15"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Is_the_library_on_the_left_of_the_stairs?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(2/8/3/10)No.It's the third room on the right.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">2/8/3/10</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(2/8/3/10)北京版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(2/8/3/10)4</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(2/8/3/10)A:Excues_me. Is the library on the left of the stairs?B:No.It's the third room on the right.A:Thank you so much.B:Not at all.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(2/8/3/10)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(2/8/3/10)1.excuse 原谅2.library 图书馆3.floor 层；地面，地板</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_07993f55_564e_44f3_8cf2_0403dd97f23d"/>
+    <rdfs:label xml:lang="zh">Is_the_library_on_the_left_of_the_stairs?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_07993f55_564e_44f3_8cf2_0403dd97f23d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">Is</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Where_is_Xining?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(5/11/1/15)Look at the map.It's in the west of China.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">5/11/1/15</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(5/11/1/15)人教版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(5/11/1/15)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(5/11/1/15)A:Hi,Andy.How was your summer vacation?B:It was great.I went to Xining with my paren ts.A:Where is xining?B:Look at the map.It's in the west of China.A:What's the weather like there?B:It's cool in summer.A:What's Xining famous for?B:It's famous for temples.A:How did you go there?B:We went there by plane,but you can also go by train.It's cheaper.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(5/11/1/15)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(5/11/1/15)1.map 地图2.west 西3.famous 著名的4.temple 寺</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_744da2aa_7e4b_4e56_8878_6cbbfbfb426a"/>
+    <rdfs:label xml:lang="zh">Where_is_Xining?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;May_I_help_you?&apos;@zh">
+    <rdfs:label xml:lang="zh">May_I_help_you?</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_0a0f469c_04ba_4177_a9e0_c3389e2c8960"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_a0d68b36_372b_4c52_93c3_d1e9cd3fde94">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">Can</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Where_can_I_find_Bob?&apos;@zh">
+    <rdfs:label xml:lang="zh">Where_can_I_find_Bob?</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_744da2aa_7e4b_4e56_8878_6cbbfbfb426a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Where_are_you_going?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(4/5/10/4)I'm going to HongKong.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">4/5/10/4</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(4/5/10/4)外研社（一年级起点）</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(4/5/10/4)3</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(4/5/10/4)A:Where are you going?B:I'm going to HongKong.My grandma lives there.Are you going to HongKong?A:No.I'm going to Hainan.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(4/5/10/4)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(4/5/10/4)无</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_744da2aa_7e4b_4e56_8878_6cbbfbfb426a"/>
+    <rdfs:label xml:lang="zh">Where_are_you_going?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_time_do_you_go_to_work?&apos;@zh">
+    <rdfs:label xml:lang="zh">What_time_do_you_go_to_work?</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_can_you_see_there?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(4/11/1/10)A lot of old things.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">4/11/1/10</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(4/11/1/10)外研社（一年级起点）</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(4/11/1/10)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(4/11/1/10)A:What can you see there.B:A lot of old things.A:Is it the museum?B:Yes,it is.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(4/11/1/10)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(4/11/1/10)无</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021"/>
+    <rdfs:label xml:lang="zh">What_can_you_see_there?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Where_are_you_from?&apos;@zh">
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(5/8/6/10)A:Where are you from?B:I'm from the UK.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(5/8/6/10)1.the UK. 英国</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(5/8/6/10)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <rdfs:label xml:lang="zh">Where_are_you_from?</rdfs:label>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(5/8/6/10)4</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(5/8/6/10)I'm from the UK.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <owl:sameAs rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Which_country_are_you_from?&apos;@zh"/>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">5/8/6/10</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(5/8/6/10)人教版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_744da2aa_7e4b_4e56_8878_6cbbfbfb426a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_can_you_do_there?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(5/11/1/17)I can eat seafood.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">5/11/1/17</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(5/11/1/17)人教版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(5/11/1/17)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(5/11/1/17)A:What can you do there?B:I can eat seafood.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(5/11/1/17)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(5/11/1/17)无</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021"/>
+    <rdfs:label xml:lang="zh">What_can_you_do_there?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Did_they_like_your_gifts?&apos;@zh">
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(2/11/1/25)A:Hi,Mike!Nice to see you again.Did you go to see your grandparents this summer?B:Yes,I did.I gave them some gifts from China.A:What gifts did you have for them?B:I bought a pair of Chinese shoes for my grandma,and a pair of glasses for my grandpa.A:Did they like your gifts?B:Yes,they liked them very much.A:Are they coming to visit you?B:Yes,they are coming next summer.I miss them.Oh,Lingling,will you help me.please?A:Sure.What can I do for you?B:Would you please tell me more about the food in Beijing?I want them to enjoy the best food there.A:No problem.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(2/11/1/25)Yes,they liked them very much.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <owl:sameAs rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_did_they_think_about_your_gifts?&apos;@zh"/>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(2/11/1/25)1.glass 眼睛2.please 请3.problem 问题</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(2/11/1/25)北京版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">2/11/1/25</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <rdfs:label xml:lang="zh">Did_they_like_your_gifts?</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_6ac3ddf0_1b7b_4736_9b36_bef184f563cc"/>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(2/11/1/25)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(2/11/1/25)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Which_place_did_you_go?&apos;@zh">
+    <rdfs:label xml:lang="zh">Which_place_did_you_go?</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_4dc40418_61fd_48ab_b95e_b81dbd42413b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="zh">相关单词</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_93c03c43_e7fe_4dc8_aa18_e618bae2507a">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">Will</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Do_you_go_to_school_by_car?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(4/3/7/3)No,I don't.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">4/3/7/3</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(4/3/7/3)外研社（一年级起点）</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(4/3/7/3)2</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(4/3/7/3)A:How do you go to school,Amy?B:I go to school by bus.And how do you go to school?A:I walk to school.B:How about your father?A:He goes to work by bike.A:Tom,do you go to school by car?C:No,I don't.B:He goes by bus with my mother.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(4/3/7/3)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(4/3/7/3)1.how 怎样，如何2.bus 公共汽车3.by 乘，坐（交通工具）4.walk 步行5.go to walk 去上班6.bike 自行车7.with 与......在一起；同；和</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_956db5cb_b72e_451e_9f58_4e2092cf341e"/>
+    <rdfs:label xml:lang="zh">Do_you_go_to_school_by_car?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_was_your_trip_like?&apos;@zh">
+    <rdfs:label xml:lang="zh">What_was_your_trip_like?</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Was_the_camp_very_far?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(2/11/1/22)No.It took only two hours by bus.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">2/11/1/22</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(2/11/1/22)北京版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(2/11/1/22)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(2/11/1/22)A:When did you come back from your summer camp,Lingling?B:I came back last Thursday.A:What did you do there?B:I climbed the mountains and I swam in the river.I went fishing one day and caught three fish.A:Really!B:I let them go back into the river again.A:Good for you!Was the camp very far?B:No.It took only two hours by bus.A:So you had a lot of fun at the camp.B:Yes,I did.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(2/11/1/22)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(2/11/1/22)1.Thursday 星期四2.mountain 山，山脉3.let 让，允许</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_9ef6bde2_9d8d_407e_8916_7d3bc04d556f"/>
+    <rdfs:label xml:lang="zh">Was_the_camp_very_far?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Where&apos;s_Ken&apos;s_bag?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(6/10/7/3)It's here.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(6/10/7/3)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(6/10/7/3)朗文版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(6/10/7/3)A:Let's get the bags.Where's Ken's bag?It's big and blue.B:It's here.This is his.A:What about Brenda's bag?It's small and red.B:Umm.Here it is.This is hers.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(6/10/7/3)5</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <rdfs:label xml:lang="zh">Where's_Ken's_bag?</rdfs:label>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(6/10/7/3)1.his 他的2.hers 她的</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <owl:sameAs rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Where_can_I_find_Ken&apos;s_bag?&apos;@zh"/>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">6/10/7/3</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_744da2aa_7e4b_4e56_8878_6cbbfbfb426a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_956db5cb_b72e_451e_9f58_4e2092cf341e">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">Do</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Are_you_going_away_for_the_holiday?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(2/10/7/15)Yes.My mum and I are going to New York.My dad is working there.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">2/10/7/15</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(2/10/7/15)北京版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(2/10/7/15)5</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(2/10/7/15)A:Are you going away for the holiday,Lingling?B:Yes.My mum and I are going to New York.My dad is working there.A:So you'll fly to the U.S.A.B:Yes.I'm very excited.A:How long does it take to get to New York?B:It takes more than ten hours by plane.A:I'll miss you.Have a nice trip.B:Thank you.I'll write emails to you.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(2/10/7/15)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(2/10/7/15)1.excited 激动的，兴奋的2.hour 小时3.email 电子邮件</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_ef9586f9_de26_417a_b452_f2a3f86c3b6c"/>
+    <rdfs:label xml:lang="zh">Are_you_going_away_for_the_holiday?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Is_this_the_UN_building?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(4/11/9/14)Yes.It's a very important building in New York.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">4/11/9/14</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(4/11/9/14)外研社（一年级起点）</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(4/11/9/14)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(4/11/9/14)A:Do you want to visit the UN building?B:Yes,we do!C:Is this the UN building?B:Yes.It's a very important building in New York.The UN wants to make peace in the world.Many countries are in the UN.C:Is China in the UN?B:Yes.China is one of the 193 member states in the UN.C:Wow!The building is beautiful.It's very big and very tall.B:Haven't you got buildings this in China?C:Yes,we have.We've got lots of very tall and big buildings in China.B:Do you want to go into the builiding?C:Yes,I do.But can we?</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(4/11/9/14)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(4/11/9/14)1.peace 和平2.make peace 维护和平3.member state 成员国</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_07993f55_564e_44f3_8cf2_0403dd97f23d"/>
+    <rdfs:label xml:lang="zh">Is_this_the_UN_building?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_Brenda&apos;s_bag?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(6/10/7/4)Umm.Here it is.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">6/10/7/4</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(6/10/7/4)朗文版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(6/10/7/4)5</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(6/10/7/4)A:Let's get the bags.Where's Ken's bag?It's big and blue.B:It's here.This is his.A:What about Brenda's bag?It's small and red.B:Umm.Here it is.This is hers.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(6/10/7/4)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(6/10/7/4)1.his 他的2.hers 她的</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021"/>
+    <rdfs:label xml:lang="zh">What_Brenda's_bag?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_do_you_do_on_Sunday?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(2/3/2/2)I go to the zoo.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">2/3/2/2</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(2/3/2/2)北京版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(2/3/2/2)2</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(2/3/2/2)A:What do you do on Saturday?B:My parents and I go to the farm.I play with the animals.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(2/3/2/2)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(2/3/2/2)1.to 往，向2.the （指已提到或正谈到的人或事物）3.Sunday 星期天4.zoo 动物园</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021"/>
+    <rdfs:label xml:lang="zh">What_do_you_do_on_Sunday?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="zh">句子ID</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_did_you_buy_for_them?&apos;@zh">
+    <rdfs:label xml:lang="zh">What_did_you_buy_for_them?</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Do_you_know?&apos;@zh">
+    <rdfs:label xml:lang="zh">Do_you_know?</rdfs:label>
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(1/10/7/7)Oh,he went home.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(1/10/7/7)A:Hi,Mary.Whose watch is this?Is it yours?B:Let me have a look.No it isn't.Ask jone.I think is hers.A:Hi,Jone.Look at this watch.Is it yours?C:No,it isn't.Ask Bob.I think is his.A:Where is Bob?Do you know?C:Oh,he went home.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(1/10/7/7)5</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(1/10/7/7)1.hers 她的（所有物）2.his 他的（所有物）3.yours 你（们）的（所有物）</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_956db5cb_b72e_451e_9f58_4e2092cf341e"/>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">1/10/7/7</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(1/10/7/7)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(1/10/7/7)北师大版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <owl:sameAs rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Do_you_have_any_idea_about_this?&apos;@zh"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Could_you_tell_me_the_way?&apos;@zh">
+    <rdfs:label xml:lang="zh">Could_you_tell_me_the_way?</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_184c923a_84a7_4456_8851_b2868cd0f051"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_was_your_trip_to_Hangzhou_like?&apos;@zh">
+    <rdfs:label xml:lang="zh">What_was_your_trip_to_Hangzhou_like?</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;How_was_your_holiday?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(6/10/7/7)Frightening and tiring.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">6/10/7/7</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(6/10/7/7)朗文版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(6/10/7/7)5</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(6/10/7/7)A:Hi Doug and Jeff.How was your holiday.B:Exciting and interesting.C:Frightening and tiring.A:I don't understand.B:We saw lots animals.They are beautiful.C:The monkeys took my camera and broke it.B:We went to tall bridge.It was exciting!I was happy.C:I wasn't want to go back to hotel.B:The food was delicious.I love spicy food.C:I hate spicy food.It was terrible.B:The next day,we went to a mountain and climbed.C：It was so tiring.B:It was so beautiful.A:I think you should both go on holiday again next year.C:You do?A:Yes,but you should each go to different places.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(6/10/7/7)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(6/10/7/7)1.terrible 可怕的；糟糕的2.hate 恨，讨厌</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_59f55a35_94b6_44ea_a61d_381925840d15"/>
+    <rdfs:label xml:lang="zh">How_was_your_holiday?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Where_did_you_go?&apos;@zh">
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">5/10/5/13</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <owl:sameAs rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Which_place_did_you_go?&apos;@zh"/>
+    <rdfs:label xml:lang="zh">Where_did_you_go?</rdfs:label>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(5/10/5/13)A:Hello,Emma.How was your summer vacation?B:It was fun.A:Where did you go?B:I went to Beijing with my parents.A:What did you do there?B:We went to Beijing Zoo and saw many lovely animals there.We took lots of photos in Tian'anmen Square.We also ate Beijing duck.It was delicious!We went to the Summer Palace.I rowed a boat on Kunming Lake.I felt very happy.A:That sounds like a great trip.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_744da2aa_7e4b_4e56_8878_6cbbfbfb426a"/>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(5/10/5/13)1.tool photos （过去式）拍照片2.delicious 美味的；可口的3.felt happy （过去式）觉得高兴</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(2/11/1/20)I just stayed in Beijing.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(5/10/5/13)5</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(2/11/1/20)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(2/11/1/20)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(5/10/5/13)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(2/11/1/20)A:Hi,Mike!What did you do this summer?B:Oh,I went back to Canada.Ihad a great time and did many things.A:What did you do in Canada?B:Well,I visited my grandparents.I played with my friends.I worked on my uncle's farm.Where did you go,Yangyang?A:I just stayed in Beijing.I learned to sing Peking Opera in the morning and went swimming in the afternoon.B:No wonder you look stronger.A:Thank you.I also visited some museums and played with my cousins.B:We both had an interesting vacation.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(2/11/1/20)1.play 玩2.farm 农场3.swim 游泳4.strong 健壮的，强健的5.some 一些</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(5/10/5/13)人教版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(5/10/5/13)I went to Beijing with my parents.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(2/11/1/20)北京版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">2/11/1/20</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_0a0f469c_04ba_4177_a9e0_c3389e2c8960">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">May</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;How_do_you_go_to_shcool?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(4/3/7/1)I go to school by bus.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">4/3/7/1</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(4/3/7/1)外研社（一年级起点）</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(4/3/7/1)2</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(4/3/7/1)A:How do you go to school,Amy?B:I go to school by bus.And how do you go to school?A:I walk to school.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(4/3/7/1)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(4/3/7/1)1.how 怎样，如何2.bus 公共汽车3.by 乘，坐（交通工具）4.walk 步行</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_59f55a35_94b6_44ea_a61d_381925840d15"/>
+    <rdfs:label xml:lang="zh">How_do_you_go_to_shcool?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;When_was_Larry_born?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(5/12/1/28)He was born on August 12,2004.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">5/12/1/28</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(5/12/1/28)人教版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(5/12/1/28)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(5/12/1/28)A:When was Larry born?B:He was born on August 12,2004</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(5/12/1/28)</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(5/12/1/28)无</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_c6950ac9_77ef_4a64_9944_8991c9d2fd25"/>
+    <rdfs:label xml:lang="zh">When_was_Larry_born?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_4dc40418_61fd_48ab_b95e_b81dbd42413b">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">Which</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Do_you_often_go_to_the_cinema_on_the_weekend?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(5/7/2/1)No,I don't.I often visit my grandparents.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">5/7/2/1</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(5/7/2/1)人教版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(5/7/2/1)4</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(5/7/2/1)A:Lily,do you often go to the cinema on the weekend?B:No,I don't.I often visit my grandparents.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(5/7/2/1)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(5/7/2/1)1.go to the cinema 看电影2.visit one's grandparents 看望（外）祖父母</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_956db5cb_b72e_451e_9f58_4e2092cf341e"/>
+    <rdfs:label xml:lang="zh">Do_you_often_go_to_the_cinema_on_the_weekend?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_time_did_you_come_back_from_your_summer_camp?&apos;@zh">
+    <rdfs:label xml:lang="zh">What_time_did_you_come_back_from_your_summer_camp?</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Do_all_children_go_to_school_by_bike?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(5/7/3/7)No.You can go and see.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">5/7/3/7</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(5/7/3/7)人教版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(5/7/3/7)4</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(5/7/3/7)A:Where are you going?B:We are going to school.A:Do all children go to school by bike?C:No.You can go and see.A:How do you usually go to school?D:I usually go to school bu school bus.I like going to school by school bus.I can talk to my friends.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(5/7/3/7)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(5/7/3/7)1.by bike 骑自行车2.by bus 乘公交车3.by school bus 乘校车</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_956db5cb_b72e_451e_9f58_4e2092cf341e"/>
+    <rdfs:label xml:lang="zh">Do_all_children_go_to_school_by_bike?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;How_long_does_it_take_to_get_to_New_York?&apos;@zh">
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(2/10/7/14)5</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_59f55a35_94b6_44ea_a61d_381925840d15"/>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(2/10/7/14)1.excited 激动的，兴奋的2.hour 小时3.email 电子邮件</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(2/10/7/14)A:Are you going away for the holiday,Lingling?B:Yes.My mum and I are going to New York.My dad is working there.A:So you'll fly to the U.S.A.B:Yes.I'm very excited.A:How long does it take to get to New York?B:It takes more than ten hours by plane.A:I'll miss you.Have a nice trip.B:Thank you.I'll write emails to you.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <rdfs:label xml:lang="zh">How_long_does_it_take_to_get_to_New_York?</rdfs:label>
+    <owl:sameAs rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;How_many_hours_does_it_take_to_get_to_the_New_York?&apos;@zh"/>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">2/10/7/14</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(2/10/7/14)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(2/10/7/14)It take more than ten hours by plane.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(2/10/7/14)北京版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="zh">情境对话</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;How_will_you_go?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(2/10/7/16)We'll go by bullet train this time.It takes about five hours.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">2/10/7/16</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(2/10/7/16)北京版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(2/10/7/16)5</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(2/10/7/16)A:My parents and I are going to Shanghai for the weekend.B:How will you go?A:We'll go by bullet train this time.It takes about five hours.B:Why don't you take the plane to Shanghai?It's faster.A:I enjoy travelling by train.It will be very exciting.B:But can you come back for school on Monday.A:Sure i can.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(2/10/7/16)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(2/10/7/16)1.enjoy 享受……乐趣2.exciting 使人激动的</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_59f55a35_94b6_44ea_a61d_381925840d15"/>
+    <rdfs:label xml:lang="zh">How_will_you_go?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_ef9586f9_de26_417a_b452_f2a3f86c3b6c">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">Are</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_6ac3ddf0_1b7b_4736_9b36_bef184f563cc">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">Did</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Is_this_yours?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(1/10/7/2)Yes,it's mine.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">1/10/7/2</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(1/10/7/2)北师大版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(1/10/7/2)5</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(1/10/7/2)A:Is this yours?B:Yes,it's mine.A:Are there any gift in your bag?B:Well,open it and see.C:Dad,this bag isn't yours.There are women's clothes.D:Maybe it's hers.A:This bag isn't his.Is it yours?E:Yes,it's mine.What's your name?B:His name is Mocky.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(1/10/7/2)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(1/10/7/2)1.hers 她的（所有物）2.his 他的（所有物）3.yours 你（们）的（所有物）</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_07993f55_564e_44f3_8cf2_0403dd97f23d"/>
+    <rdfs:label xml:lang="zh">Is_this_yours?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_about_going_together_with_you?&apos;@zh">
+    <rdfs:label xml:lang="zh">What_about_going_together_with_you?</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Do_you_go_to_the_park_on_Saturday?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(2/3/2/1)Yes,I do.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">2/3/2/1</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(2/3/2/1)北京版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(2/3/2/1)2</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(2/3/2/1)A:Do you go to the park on Saturday,Kate?B:Yes,I do.A:Do you have classes on the weekend?B:No,we don't.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(2/3/2/1)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(2/3/2/1)1.do 做2.you 你；你们（主格或宾格）3.park 公园4.class 课；班级5.we 我们（主格）</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_956db5cb_b72e_451e_9f58_4e2092cf341e"/>
+    <rdfs:label xml:lang="zh">Do_you_go_to_the_park_on_Saturday?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;How_was_your_trip_to_Hangzhou?&apos;@zh">
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(2/11/3/28)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(2/11/3/28)北京版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(2/11/3/28)A:How was your trip to Hangzhou,Mike?B:It was fantastic.A:How did you go to Hangzhou?B:We wenrt there by air.We visited many places and saw green hills,blue water,small bridges,and old houses.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <rdfs:label xml:lang="zh">How_was_your_trip_to_Hangzhou?</rdfs:label>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">2/11/3/28</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(2/11/3/28)1.hill 小山2.west 西方；西部3.around 在……周围</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(2/11/3/28)It was fantastic.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <owl:sameAs rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_was_your_trip_to_Hangzhou_like?&apos;@zh"/>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(2/11/3/28)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_59f55a35_94b6_44ea_a61d_381925840d15"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Why_did_you_miss_the_flight?&apos;@zh">
+    <rdfs:label xml:lang="zh">Why_did_you_miss_the_flight?</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_90731a3d_b68d_48f6_a516_b13e99116e91"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Can_we_go_to_the_park?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(2/5/5/8)OK.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">2/5/5/8</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(2/5/5/8)北京版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(2/5/5/8)3</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(2/5/5/8)A:What's the weather like today,Mum?B:It's sunny.A:Can we go to the park?B:OK.C:It's a nice autumn day.B:Yes,it's sunny and cool.A:I like autumn.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(2/5/5/8)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(2/5/5/8)1.weather 天气2.like 像3.sunny 阳光充足的4.nice 好的，令人愉快的</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_a0d68b36_372b_4c52_93c3_d1e9cd3fde94"/>
+    <rdfs:label xml:lang="zh">Can_we_go_to_the_park?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;How_do_you_go_to_school?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(2/4/5/3)I go to school by bus.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">2/4/5/3</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(2/4/5/3)北京版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(2/4/5/3)2</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(2/4/5/3)A:How do you go to school,Amy?B:I go to school on the school bus.How about you?A:I go to school by bus.A:When do you go to work,Uncle?C：At 7:30.A:How do you go to work?C:I go to work by car. </OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(2/4/5/3)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(2/4/5/3)1.how 怎样2.bus 公共汽车3.by 乘……去4.car 小汽车</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_59f55a35_94b6_44ea_a61d_381925840d15"/>
+    <rdfs:label xml:lang="zh">How_do_you_go_to_school?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Would_you_like_to_go_with_me?&apos;@zh">
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(5/7/3/5)人教版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(5/7/3/5)A:What do you do on the weekend,Joy?B:I often go to the cinema.A:Oh,look!A new film is on at Snow Theatre.B:Oh,yeah!Would you like to go with me?A:Sorry.I want to pick apples on Saturday.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <owl:sameAs rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_about_going_together_with_you?&apos;@zh"/>
+    <rdfs:label xml:lang="zh">Would_you_like_to_go_with_me?</rdfs:label>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">5/7/3/5</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(5/7/3/5)1.theatre 剧场2.apple 苹果3.film 电影</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(5/7/3/5)Sorry.I want to pick apples on Saturday.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(5/7/3/5)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_b9ca8146_04e5_4403_8c11_eeebdcfc4895"/>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(5/7/3/5)4</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_did_they_think_about_your_gifts?&apos;@zh">
+    <rdfs:label xml:lang="zh">What_did_they_think_about_your_gifts?</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;How_did_you_spend_your_time_there?&apos;@zh">
+    <rdfs:label xml:lang="zh">How_did_you_spend_your_time_there?</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_59f55a35_94b6_44ea_a61d_381925840d15"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Can_you_see_Mr_and_Mrs_Sun&apos;s_bag?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(6/10/7/5)This is theirs.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">6/10/7/5</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(6/10/7/5)朗文版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(6/10/7/5)5</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(6/10/7/5)A:Can you see Mr and Mrs Sun's bag?It's very big.B:Is it green?A:No,it isn't.It's purple.B:Ah!This is theirs.A:This one is big and yellow.Is it yours?B:Yes,it's mine.A:Good!This black one is mine and these other bags aren't ours.Let's go.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(6/10/7/5)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(6/10/7/5)1.theirs 他（或她、它）们的2.yours 你的；你们的3.mine 我的4.ours 我们的</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_a0d68b36_372b_4c52_93c3_d1e9cd3fde94"/>
+    <rdfs:label xml:lang="zh">Can_you_see_Mr_and_Mrs_Sun's_bag?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_3db5dcd0_944e_4383_8484_e8cf41d204f8">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">Shall</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;How_can_we_get_there?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(5/12/6/31)You need to travel forty more kilometres north.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">5/12/6/31</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(5/12/6/31)人教版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(5/12/6/31)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(5/12/6/31)A:How can we get there?B:You need to travel forty more kilometres north.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(5/12/6/31)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(5/12/6/31)无</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_59f55a35_94b6_44ea_a61d_381925840d15"/>
+    <rdfs:label xml:lang="zh">How_can_we_get_there?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="zh">句子册数</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;How_did_you_miss_the_flight?&apos;@zh">
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(2/11/3/27)北京版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(2/11/3/27)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(2/11/3/27)Last Sunday afternoon,at the airport I found I left my passport in the hotel.So we went back for it,and then we missed the flight.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <rdfs:label xml:lang="zh">How_did_you_miss_the_flight?</rdfs:label>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(2/11/3/27)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_59f55a35_94b6_44ea_a61d_381925840d15"/>
+    <owl:sameAs rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Why_did_you_miss_the_flight?&apos;@zh"/>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">2/11/3/27</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(2/11/3/27)A:How did you miss the flight?B:Last Sunday afternoon,at the airport I found I left my passport in the hotel.So we went back for it,and then we missed the flight.A:I'm sorry to hear that.Your parents must be upset.B:Yes,they were angry because they missed work and I missed school on Monday.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(2/11/3/27)1.Monday 星期一</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What&apos;s_that?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(6/2/4/1)It's a panda.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">6/2/4/1</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(6/2/4/1)朗文版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(6/2/4/1)1</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(6/2/4/1)A:Mum,what's that?B:Sit down,Cindy.A:Mum!It's big.It can read.B:Be quite,Cindy.Cindy…What's that?A:Mum!It's black and white.It's fat.B:Oh,no!It's panda.Let's call the zoo.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(6/2/4/1)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(6/2/4/1)1.panda 熊猫2.black 黑色的3.white 白色的4.zoo 动物园5.call 打电话给</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021"/>
+    <rdfs:label xml:lang="zh">What's_that?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Where_is_the_supermarket?&apos;@zh">
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(3/4/10/1)A:Sam,this is my cousin Lin.B:Nice to meet you.C:Nice to meet you too.D:Excuse me.Where is the supermarket,please?C:Go straight on.Then turn left.It's next to the park.E:Excuse me.Where's the zoo?C:Go straight on.It's in front of the school.B:You know the city well,Lin.C:Of course!I'm a taxi driver.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <rdfs:label xml:lang="zh">Where_is_the_supermarket?</rdfs:label>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(3/4/10/1)1.next to 在......旁边2.in front of 在......的前面3.cousin 堂（表）兄（弟姐妹）4.supermarket 超市5.well 当然6.of course 当然</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(3/4/10/1)外研社 新标准</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(3/4/10/1)Go straight on.Then turn left.It's next to the park.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(3/4/10/1)2</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <owl:sameAs rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Where_can_I_find_the_supermarket?&apos;@zh"/>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(3/4/10/1)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_744da2aa_7e4b_4e56_8878_6cbbfbfb426a"/>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">3/4/10/1</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_can_I_do_for_you?&apos;@zh">
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(2/11/1/26)A:Hi,Mike!Nice to see you again.Did you go to see your grandparents this summer?B:Yes,I did.I gave them some gifts from China.A:What gifts did you have for them?B:I bought a pair of Chinese shoes for my grandma,and a pair of glasses for my grandpa.A:Did they like your gifts?B:Yes,they liked them very much.A:Are they coming to visit you?B:Yes,they are coming next summer.I miss them.Oh,Lingling,will you help me.please?A:Sure.What can I do for you?B:Would you please tell me more about the food in Beijing?I want them to enjoy the best food there.A:No problem.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <rdfs:label xml:lang="zh">What_can_I_do_for_you?</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021"/>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(2/11/1/26)1.glass 眼睛2.please 请3.problem 问题</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">2/11/1/26</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(2/11/1/26)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(2/11/1/26)北京版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(2/11/1/26)Would you please tell me more about the food in Beijing?I want them to enjoy the best food there.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <owl:sameAs rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Can_I_help_you?&apos;@zh"/>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(2/11/1/26)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;How_many_hours_does_it_take_to_get_to_the_New_York?&apos;@zh">
+    <rdfs:label xml:lang="zh">How_many_hours_does_it_take_to_get_to_the_New_York?</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_59f55a35_94b6_44ea_a61d_381925840d15"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_81916ad1_17e9_490d_96c5_aef22d361814">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">Were</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What&apos;s_Ted’s_mother’s_job?&apos;@zh">
+    <rdfs:label xml:lang="zh">What's_Ted’s_mother’s_job?</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_ed483c4d_e940_48cd_a168_f46d3ef930a4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">Have</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Which_country_are_you_from?&apos;@zh">
+    <rdfs:label xml:lang="zh">Which_country_are_you_from?</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_4dc40418_61fd_48ab_b95e_b81dbd42413b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Where_is_Bill_going?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(5/12/1/22)He's going to Canada.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">5/12/1/22</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(5/12/1/22)人教版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(5/12/1/22)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(5/12/1/22)A:Where is Bill going?B:He's going to Canada.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(5/12/1/22)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(5/12/1/22)1.Canada 加拿大</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_744da2aa_7e4b_4e56_8878_6cbbfbfb426a"/>
+    <rdfs:label xml:lang="zh">Where_is_Bill_going?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Where_is_the_U.K.?&apos;@zh">
+    <rdfs:label xml:lang="zh">Where_is_the_U.K.?</rdfs:label>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(2/9/5/13)A:Good morning,everyone!Welcome to London.Where is London,Baobao?B:It's here,in theU.K.A:Where is the U.K.?B:It's in Europe.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(2/9/5/13)1.morning 早晨；上午2.the U.K. 英国3.clock 时钟4.river 河，江</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <owl:sameAs rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Which_place_is_the_U.K._in?&apos;@zh"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_744da2aa_7e4b_4e56_8878_6cbbfbfb426a"/>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">2/9/5/13</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(2/9/5/13)北京版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(2/9/5/13)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(2/9/5/13)It's in Europe.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(2/9/5/13)5</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Are_you_preparing_for_the_Halloween_show?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(5/8/3/9)Yes.My topic is holidays and festivals.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">5/8/3/9</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(5/8/3/9)人教版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(5/8/3/9)4</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(5/8/3/9)A:Are you preparing for the Halloween show？B:Yes.My topic is holidays and festivals.Are you going to do a show about dinosaurs?C:Yes.My topic os animals.I'm very intersted in dinosaurs.B:What's Yulin going to do?C:His topic is outer space.He's going to play a Martian.B:Look!There he is!What are you going to do,Spot?D:I'm going to play a cat from Mars.C:What a good mask,Spot!D:Thank you!E:Great shows,kids!Have some canday.B:Thanks.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(5/8/3/9)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(5/8/3/9)无</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_ef9586f9_de26_417a_b452_f2a3f86c3b6c"/>
+    <rdfs:label xml:lang="zh">Are_you_preparing_for_the_Halloween_show?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Why_don&apos;t_you_take_the_plane_to_Shanghai?It&apos;s_faster.&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(2/10/7/17)I enjoy travelling by train.It will be very exciting.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">2/10/7/17</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(2/10/7/17)北京版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(2/10/7/17)5</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(2/10/7/17)A:My parents and I are going to Shanghai for the weekend.B:How will you go?A:We'll go by bullet train this time.It takes about five hours.B:Why don't you take the plane to Shanghai?It's faster.A:I enjoy travelling by train.It will be very exciting.B:But can you come back for school on Monday.A:Sure i can.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(2/10/7/17)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(2/10/7/17)1.enjoy 享受……乐趣2.exciting 使人激动的</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_90731a3d_b68d_48f6_a516_b13e99116e91"/>
+    <rdfs:label xml:lang="zh">Why_don't_you_take_the_plane_to_Shanghai?It's_faster.</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Is_it_yours?&apos;@zh">
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(1/10/7/5)北师大版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(1/10/7/5)A:Hi,Mary.Whose watch is this?Is it yours?B:Let me have a look.No it isn't.Ask jone.I think is hers.A:Hi,Jone.Look at this watch.Is it yours?C:No,it isn't.Ask Bob.I think is his.A:Where is Bob?Do you know?C:Oh,he went home.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(1/10/7/5)1.hers 她的（所有物）2.his 他的（所有物）3.yours 你（们）的（所有物）</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdfs:label xml:lang="zh">Is_it_yours?</rdfs:label>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(1/10/7/5)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(1/10/7/5)No it isn't</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <owl:sameAs rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Does_it_belong_to_you?&apos;@zh"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_07993f55_564e_44f3_8cf2_0403dd97f23d"/>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">1/10/7/5</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(1/10/7/5)5</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;How_about_Brenda’s_bag?&apos;@zh">
+    <rdfs:label xml:lang="zh">How_about_Brenda’s_bag?</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_59f55a35_94b6_44ea_a61d_381925840d15"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_about_you?&apos;@zh">
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(5/7/3/4)1.usually 通常2.on foot 步行3.by subway 乘地铁</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(5/7/3/4)A:How do you usually go to school?B:I usually go to school on foot.What about you?A:I usually go to school by subway.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(3/8/10/7)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021"/>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">5/7/3/4</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(5/7/3/4)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(3/8/10/7)4</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(3/8/10/7)1.granddad （外）祖父</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(5/7/3/4)I usually go to school by subway.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">3/8/10/7</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(3/8/10/7)A:What are you going to do this summer?B:I'm going to go back to England.What about you?A:I don't know.Maybe I'll visit my granddad's farm.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(3/8/10/7)外研社 新标准</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(5/7/3/4)人教版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(5/7/3/4)4</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <rdfs:label xml:lang="zh">What_about_you?</rdfs:label>
+    <owl:sameAs rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;How_about_you?&apos;@zh"/>
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(3/8/10/7)Maybe I'll visit my granddad's farm.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;How_do_you_usually_go_to_school?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(5/7/3/3)I usually go to school on foot.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">5/7/3/3</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(5/7/3/3)人教版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(5/7/3/3)4</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(5/7/3/3)A:How do you usually go to school?B:I usually go to school on foot.What about you?A:I usually go to school by subway.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(5/7/3/3)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(5/7/3/3)1.usually 通常2.on foot 步行3.by subway 乘地铁</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_59f55a35_94b6_44ea_a61d_381925840d15"/>
+    <rdfs:label xml:lang="zh">How_do_you_usually_go_to_school?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_c66f87c7_3f1e_4992_bac0_e9fddc214758">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">Whose</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_will_you_do_this_weekend?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(3/6/3/5)Maybe we'll go to the zoo.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">3/6/3/5</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(3/6/3/5)外研社 新标准</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(3/6/3/5)3</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(3/6/3/5)A:What will you do this weekend?B:Maybe we'll go to the zoo.A:What wiil you see?B:We'll see lions,tigers and pandas.A:Will Sam go,too?B:Yes,he will.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(3/6/3/5)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(3/6/3/5)1.maybe 也许2.tiger 老虎</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021"/>
+    <rdfs:label xml:lang="zh">What_will_you_do_this_weekend?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Where_does_Jenny_go_to_school_in_Canada?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(5/12/1/27)She goes to Willow Primary School.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">5/12/1/27</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(5/12/1/27)人教版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(5/12/1/27)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(5/12/1/27)A:Where does Jenny go to school in Canada?B:She goes to Willow Primary School.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(5/12/1/27)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(5/12/1/27)无</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_744da2aa_7e4b_4e56_8878_6cbbfbfb426a"/>
+    <rdfs:label xml:lang="zh">Where_does_Jenny_go_to_school_in_Canada?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Did_you_go_to_see_your_grandparents_this_summer?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(2/11/1/23)Yes,I did.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">2/11/1/23</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(2/11/1/23)北京版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(2/11/1/23)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(2/11/1/23)A:Hi,Mike!Nice to see you again.Did you go to see your grandparents this summer?B:Yes,I did.I gave them some gifts from China.A:What gifts did you have for them?B:I bought a pair of Chinese shoes for my grandma,and a pair of glasses for my grandpa.A:Did they like your gifts?B:Yes,they liked them very much.A:Are they coming to visit you?B:Yes,they are coming next summer.I miss them.Oh,Lingling,will you help me.please?A:Sure.What can I do for you?B:Would you please tell me more about the food in Beijing?I want them to enjoy the best food there.A:No problem.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(2/11/1/23)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(2/11/1/23)1.glass 眼睛2.please 请3.problem 问题</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_6ac3ddf0_1b7b_4736_9b36_bef184f563cc"/>
+    <rdfs:label xml:lang="zh">Did_you_go_to_see_your_grandparents_this_summer?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Where_are_you_goning?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(5/7/3/6)We are going to school.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">5/7/3/6</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(5/7/3/6)人教版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(5/7/3/6)4</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(5/7/3/6)A:Where are you going?B:We are going to school.A:Do all children go to school by bike?C:No.You can go and see.A:How do you usually go to school?D:I usually go to school bu school bus.I like going to school by school bus.I can talk to my friends.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(5/7/3/6)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(5/7/3/6)1.by bike 骑自行车2.by bus 乘公交车3.by school bus 乘校车</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_744da2aa_7e4b_4e56_8878_6cbbfbfb426a"/>
+    <rdfs:label xml:lang="zh">Where_are_you_goning?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">What</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLDataProperty_73f78b93_5618_42fc_b92f_77c38fa29fd8">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="zh">问题</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Excuse_me,_which_place_is_the_new_library_in?&apos;@zh">
+    <rdfs:label xml:lang="zh">Excuse_me,_which_place_is_the_new_library_in?</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_4dc40418_61fd_48ab_b95e_b81dbd42413b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;How_is_the_weather_today?&apos;@zh">
+    <rdfs:label xml:lang="zh">How_is_the_weather_today?</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_59f55a35_94b6_44ea_a61d_381925840d15"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_184c923a_84a7_4456_8851_b2868cd0f051">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">Could</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;How_does_your_mum_go_to_work?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(2/4/5/5)She goes to work by bike.How about your mum?</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">2/4/5/5</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(2/4/5/5)北京版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(2/4/5/5)2</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(2/4/5/5)A:How does your dad go to work,Baobao?B:He goes to work by car.A:How does your mun go to work?B:She goes to work by bike.How about your mun?A:She goes to work on foot.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(2/4/5/5)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(2/4/5/5)1.work 工作2.she 她（主格）3.bike 自行车</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_59f55a35_94b6_44ea_a61d_381925840d15"/>
+    <rdfs:label xml:lang="zh">How_does_your_mum_go_to_work?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;How_old_is_it?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(4/11/1/9)It's more than two thousand years old.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">4/11/1/9</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(4/11/1/9)外研社（一年级起点）</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(4/11/1/9)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(4/11/1/9)A:Can we walk  along all of the Great Wall?B:No,we can't walk along all of it.A:How long is the Great Wall?B:It's more than forty thousand li long.A:Forty thousand li?B:Yesw.That's more than twenty thousand kilometers!A:Wow!That's really long.How old is it?B:It's more than two thousand years old.A:Oh,that's very old.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(4/11/1/9)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(4/11/1/9)1.how long 多长2.more than 超过3.kilometre 千米公里4.metre 米 </OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_59f55a35_94b6_44ea_a61d_381925840d15"/>
+    <rdfs:label xml:lang="zh">How_old_is_it?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_did_you_do_there?&apos;@zh">
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(5/10/5/14)5</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(5/10/5/14)1.tool photos （过去式）拍照片2.delicious 美味的；可口的3.felt happy （过去式）觉得高兴</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021"/>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">5/10/5/14</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <owl:sameAs rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;How_did_you_spend_your_time_there?&apos;@zh"/>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(5/10/5/14)人教版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <rdfs:label xml:lang="zh">What_did_you_do_there?</rdfs:label>
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(5/10/5/14)We went to Beijing Zoo and saw many lovely animals there.We took lots of photos in Tian'anmen Square.We also ate Beijing duck.It was delicious!We went to the Summer Palace.I rowed a boat on Kunming Lake.I felt very happy.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(5/10/5/14)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(5/10/5/14)A:Hello,Emma.How was your summer vacation?B:It was fun.A:Where did you go?B:I went to Beijing with my parents.A:What did you do there?B:We went to Beijing Zoo and saw many lovely animals there.We took lots of photos in Tian'anmen Square.We also ate Beijing duck.It was delicious!We went to the Summer Palace.I rowed a boat on Kunming Lake.I felt very happy.A:That sounds like a great trip.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Where_can_I_find_Ken&apos;s_bag?&apos;@zh">
+    <rdfs:label xml:lang="zh">Where_can_I_find_Ken's_bag?</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_744da2aa_7e4b_4e56_8878_6cbbfbfb426a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;How_far_it_is?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(5/12/6/32)You're only twenty kilometres away.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">5/12/6/32</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(5/12/6/32)人教版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(5/12/6/32)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(5/12/6/32)A:We're looking for the magic tree.Do you know how far it is?B:You're only twenty kilometres away.Go east from here.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(5/12/6/32)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(5/12/6/32)无</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_59f55a35_94b6_44ea_a61d_381925840d15"/>
+    <rdfs:label xml:lang="zh">How_far_it_is?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_about_your_father?&apos;@zh">
+    <rdfs:label xml:lang="zh">What_about_your_father?</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;How_was_your_vacation?&apos;@zh">
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(5/10/5/12)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(5/10/5/12)人教版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(5/10/5/12)5</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <owl:sameAs rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_was_your_vocation_like?&apos;@zh"/>
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(5/10/5/12)It was great.I went to the beach.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(5/10/5/12)1.went to the beach （过去式）去海边</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_59f55a35_94b6_44ea_a61d_381925840d15"/>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">5/10/5/12</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <rdfs:label xml:lang="zh">How_was_your_vacation?</rdfs:label>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(5/10/5/12)A:Hello,Bill.How was your vacation?B:It was great.I went to the beach.What about you,Lily?A:I went to Kunming with my uncle's family.I felt very happy.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Can_you_introduce_yourself?&apos;@zh">
+    <rdfs:label xml:lang="zh">Can_you_introduce_yourself?</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_a0d68b36_372b_4c52_93c3_d1e9cd3fde94"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Is_this_your_uncle&apos;s_family?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(5/12/1/24)Yes.That is my uncle Bob and aunt Lisa.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">5/12/1/24</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(5/12/1/24)人教版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(5/12/1/24)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(5/12/1/24)A:Ted,this is a nice photo.Is this your uncle's family?B:Yes.That is my uncle Bob and aunt Lisa.My uncle is a famous artist.He is very funny.My aunt is a doctor in a hospital.She is very kind and friendly.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(5/12/1/24)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(5/12/1/24)无</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_07993f55_564e_44f3_8cf2_0403dd97f23d"/>
+    <rdfs:label xml:lang="zh">Is_this_your_uncle's_family?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Which_place_can_I_find_a_gas_station?&apos;@zh">
+    <rdfs:label xml:lang="zh">Which_place_can_I_find_a_gas_station?</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_4dc40418_61fd_48ab_b95e_b81dbd42413b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Who_are_you?&apos;@zh">
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(5/8/6/11)A:Anybody home?Oh,a big panda!It's from China.Big Ben!It's from the UK.Ah,this is from Australia.A lovely koala.Nice to meet you,Mickey Mouse.You are from Disneyland in the USA,right?A maple leaf.Is there something from Canada here?Ahh!Who are?B:I'm Max.I'm a beaver from Canada.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(5/8/6/11)I'm Max.I'm a beaver from Canada.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(5/8/6/11)4</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(5/8/6/11)1.Canada 加拿大2.Australia 澳大利亚3.the UK 英国4.the USA 美国5.China 中国6.koala 考拉7.maple leaves 枫叶8.Big Ben 大本钟9.Disneyland 迪斯尼乐园</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">5/8/6/11</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <owl:sameAs rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Can_you_introduce_yourself?&apos;@zh"/>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(5/8/6/11)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <rdfs:label xml:lang="zh">Who_are_you?</rdfs:label>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(5/8/6/11)人教版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_dca9be23_8e06_44dd_9f4e_df443a9a4933"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;How_can_I_do_for_you?&apos;@zh">
+    <rdfs:label xml:lang="zh">How_can_I_do_for_you?</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_59f55a35_94b6_44ea_a61d_381925840d15"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_gifts_did_you_have_for_them?&apos;@zh">
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">2/11/1/24</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <owl:sameAs rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_did_you_buy_for_them?&apos;@zh"/>
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(2/11/1/24)I bought a pair of Chinese shoes for my grandma,and a pair of glasses for my grandpa.A:Did they like your gifts?</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(2/11/1/24)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(2/11/1/24)北京版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(2/11/1/24)1.glass 眼睛2.please 请3.problem 问题</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021"/>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(2/11/1/24)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <rdfs:label xml:lang="zh">What_gifts_did_you_have_for_them?</rdfs:label>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(2/11/1/24)A:Hi,Mike!Nice to see you again.Did you go to see your grandparents this summer?B:Yes,I did.I gave them some gifts from China.A:What gifts did you have for them?B:I bought a pair of Chinese shoes for my grandma,and a pair of glasses for my grandpa.A:Did they like your gifts?B:Yes,they liked them very much.A:Are they coming to visit you?B:Yes,they are coming next summer.I miss them.Oh,Lingling,will you help me.please?A:Sure.What can I do for you?B:Would you please tell me more about the food in Beijing?I want them to enjoy the best food there.A:No problem.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_59f55a35_94b6_44ea_a61d_381925840d15">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">How</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Are_there_any_Chinatowns_in_China?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(4/11/2/12)Oh,all towns in China are Chinatowns.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">4/11/2/12</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(4/11/2/12)外研社（一年级起点）</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(4/11/2/12)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(4/11/2/12)A:There's a Chinatown in New York.B:Oh,that's good.A:Are there any Chinatowns in China?B:Oh,all towns in China are Chinatowns!</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(4/11/2/12)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(4/11/2/12)1.Chinatown 唐人街，中国城2.town 城镇，市镇</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_ef9586f9_de26_417a_b452_f2a3f86c3b6c"/>
+    <rdfs:label xml:lang="zh">Are_there_any_Chinatowns_in_China?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;How_about_your_father?&apos;@zh">
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(4/3/7/2)2</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <rdfs:label xml:lang="zh">How_about_your_father?</rdfs:label>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(4/3/7/2)1.how 怎样，如何2.bus 公共汽车3.by 乘，坐（交通工具）4.walk 步行5.go to walk 去上班6.bike 自行车</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(4/3/7/2)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(4/3/7/2)A:How do you go to school,Amy?B:I go to school by bus.And how do you go to school?A:I walk to school.B:How about your father?A:He goes to work by bike.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(4/3/7/2)外研社（一年级起点）</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_59f55a35_94b6_44ea_a61d_381925840d15"/>
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(4/3/7/2)He goes to work by bike.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">4/3/7/2</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <owl:sameAs rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_about_your_father?&apos;@zh"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Can_I_help_you?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(5/12/6/33)We're looking for the magic tree.Is it near there.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_a0d68b36_372b_4c52_93c3_d1e9cd3fde94"/>
+    <rdfs:label xml:lang="zh">Can_I_help_you?</rdfs:label>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(5/12/6/33)人教版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(5/12/6/33)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(5/12/6/33)无</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">5/12/6/33</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(5/12/6/33)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(5/12/6/33)A:Can I help you?B:We're looking for the magic tree.Is it near here?A:No.it's still a little far.Follow me.We will go south.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <owl:sameAs rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_can_I_do_for_you?&apos;@zh"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLDataProperty_9f5fcf67_73e4_4512_9380_9f32f3cde335">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="zh">问题句型</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_country_is_this?&apos;@zh">
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(5/11/2/20)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(5/11/2/20)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <owl:sameAs rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Where_is_this?&apos;@zh"/>
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(5/11/2/20)It's Canada.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(5/11/2/20)人教版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <rdfs:label xml:lang="zh">What_country_is_this?</rdfs:label>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">5/11/2/20</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(5/11/2/20)1.Canada 加拿大</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021"/>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(5/11/2/20)A:What country is this?B:It's Canada.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_is_it?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(3/6/2/4)This is Big Ben.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">3/6/2/4</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(3/6/2/4)外研社 新标准</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(3/6/2/4)3</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(3/6/2/4)A:It's very tall.What is it?B:This is Big Ben.It's a very old clock.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(3/6/2/4)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(3/6/2/4)1.old 老的2.clock 钟</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021"/>
+    <rdfs:label xml:lang="zh">What_is_it?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_does_Miss_Jackson_look_like?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(5/12/1/30)She has curly black hair.She wears glasses.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">5/12/1/30</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(5/12/1/30)人教版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(5/12/1/30)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(5/12/1/30)A:What does Miss Jackson look like?B:She has curly black hair.She wears glasses.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(5/12/1/30)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(5/12/1/30)无</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021"/>
+    <rdfs:label xml:lang="zh">What_does_Miss_Jackson_look_like?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_are_you_going_to_do?&apos;@zh">
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021"/>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(4/5/10/6)3</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">3/5/10/3</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(4/5/10/6)I'm going to swim in the sea.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(4/5/10/6)外研社（一年级起点）</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(3/5/10/3)外研社 新标准</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">4/5/10/6</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(3/5/10/3)3</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(3/5/10/3)I'm going to swim in the sea.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <rdfs:label xml:lang="zh">What_are_you_going_to_do?</rdfs:label>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(4/5/10/6)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(3/5/10/3)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(3/5/10/3)1.sea 大海</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(3/5/10/3)A:Are you going to Hong Kong?B:No.I'm going to Hainan.A:What are you going to do?B:I'm going to swim in the sea.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(4/5/10/6)1.sea 大海</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(4/5/10/6)A:What are you going to do,Sam?B:I'm going to swim in the sea.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Did_you_go_on_a_school_trip_yesterday?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(3/7/5/6)Yes.We went to the Great Wall.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(4/7/5/7)Yes.We went to the Great Wall.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <rdfs:label xml:lang="zh">Did_you_go_on_a_school_trip_yesterday?</rdfs:label>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(4/7/5/7)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">4/7/5/7</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_6ac3ddf0_1b7b_4736_9b36_bef184f563cc"/>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(3/7/5/6)A:Did you go on a school trip yesterday?B:Yes.We went to the Great Wall.C:It took us fifty minutes to climb to the top.B:And we saw lots of mountain.We ate candies.C:And we saw some beautiful plants.A:So,you had a good time.B:Yes.And we bought you a present.It's a picture of the Great Wall.A:Thank you,boys.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(4/7/5/7)4</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(3/7/5/6)4</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(3/7/5/6)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(3/7/5/6)外研社 新标准</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(4/7/5/7)A:Did you go on a school trip yesterday?B:Yes.We went to the Great Wall.C:It took us fifty minutes to climb to the top.B:And we saw lots of mountain.We ate candies.C:And we saw some beautiful plants.A:So,you had a good time.B:Yes.And we bought you a present.It's a picture of the Great Wall.A:Thank you,boys.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">3/7/5/6</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(3/7/5/6)1.went 去2.saw 看见3.trip 旅行4.took 需要花费5.fifty 五十6.minute 分钟7.top 顶部8.mountain 山9.ate 吃10.candies 糖果11. plant 植物.12.had 度过13.have a good time 过得愉快14.bought 买</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(4/7/5/7)外研社（一年级起点）</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(4/7/5/7)1.went 去2.saw 看见3.trip 旅行4.took 需要花费5.fifty 五十6.minute 分钟7.top 顶部8.mountain 山9.ate 吃10.candies 糖果11. plant 植物.12.had 度过13.have a good time 过得愉快14.bought 买</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Are_you_going_to_HongKong?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(4/5/10/5)No.I'm going to Hainan.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">4/5/10/5</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(4/5/10/5)外研社（一年级起点）</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(4/5/10/5)3</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(4/5/10/5)A:Where are you going?B:I'm going to HongKong.My grandma lives there.Are you going to HongKong?A:No.I'm going to Hainan.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(4/5/10/5)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(4/5/10/5)无</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_ef9586f9_de26_417a_b452_f2a3f86c3b6c"/>
+    <rdfs:label xml:lang="zh">Are_you_going_to_HongKong?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Where_can_I_find_the_supermarket?&apos;@zh">
+    <rdfs:label xml:lang="zh">Where_can_I_find_the_supermarket?</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_744da2aa_7e4b_4e56_8878_6cbbfbfb426a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_is_Sanya_famous_for?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(2/10/7/18)It's famous for its sandy beaches.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">2/10/7/18</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(2/10/7/18)北京版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(2/10/7/18)5</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(2/10/7/18)A:My father will take me to Sanya this summer.B:What is Sanya famous for?A:It's famous for its sandy beaches.We'll go swimming in the sea.B:Sounds exciting.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(2/10/7/18)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(2/10/7/18)1.famous 著名的，出名的2.its 它的3.beach 海滩4.sea 海洋5.camera 照相机</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021"/>
+    <rdfs:label xml:lang="zh">What_is_Sanya_famous_for?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Where_do_you_want_to_go?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(5/8/3/8)I want to go to West Lake with my parents.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">5/8/3/8</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(5/8/3/8)人教版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(5/8/3/8)4</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(5/8/3/8)A:Where do you want to go?B:I want to go to West Lake with my parents.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(5/8/3/8)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(5/8/3/8)无</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_744da2aa_7e4b_4e56_8878_6cbbfbfb426a"/>
+    <rdfs:label xml:lang="zh">Where_do_you_want_to_go?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="zh">回答</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Does_your_grandpa_go_with_you?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(2/4/5/6)Yes,he does.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">2/4/5/6</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(2/4/5/6)北京版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(2/4/5/6)2</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(2/4/5/6)A:How do you go to the farm on Saturday?B:We go to the farm by subway.A:Does your grandpa go with you?B:Yes,he does.A:Does your uncle come to see you on Sunday?B:Yes,he does.A:Does he come by taxi?B:No,he doesn't.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(2/4/5/6)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(2/4/5/6)1.he 他（主格）2.come 来；来临3.taxi 出租车</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_956db5cb_b72e_451e_9f58_4e2092cf341e"/>
+    <rdfs:label xml:lang="zh">Does_your_grandpa_go_with_you?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Do_you_want_to_visit_the_UN_building?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(4/11/9/13)Yes,we do!</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">4/11/9/13</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(4/11/9/13)外研社（一年级起点）</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(4/11/9/13)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(4/11/9/13)A:Do you want to visit the UN building?B:Yes,we do!C:Is this the UN building?B:Yes.It's a very important building in New York.The UN wants to make peace in the world.Many countries are in the UN.C:Is China in the UN?B:Yes.China is one of the 193 member states in the UN.C:Wow!The building is beautiful.It's very big and very tall.B:Haven't you got buildings this in China?C:Yes,we have.We've got lots of very tall and big buildings in China.B:Do you want to go into the builiding?C:Yes,I do.But can we?</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(4/11/9/13)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(4/11/9/13)1.peace 和平2.make peace 维护和平3.member state 成员国</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_956db5cb_b72e_451e_9f58_4e2092cf341e"/>
+    <rdfs:label xml:lang="zh">Do_you_want_to_visit_the_UN_building?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_744da2aa_7e4b_4e56_8878_6cbbfbfb426a">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">Where</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_do_you_do_on_the_weekend?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(5/7/2/2)I often go to a drawing club.It's fun.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">5/7/2/2</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(5/7/2/2)人教版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(5/7/2/2)4</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(5/7/2/2)A:Binbin,what do you do on the weekend?B:I often go to a drawing club.It's fun.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(5/7/2/2)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(5/7/2/2)1.go to a drawing club 去绘画俱乐部</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021"/>
+    <rdfs:label xml:lang="zh">What_do_you_do_on_the_weekend?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;When_do_you_go_to_work?&apos;@zh">
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(2/4/5/4)1.how 怎样2.bus 公共汽车3.by 乘……去4.car 小汽车</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdfs:label xml:lang="zh">When_do_you_go_to_work?</rdfs:label>
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(2/4/5/4)At 7:30</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <owl:sameAs rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_time_do_you_go_to_work?&apos;@zh"/>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(2/4/5/4)A:How do you go to school,Amy?B:I go to school on the school bus.How about you?A:I go to school by bus.A:When do you go to work,Uncle?C：At 7:30.A:How do you go to work?C:I go to work by car. </OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(2/4/5/4)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(2/4/5/4)北京版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">2/4/5/4</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(2/4/5/4)2</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_c6950ac9_77ef_4a64_9944_8991c9d2fd25"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Who_is_that_girl?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(5/12/1/25)That's jenny,my cousin.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">5/12/1/25</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(5/12/1/25)人教版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(5/12/1/25)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(5/12/1/25)A:Who is that girl?She is very pretty.B:That's Jenny,my cousin.She is ten years old.She's good at singing,dancing and drawing.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(5/12/1/25)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(5/12/1/25)1.pretty 漂亮的</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_dca9be23_8e06_44dd_9f4e_df443a9a4933"/>
+    <rdfs:label xml:lang="zh">Who_is_that_girl?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;When_did_you_come_back_from_your_summer_camp?&apos;@zh">
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(2/11/1/21)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(2/11/1/21)I came back last Thrusday.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(2/11/1/21)北京版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(2/11/1/21)A:When did you come back from your summer camp,Lingling?B:I came back last Thursday.A:What did you do there?B:I climbed the mountains and I swam in the river.I went fishing one day and caught three fish.A:Really!B:I let them go back into the river again.A:Good for you!Was the camp very far?B:No.It took only two hours by bus.A:So you had a lot of fun at the camp.B:Yes,I did.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(2/11/1/21)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(2/11/1/21)1.Thursday 星期四2.mountain 山，山脉3.let 让，允许</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_c6950ac9_77ef_4a64_9944_8991c9d2fd25"/>
+    <owl:sameAs rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_time_did_you_come_back_from_your_summer_camp?&apos;@zh"/>
+    <rdfs:label xml:lang="zh">When_did_you_come_back_from_your_summer_camp?</rdfs:label>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">2/11/1/21</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Where_do_you_want_to_go_for_your_summer_holiday?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(6/10/7/2)I want to go to Australia.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">6/10/7/2</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(6/10/7/2)朗文版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(6/10/7/2)5</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(6/10/7/2)A:Where do you want to go for your sumer holiday?B:I want to go to Australia.I want to ski here.A:That's exciting.B:Where do you want to go?A:I want to go to South Africa.I'd like to see hipos,elephants and lions.B:Ooh!That's frightening！</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(6/10/7/2)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(6/10/7/2)1.exciting 令人兴奋的2.South Africa 南非3.frightening 引起恐惧的；可怕的4.</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_744da2aa_7e4b_4e56_8878_6cbbfbfb426a"/>
+    <rdfs:label xml:lang="zh">Where_do_you_want_to_go_for_your_summer_holiday?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Who_are_the_people_in_this_photo?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(5/12/1/26)They are my grandparents.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">5/12/1/26</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(5/12/1/26)人教版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(5/12/1/26)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(5/12/1/26)A:Who are the people in this photo?B:They are my grandparents.My grandpa is an artist,too.He draws pictures for children's books.My grandma is a winter.She writes books for children.I love my grandparents very much.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(5/12/1/26)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(5/12/1/26)1.artist 作家</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_dca9be23_8e06_44dd_9f4e_df443a9a4933"/>
+    <rdfs:label xml:lang="zh">Who_are_the_people_in_this_photo?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_does_Ted&apos;s_mother_do?&apos;@zh">
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(5/12/1/23)A:What does Ted's mother do?B:She's a nurse.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(5/12/1/23)She's a nurse.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(5/12/1/23)人教版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021"/>
+    <rdfs:label xml:lang="zh">What_does_Ted's_mother_do?</rdfs:label>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(5/12/1/23)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <owl:sameAs rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What&apos;s_Ted’s_mother’s_job?&apos;@zh"/>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(5/12/1/23)1.nurse 护士</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(5/12/1/23)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">5/12/1/23</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Can_you_tell_me_the_way?&apos;@zh">
+    <rdfs:label xml:lang="zh">Can_you_tell_me_the_way?</rdfs:label>
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(2/8/3/12)Sure.Please drive on,and then turn left at the first corner.It's on your right.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_a0d68b36_372b_4c52_93c3_d1e9cd3fde94"/>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(2/8/3/12)北京版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(2/8/3/12)1.station 站2.far 远方的；久远的3.way 路，路线4.then 然后5.left 左边6.miss 未见到，错过</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(2/8/3/12)4</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">2/8/3/12</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(2/8/3/12)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <owl:sameAs rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Could_you_tell_me_the_way?&apos;@zh"/>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(2/8/3/12)A:Excues me.Where can I find a gas station?B:There is one.It's not far.A:Can you tell me the way?B:Sure.Please drive on,and then turn left at the first corner.It's on your right.A:I see.I should drive on and then turn left at the first corner.B:Yes The gas station is on your right.You can't miss it.A:Thanks a lot.B:You're welcome.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Are_you_going_to_Hong_Kong?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(3/5/10/2)No.I'm going to Hainan.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">3/5/10/2</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(3/5/10/2)外研社 新标准</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(3/5/10/2)3</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(3/5/10/2)A:Are you going to Hong Kong?B:No.I'm going to Hainan.A:What are you going to do?B:I'm going to swim in the sea.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(3/5/10/2)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(3/5/10/2)1.sea 大海</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_ef9586f9_de26_417a_b452_f2a3f86c3b6c"/>
+    <rdfs:label xml:lang="zh">Are_you_going_to_Hong_Kong?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Do_you_have_any_idea_about_this?&apos;@zh">
+    <rdfs:label xml:lang="zh">Do_you_have_any_idea_about_this?</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_ed483c4d_e940_48cd_a168_f46d3ef930a4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What&apos;s_Xining_famous_for?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(5/11/1/16)It's famous for temples.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">5/11/1/16</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(5/11/1/16)人教版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(5/11/1/16)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(5/11/1/16)A:Hi,Andy.How was your summer vacation?B:It was great.I went to Xining with my paren ts.A:Where is xining?B:Look at the map.It's in the west of China.A:What's the weather like there?B:It's cool in summer.A:What's Xining famous for?B:It's famous for temples.A:How did you go there?B:We went there by plane,but you can also go by train.It's cheaper.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(5/11/1/16)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(5/11/1/16)1.map 地图2.west 西3.famous 著名的4.temple 寺</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021"/>
+    <rdfs:label xml:lang="zh">What's_Xining_famous_for?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;How_did_people_travel_many,many_years_ago?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(2/11/3/29)They walked or rode horses because there were no bikes,carsor buses.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">2/11/3/29</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(2/11/3/29)北京版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(2/11/3/29)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(2/11/3/29)A:How did people travel many,many years ago,Baobao?B:They walked or rode horses because there were no bikes,carsor buses.A:There were no ships,trains,or planes.B:Travelling in the old days was very slow.A:Yes,it was diffcult and dangerous,tooB:Do you know who invented those vehicles?A:Some smart people did.Their inventions make our life easy and comfortable.B:They also make travelling safe and fast.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(2/11/3/29)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(2/11/3/29)1.many 许多的，多的2.ride （乘车或骑车的）短途旅程3.horse 马4.smart 聪明的</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_59f55a35_94b6_44ea_a61d_381925840d15"/>
+    <rdfs:label xml:lang="zh">How_did_people_travel_many,many_years_ago?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Where_do_you_want_to_go_this_winter_vacation?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(5/11/2/18)I want to go to London.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">5/11/2/18</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(5/11/2/18)人教版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(5/11/2/18)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(5/11/2/18)A:Where do you want to go this winter vacation?B:I want to go to London.It's in the southeast of the UK.A:What do you want to do there?B:I want to visit the British Museum and see Big Ben.It's a large clock.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(5/11/2/18)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(5/11/2/18)1.London 伦敦2.the British Museum 大英博物馆</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_744da2aa_7e4b_4e56_8878_6cbbfbfb426a"/>
+    <rdfs:label xml:lang="zh">Where_do_you_want_to_go_this_winter_vacation?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_529092f5_af5f_48c7_a997_34abda79e28b">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">Does</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="zh">重要句型</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_did_she_want_to_have?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(1/10/7/8)She wanted to have new clothes.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">1/10/7/8</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(1/10/7/8)北师大版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(1/10/7/8)5</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(1/10/7/8)A:What did she want to have?B:She wanted to have new clothes.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(1/10/7/8)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(1/10/7/8)无</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021"/>
+    <rdfs:label xml:lang="zh">What_did_she_want_to_have?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;How_about_going_together_with_you?&apos;@zh">
+    <rdfs:label xml:lang="zh">How_about_going_together_with_you?</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_59f55a35_94b6_44ea_a61d_381925840d15"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_do_you_want_to_do_there?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(5/11/2/19)I want to visit the British Museum and see Big Ben.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">5/11/2/19</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(5/11/2/19)人教版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(5/11/2/19)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(5/11/2/19)A:Where do you want to go this winter vacation?B:I want to go to London.It's in the southeast of the UK.A:What do you want to do there?B:I want to visit the British Museum and see Big Ben.It's a large clock.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(5/11/2/19)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(5/11/2/19)1.London 伦敦2.the British Museum 大英博物馆</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021"/>
+    <rdfs:label xml:lang="zh">What_do_you_want_to_do_there?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Where_is_Bob?&apos;@zh">
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(1/10/7/6)A:Hi,Mary.Whose watch is this?Is it yours?B:Let me have a look.No it isn't.Ask jone.I think is hers.A:Hi,Jone.Look at this watch.Is it yours?C:No,it isn't.Ask Bob.I think is his.A:Where is Bob?Do you know?C:Oh,he went home.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(1/10/7/6)5</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_744da2aa_7e4b_4e56_8878_6cbbfbfb426a"/>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(1/10/7/6)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(1/10/7/6)Oh,he went home.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <owl:sameAs rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Where_can_I_find_Bob?&apos;@zh"/>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(1/10/7/6)1.hers 她的（所有物）2.his 他的（所有物）3.yours 你（们）的（所有物）</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(1/10/7/6)北师大版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <rdfs:label xml:lang="zh">Where_is_Bob?</rdfs:label>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">1/10/7/6</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What&apos;s_your_name?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(1/10/7/3)His name is Mocky.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">1/10/7/3</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(1/10/7/3)北师大版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(1/10/7/3)5</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(1/10/7/3)A:Is this yours?B:Yes,it's mine.A:Are there any gift in your bag?B:Well,open it and see.C:Dad,this bag isn't yours.There are women's clothes.D:Maybe it's hers.A:This bag isn't his.Is it yours?E:Yes,it's mine.What's your name?B:His name is Mocky.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(1/10/7/3)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(1/10/7/3)1.hers 她的（所有物）2.his 他的（所有物）3.yours 你（们）的（所有物）</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021"/>
+    <rdfs:label xml:lang="zh">What's_your_name?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Why_is_spring_your_favourite_season?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(5/12/1/29)Because I can fly a kite in spring.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">5/12/1/29</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(5/12/1/29)人教版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(5/12/1/29)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(5/12/1/29)A:WHy is spring your favourite season?B:Because I can fly a kite in spring.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(5/12/1/29)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(5/12/1/29)无</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_90731a3d_b68d_48f6_a516_b13e99116e91"/>
+    <rdfs:label xml:lang="zh">Why_is_spring_your_favourite_season?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_c6950ac9_77ef_4a64_9944_8991c9d2fd25">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">When</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Can_we_walk_along_all_of_the_Great_Wall?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(4/11/1/8)No,we can't walk along all of it.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">4/11/1/8</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(4/11/1/8)外研社（一年级起点）</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(4/11/1/8)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(4/11/1/8)A:Can we walk  along all of the Great Wall?B:No,we can't walk along all of it.A:How long is the Great Wall?B:It's more than forty thousand li long.A:Forty thousand li?B:Yesw.That's more than twenty thousand kilometers!</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(4/11/1/8)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(4/11/1/8)1.how long 多长2.more than 超过3.kilometre 千米公里4.metre 米 </OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_a0d68b36_372b_4c52_93c3_d1e9cd3fde94"/>
+    <rdfs:label xml:lang="zh">Can_we_walk_along_all_of_the_Great_Wall?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Is_it_the_museum?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(4/11/1/11)Yes,it is.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">4/11/1/11</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(4/11/1/11)外研社（一年级起点）</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(4/11/1/11)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(4/11/1/11)A:What can you see there.B:A lot of old things.A:Is it the museum?B:Yes,it is.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(4/11/1/11)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(4/11/1/11)无</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_07993f55_564e_44f3_8cf2_0403dd97f23d"/>
+    <rdfs:label xml:lang="zh">Is_it_the_museum?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_dca9be23_8e06_44dd_9f4e_df443a9a4933">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">Who</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_9ef6bde2_9d8d_407e_8916_7d3bc04d556f">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">Was</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_b9ca8146_04e5_4403_8c11_eeebdcfc4895">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">Would</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;How_did_they_like_your_gifts?&apos;@zh">
+    <rdfs:label xml:lang="zh">How_did_they_like_your_gifts?</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_59f55a35_94b6_44ea_a61d_381925840d15"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_was_your_vocation_like?&apos;@zh">
+    <rdfs:label xml:lang="zh">What_was_your_vocation_like?</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Excuse_me,_sir,_where_is_the_new_library?&apos;@zh">
+    <owl:sameAs rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Excuse_me,_which_place_is_the_new_library_in?&apos;@zh"/>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">2/8/3/9</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_744da2aa_7e4b_4e56_8878_6cbbfbfb426a"/>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(2/8/3/9)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(2/8/3/9)1.excuse 原谅2.library 图书馆3.floor 层；地面，地板</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(2/8/3/9)4</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(2/8/3/9)A:Excuse me sir,where is the new library?B:It's in that building over there.A:Which floor,please?B:The fifth floor.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(2/8/3/9)北京版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <rdfs:label xml:lang="zh">Excuse_me,_sir,_where_is_the_new_library?</rdfs:label>
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(2/8/3/9)It's in that building over there.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What&apos;s_the_weather_like_today?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(2/5/5/7)It's sunny.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(2/5/5/7)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">2/5/5/7</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(2/5/5/7)北京版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021"/>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(2/5/5/7)A:What's the weather like today,Mum?B:It's sunny.A:Can we go to the park?B:OK.C:It's a nice autumn day.B:Yes,it's sunny and cool.A:I like autumn.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(2/5/5/7)1.weather 天气2.like 像3.sunny 阳光充足的4.nice 好的，令人愉快的</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdfs:label xml:lang="zh">What's_the_weather_like_today?</rdfs:label>
+    <owl:sameAs rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;How_is_the_weather_today?&apos;@zh"/>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(2/5/5/7)3</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Is_it_green?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(6/10/7/6)No,it isn't.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">6/10/7/6</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(6/10/7/6)朗文版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(6/10/7/6)5</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(6/10/7/6)A:Can you see Mr and Mrs Sun's bag?It's very big.B:Is it green?A:No,it isn't.It's purple.B:Ah!This is theirs.A:This one is big and yellow.Is it yours?B:Yes,it's mine.A:Good!This black one is mine and these other bags aren't ours.Let's go.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(6/10/7/6)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(6/10/7/6)1.theirs 他（或她、它）们的2.yours 你的；你们的3.mine 我的4.ours 我们的</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_07993f55_564e_44f3_8cf2_0403dd97f23d"/>
+    <rdfs:label xml:lang="zh">Is_it_green?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Where_is_this?&apos;@zh">
+    <rdfs:label xml:lang="zh">Where_is_this?</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_744da2aa_7e4b_4e56_8878_6cbbfbfb426a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_did_you_do_this_summer?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(2/11/1/19)I went back to Canada.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">2/11/1/19</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(2/11/1/19)北京版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(2/11/1/19)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(2/11/1/19)A:Hi,Mike!What did you do this summer?B:Oh,I went back to Canada.Ihad a great time and did many things.A:What did you do in Canada?B:Well,I visited my grandparents.I played with my friends.I worked on my uncle's farm.Where did you go,Yangyang?A:I just stayed in Beijing.I learned to sing Peking Opera in the morning and went swimming in the afternoon.B:No wonder you look stronger.A:Thank you.I also visited some museums and played with my cousins.B:We both had an interesting vacation.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(2/11/1/19)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(2/11/1/19)1.play 玩2.farm 农场3.swim 游泳4.strong 健壮的，强健的5.some 一些</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021"/>
+    <rdfs:label xml:lang="zh">What_did_you_do_this_summer?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;How_was_your_trip?&apos;@zh">
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(1/10/7/1)5</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_59f55a35_94b6_44ea_a61d_381925840d15"/>
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(1/10/7/1)It was wonderful!Thank you!</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <rdfs:label xml:lang="zh">How_was_your_trip?</rdfs:label>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(1/10/7/1)1.mine 我的（所有格）2.trip 旅行，行程</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(1/10/7/1)北师大版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(1/10/7/1)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(1/10/7/1)A:There's dad!B:Mocky come back!C:How was you trip!D:It was wonderful!Thank you!C:Let me get your bag.D:That big isn't mine.Mine is green.That bag is mine.C:I'm sorry.Here you are.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">1/10/7/1</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <owl:sameAs rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_was_your_trip_like?&apos;@zh"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Whose_watch_is_this?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(1/10/7/4)Ask jone.I think is hers.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">1/10/7/4</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(1/10/7/4)北师大版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(1/10/7/4)5</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(1/10/7/4)A:Hi,Mary.Whose watch is this?Is it yours?B:Let me have a look.No it isn't.Ask jone.I think is hers.A:Hi,Jone.Look at this watch.Is it yours?C:No,it isn't.Ask Bob.I think is his.A:Where is Bob?Do you know?C:Oh,he went home.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(1/10/7/4)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(1/10/7/4)1.hers 她的（所有物）2.his 他的（所有物）3.yours 你（们）的（所有物）</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_c66f87c7_3f1e_4992_bac0_e9fddc214758"/>
+    <rdfs:label xml:lang="zh">Whose_watch_is_this?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_about_Brenda&apos;s_bag?&apos;@zh">
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021"/>
+    <owl:sameAs rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;How_about_Brenda’s_bag?&apos;@zh"/>
+    <rdfs:label xml:lang="zh">What_about_Brenda's_bag?</rdfs:label>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(6/10/7/4))无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(6/10/7/4))1.his 他的2.hers 她的</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(6/10/7/4))朗文版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">6/10/7/4</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(6/10/7/4))Umm.Here it is.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(6/10/7/4))A:Let's get the bags.Where's Ken's bag?It's big and blue.B:It's here.This is his.A:What about Brenda's bag?It's small and red.B:Umm.Here it is.This is hers.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(6/10/7/4))5</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Does_it_belong_to_you?&apos;@zh">
+    <rdfs:label xml:lang="zh">Does_it_belong_to_you?</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_956db5cb_b72e_451e_9f58_4e2092cf341e"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Where_can_I_find_a_gas_station?&apos;@zh">
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(2/8/3/11)北京版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_744da2aa_7e4b_4e56_8878_6cbbfbfb426a"/>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(2/8/3/11)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(2/8/3/11)1.station 站2.far 远方的；久远的3.way 路，路线4.then 然后5.left 左边6.miss 未见到，错过</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">2/8/3/11</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <owl:sameAs rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Which_place_can_I_find_a_gas_station?&apos;@zh"/>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(2/8/3/11)A:Excues me.Where can I find a gas station?B:There is one.It's not far.A:Can you tell me the way?B:Sure.Please drive on,and then turn left at the first corner.It's on your right.A:I see.I should drive on and then turn left at the first corner.B:Yes The gas station is on your right.You can't miss it.A:Thanks a lot.B:You're welcome.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(2/8/3/11)4</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <rdfs:label xml:lang="zh">Where_can_I_find_a_gas_station?</rdfs:label>
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(2/8/3/11)There is one.It's not far.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="zh">句子教材版本</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;What_are_you_going_to_do_in_your_winter_vacation?&apos;@zh">
+    <OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf xml:lang="zh">(5/11/6/21)I'm going to learn Chinese patinting.I love painting.</OWLDataProperty_44f21cd5_13c5_432f_b81c_e3313d2508cf>
+    <OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64 xml:lang="zh">5/11/6/21</OWLDataProperty_64305d93_e14b_456f_a74b_449ca3706f64>
+    <OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04 xml:lang="zh">(5/11/6/21)人教版</OWLDataProperty_b8915086_8126_4bf6_a772_fa2d2d647c04>
+    <OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3 xml:lang="zh">(5/11/6/21)6</OWLDataProperty_bcbbcc9e_c942_437b_a642_d8cd4823dca3>
+    <OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5 xml:lang="zh">(5/11/6/21)A:What are you going to do in your winter vacation?B:I'm going to learn Chinese painting.I love painting.C:I'm going to train for a basketball match.I'm a sports fan.</OWLDataProperty_badb28fb_9e9b_4834_aebe_1bd7a25993e5>
+    <OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347 xml:lang="zh">(5/11/6/21)无</OWLDataProperty_2bf46a3f_b30e_4adf_a18a_8f871c026347>
+    <OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1 xml:lang="zh">(5/11/6/21)1.fan 迷；爱好者</OWLDataProperty_3adbe071_854f_4292_a243_168b41d129f1>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_16f8b064_21bd_4327_a3ff_9729f91cc021"/>
+    <rdfs:label xml:lang="zh">What_are_you_going_to_do_in_your_winter_vacation?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_90731a3d_b68d_48f6_a516_b13e99116e91">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">Why</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#&apos;Which_place_is_the_U.K._in?&apos;@zh">
+    <rdfs:label xml:lang="zh">Which_place_is_the_U.K._in?</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/8/untitled-ontology-85#OWLClass_4dc40418_61fd_48ab_b95e_b81dbd42413b"/>
+  </rdf:Description>
+</rdf:RDF>
