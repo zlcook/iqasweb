@@ -20,7 +20,7 @@ private HibernateTemplate hibernateTemplate;
 	@Override
 	public int updateAnswer(Answer answer) {
 		// TODO Auto-generated method stub
-		hibernateTemplate.update(answer);
+		hibernateTemplate.update(answer);      
 		return answer.getAnswerId();
 	}
 

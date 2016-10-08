@@ -431,16 +431,18 @@ public class PropertyEntity {
 	}
 	
 	private HashSet<String> getSubWord(String property){
-		if( property!=null && !property.equalsIgnoreCase("无")){
+		if( property!=null && !property.trim().equalsIgnoreCase("无")){
 			String[] words =property.split("/");
 			HashSet<String> listWord =new HashSet<>();
 			for( String wordm : words){
 				int lastIndex = 0;
-					lastIndex=wordm.lastIndexOf("(");
+					lastIndex=wordm.indexOf("(");
 				if( lastIndex ==-1 )
-					lastIndex=wordm.lastIndexOf("（");
-				String word= wordm.substring(0, lastIndex);
-				listWord.add(word.trim());
+					lastIndex=wordm.indexOf("（");
+				if( lastIndex!=-1){
+					wordm= wordm.substring(0, lastIndex);
+				}
+				 listWord.add(wordm.trim());
 			}
 			if(listWord.size()>0)
 				return listWord;

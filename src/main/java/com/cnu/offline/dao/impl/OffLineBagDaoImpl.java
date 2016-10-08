@@ -35,7 +35,7 @@ public class OffLineBagDaoImpl extends DaoSupport<OffLineBag>implements OffLineB
 	 */
 	public boolean existMasterBag(String themenumber, int realGrade){
 		
-		List<OffLineBag> bags= (List<OffLineBag>) getHt().find("from OffLineBag o where o.themenumber=? and o.realGrade=? ", new Object[]{themenumber , realGrade});
+		List<OffLineBag> bags= (List<OffLineBag>) getHt().find("from OffLineBag o where o.themenumber=? and o.realGrade=? and o.recommendGrade=? ", new Object[]{themenumber , realGrade,realGrade});
 		if( bags!=null&& bags.size()>=1)
 			return true;
 		return false;

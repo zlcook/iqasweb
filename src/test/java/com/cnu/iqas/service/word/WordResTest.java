@@ -33,6 +33,7 @@ import com.cnu.iqas.service.iword.WordResService;
 import com.cnu.iqas.utils.PropertyUtils;
 import com.cnu.iqas.utils.FileTool;
 import com.cnu.iqas.utils.WebUtils;
+import com.cnu.offline.utils.ImageSizer;
 
 /**
 * @author 周亮 
@@ -40,7 +41,10 @@ import com.cnu.iqas.utils.WebUtils;
 * 类说明
 */
 public class WordResTest {
-	
+	/**
+	 * 图片压缩宽度
+	 */
+	private final int resizeWidth =300;
 	private WordResService wordResService;
 	
 	public WordResService getWordResService() {
@@ -249,7 +253,7 @@ public class WordResTest {
 									String vabPath = PropertyUtils.WORD_VOICE_DIR;
 									try {
 										//图片资源保存
-										String phoRePath=saveRes(photoUrl,pabPath);
+										String phoRePath=saveRes(photoUrl,pabPath,true);
 										String relPath=PropertyUtils.getFileSaveDir(PropertyUtils.WORD_IMAGE_DIR)+"/"+phoRePath;
 										res.setPicPath(relPath);
 									} catch (Exception e) {
@@ -387,7 +391,46 @@ public class WordResTest {
 		String relPath =FileTool.saveFile(outdir, fis, FileTool.getExtFromFileName(relapath));
 		return relPath;
 	}
-
+	private String saveRes(String relapath,String savekey,boolean isSizer) throws FileNotFoundException, IOException {
+		//输出文件根目录
+		String outdir =  PropertyUtils.getFileSaveAbsolutePath(savekey); 
+		//输入文件根目录
+		String indir ="I://resdir";
+		File infile = new File(indir+"/"+relapath);
+		//输出文件读取流
+		FileInputStream fis =new FileInputStream(infile);
+		String ext =FileTool.getExtFromFileName(relapath);
+		//生成输出文件
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
+		//文件名
+		String fileName= System.currentTimeMillis()+"."+ext;
+		String relPath = sdf.format(new Date());
+		String moutdir=outdir+"/"+relPath;
+		File outdirfile = new File(moutdir);
+		if(!outdirfile.exists())
+			outdirfile.mkdirs();
+		File file = new File(outdirfile, fileName);
+		//传输
+		FileOutputStream fos = new FileOutputStream(file);
+		FileTool.write(fos,fis);
+		String sizerPath ="";
+		//压缩
+		if( isSizer ){
+			//压缩文件夹在源文件夹中多一个压缩文件夹，文件夹名称已压缩比例命名
+			
+			//压缩目录
+			File resizeDir = new File(outdirfile,resizeWidth+"");
+			if(!resizeDir.exists())
+				resizeDir.mkdirs();
+			File resizedFile = new File(resizeDir, fileName);
+			//压缩
+			ImageSizer.resize(file, resizedFile, resizeWidth, ext);
+			sizerPath+=resizeWidth;
+		}
+		//输入文件相对路径
+		return relPath+"/"+sizerPath+"/"+fileName;
+	}
+	
 	public Workbook getWorkBook(String path) throws FileNotFoundException{
 		File file=new File(path);
 		InputStream is = new FileInputStream(file);

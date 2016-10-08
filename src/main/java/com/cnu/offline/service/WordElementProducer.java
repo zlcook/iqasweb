@@ -172,19 +172,26 @@ public class WordElementProducer implements Runnable {
 	}
 	private void masterPackProducer() {
 
-		System.out.println(Thread.currentThread().getName()+"：开始");
+		//logger.info(Thread.currentThread().getName()+"：开始");
 		while(!offLineBagResource.isover()){
 
 		  PropertyEntity pe=offLineBagResource.getPropertyEntity();
 
-		  System.out.println(Thread.currentThread().getName()+"：获取单词："+pe);
+		 // logger.info(Thread.currentThread().getName()+"：获取单词："+pe);
 		  if( pe!=null){
 			String word = pe.getInstanceLabel();
+			WordRes wr =wordResService.find(word);
+			
 			WordElement we =WordElement.instance(pe,themenumber,realGrade);
+			if( wr==null){
+				offLineBagResource.producerWordElement(we);
+				logger.error("生成压缩包时："+word+" 单词没有任何资源。");
+				continue;				
+			}
 			//生成"propertyScene"、"propertyText"、2个属性
 			//1.生成情景段落
 			WordElement.Property qjdlproperty = new WordElement.Property("propertyScene");
-			WordRes wr =wordResService.find(word);
+			
 			//1.1实际年级的情景段落
 			try {
 				WordElement.Property.Pro qjdlrealGpro= getPro(wr,false,realGrade);
@@ -387,28 +394,28 @@ public class WordElementProducer implements Runnable {
 		Map<String,String> map = new HashMap<>();
 		switch(grade){
 			case 1:
-				value=flage?wr.getQjdl1():wr.getKwyj1();
-				path = flage?wr.getQjdlVoicePath1():wr.getKwyjVoicePath1();
+				value=!flage?wr.getQjdl1():wr.getKwyj1();
+				path = !flage?wr.getQjdlVoicePath1():wr.getKwyjVoicePath1();
 				break;
 			case 2:
-				value=flage?wr.getQjdl2():wr.getKwyj2();
-				path = flage?wr.getQjdlVoicePath2():wr.getKwyjVoicePath2();
+				value=!flage?wr.getQjdl2():wr.getKwyj2();
+				path = !flage?wr.getQjdlVoicePath2():wr.getKwyjVoicePath2();
 				break;
 			case 3:
-				value=flage?wr.getQjdl3():wr.getKwyj3();
-				path = flage?wr.getQjdlVoicePath3():wr.getKwyjVoicePath3();
+				value=!flage?wr.getQjdl3():wr.getKwyj3();
+				path = !flage?wr.getQjdlVoicePath3():wr.getKwyjVoicePath3();
 				break;
 			case 4:
-				value=flage?wr.getQjdl4():wr.getKwyj4();
-				path = flage?wr.getQjdlVoicePath4():wr.getKwyjVoicePath4();
+				value=!flage?wr.getQjdl4():wr.getKwyj4();
+				path = !flage?wr.getQjdlVoicePath4():wr.getKwyjVoicePath4();
 				break;
 			case 5:
-				value=flage?wr.getQjdl5():wr.getKwyj5();
-				path = flage?wr.getQjdlVoicePath5():wr.getKwyjVoicePath5();
+				value=!flage?wr.getQjdl5():wr.getKwyj5();
+				path = !flage?wr.getQjdlVoicePath5():wr.getKwyjVoicePath5();
 				break;
 			case 6:
-				value=flage?wr.getQjdl6():wr.getKwyj6();
-				path = flage?wr.getQjdlVoicePath6():wr.getKwyjVoicePath6();
+				value=!flage?wr.getQjdl6():wr.getKwyj6();
+				path = !flage?wr.getQjdlVoicePath6():wr.getKwyjVoicePath6();
 				break;
 		}
 		map.put("value", value);

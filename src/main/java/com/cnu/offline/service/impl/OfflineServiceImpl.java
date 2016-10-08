@@ -372,205 +372,100 @@ public class OfflineServiceImpl implements OfflineService {
 	 * @throws ThemeWordNotExistException 
 	 */
 	public OffLineBag createSlaveOfflineBag(int recommendGrade, int realGrade, String themenumber) throws ThemeWordNotExistException{
-		//1.根据主题和推荐年级获得所有单词
-		Hashtable<String,PropertyEntity> wordsMap=getMapPropertyEntity(realGrade,themenumber);
-		if( wordsMap==null ||wordsMap.size()<=0){
-			logger.info(themenumber+" 主题,"+realGrade+"年级,"+"没有单词!");
-			throw new ThemeWordNotExistException(themenumber+" 主题"+" "+realGrade+"年级没有单词");
-		}
-		//3.开启多线程将对应单词的资源拷贝到压缩包文件中以及生成对应xml文件中的节点信息
-		 //根据当前时间生成相对路径
-		String reldir =FileTool.createRelDir();
-		String parentdirpath =parentdirpath(reldir);
-		String offLineBagname =offLineBagName(recommendGrade, realGrade, themenumber);
-		File rootDir = offLineBagFileDir(parentdirpath, offLineBagname);
-		//3.2要处理的主单词
-		HashSet<PropertyEntity> listpes = new HashSet<>();
-		Set<String> keyset=wordsMap.keySet();
-		for( String key : keyset){
-			PropertyEntity pe = wordsMap.get(key);
-			listpes.add(pe);
-		}
-		//离线资源
-		OffLineBagResource offLineBagResource= new OffLineBagResource(listpes,rootDir,themenumber,realGrade, recommendGrade);
-			//3.3开启4个线程
-		taskExecutor.execute(new WordElementProducer(offLineBagResource,wordResService,false));
-		taskExecutor.execute(new WordElementProducer(offLineBagResource,wordResService,false));
-		taskExecutor.execute(new WordElementProducer(offLineBagResource,wordResService,false));
-		taskExecutor.execute(new WordElementProducer(offLineBagResource,wordResService,false));
-		
-		//4.文件转移完，开始生成xml文件
-		//4.1新建Xml
-		Document document = DocumentHelper.createDocument();
-		if(offLineBagResource.doover()){
-			//填充数据
-			fillDocument(document,offLineBagResource.getListWordElements());
-		}
-		//4.2往压缩文件夹中添加words.xml
-		File xmlFile = new File(rootDir,"words.xml");
-		 try {
-			 writeData2Xml(xmlFile,document);
-		} catch (IOException e) {
-			e.printStackTrace();
-			logger.error("将数据写入xml文件时出错"+e.getMessage());
-		}
-		//5.压缩文件
-			//压缩文件名
-			String zipname = offLineBagname+".zip";
-			//压缩后的文件
-			File zipFile = new File(parentdirpath,zipname);
-			//被压缩的文件
-			List<File> zipfiles = new ArrayList<>();
-			zipfiles.add(rootDir);
-			try {
-				ZipUtils.zipFiles(zipfiles, zipFile);
-				//保存压缩文件记录
-				OffLineBag bag = new OffLineBag(zipname, MobileStyleEnum.ANDROID, themenumber, recommendGrade, realGrade, "zip",offLineBagResource.getWordSum());
-				bag.setDownsize(zipFile.length());
-				bag.setSavePath(PropertyUtils.getFileSaveDir(PropertyUtils.THEME_OFFLINE_BAG)+"/"+reldir+"/"+zipname);
-				bag.setVersion(1);
-				//开启线程删除，压缩前的文件
-				taskExecutor.execute(new DeleteFileTask(rootDir));
-				return bag;
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-				logger.error("压缩失败"+e.getMessage());
-			}
-			
-		return null;
+		OffLineBag bag =createOfflineBag(recommendGrade, realGrade, themenumber, false);
+		return bag;
 	}
 	
 	@Override
-	public OffLineBag createOfflineBag(int recommendGrade, int realGrade, String themenumber) throws ThemeWordNotExistException {
-		   //1.根据主题和推荐年级获得所有单词
-		   Hashtable<String,PropertyEntity> wordsMap=getMapPropertyEntity(realGrade,themenumber);
+	public OffLineBag createMasterOfflineBag( int realGrade, String themenumber) throws ThemeWordNotExistException {
+		int recommendGrade = realGrade;   
+		OffLineBag bag =createOfflineBag(recommendGrade, realGrade, themenumber, true);
+		return bag;
+	}
+	
+	
+	private  OffLineBag createOfflineBag( int recommendGrade, int realGrade, String themenumber,boolean ismaster) throws ThemeWordNotExistException {
+			//1.根据主题和推荐年级获得所有单词
+			Hashtable<String,PropertyEntity> wordsMap=getMapPropertyEntity(realGrade,themenumber);
 			if( wordsMap==null ||wordsMap.size()<=0){
 				logger.info(themenumber+" 主题,"+realGrade+"年级,"+"没有单词!");
 				throw new ThemeWordNotExistException(themenumber+" 主题"+" "+realGrade+"年级没有单词");
 			}
 			//3.开启多线程将对应单词的资源拷贝到压缩包文件中以及生成对应xml文件中的节点信息
-			    //3.1新建压缩包根目录
 			 //根据当前时间生成相对路径
 			String reldir =FileTool.createRelDir();
 			String parentdirpath =parentdirpath(reldir);
 			String offLineBagname =offLineBagName(recommendGrade, realGrade, themenumber);
 			File rootDir = offLineBagFileDir(parentdirpath, offLineBagname);
-			
-				//3.2要处理的所有单词,有可能会比wordMap中的多，因为每个单词的“联想propertyAssociate”、“同义词propertyAntonym”、“反义词propertySynonyms”、“拓展propertyExtend”、“常用propertyCommonUse”属性中可能包含其它单词
+			//3.2要处理的主单词
 			HashSet<PropertyEntity> listpes = new HashSet<>();
-			Set<String> keyset=wordsMap.keySet();
-			for( String key : keyset){
-				PropertyEntity pe = wordsMap.get(key);
-				listpes.add(pe);
-				//添加pe的从单词，即“联想”、“同义词”、“反义词”、“拓展”、“常用”属性中的单词
-				HashSet<PropertyEntity> subpes = pe.getSub();
-				listpes.addAll(subpes);
+			
+			if(ismaster){
+				//3.2主离线包要处理的所有单词,有可能会比wordMap中的多，因为每个单词的“联想propertyAssociate”、“同义词propertyAntonym”、“反义词propertySynonyms”、“拓展propertyExtend”、“常用propertyCommonUse”属性中可能包含其它单词
+				Set<String> keyset=wordsMap.keySet();
+				for( String key : keyset){
+					PropertyEntity pe = wordsMap.get(key);
+					listpes.add(pe);
+					//添加pe的从单词，即“联想”、“同义词”、“反义词”、“拓展”、“常用”属性中的单词
+					HashSet<PropertyEntity> subpes = pe.getSub();
+					listpes.addAll(subpes);
+				}
+			}else{
+				//从离线包要处理的单词只有主单词
+				Set<String> keyset=wordsMap.keySet();
+				for( String key : keyset){
+					PropertyEntity pe = wordsMap.get(key);
+					listpes.add(pe);
+				}
 			}
+			
+			
 			//离线资源
 			OffLineBagResource offLineBagResource= new OffLineBagResource(listpes,rootDir,themenumber,realGrade, recommendGrade);
 				//3.3开启4个线程
-			taskExecutor.execute(new WordElementProducer(offLineBagResource,wordResService));
-			taskExecutor.execute(new WordElementProducer(offLineBagResource,wordResService));
-			taskExecutor.execute(new WordElementProducer(offLineBagResource,wordResService));
-			taskExecutor.execute(new WordElementProducer(offLineBagResource,wordResService));
-			//new Thread(new WordElementProducer(offLineBagResource,wordResService)).start();
-			//4.文件转移完，开始生成xml文件
-
-			//4.1新建Xml
-			Document document = DocumentHelper.createDocument();
-			if(offLineBagResource.doover()){
-				//填充数据
-				fillDocument(document,offLineBagResource.getListWordElements());
-			}
-			//4.往压缩文件夹中添加words.xml
-			File xmlFile = new File(rootDir,"words.xml");
-			 try {
-				 writeData2Xml(xmlFile,document);
-			} catch (IOException e) {
-				e.printStackTrace();
-				logger.error("将数据写入xml文件时出错"+e.getMessage());
-			}
-			//5.压缩文件
-			//压缩文件名
-			String zipname = offLineBagname+".zip";
-			//压缩后的文件
-			File zipFile = new File(parentdirpath,zipname);
-			//被压缩的文件
-			List<File> zipfiles = new ArrayList<>();
-			zipfiles.add(rootDir);
-			try {
-				ZipUtils.zipFiles(zipfiles, zipFile);
-				//保存压缩文件记录
-				OffLineBag bag = new OffLineBag(zipname, MobileStyleEnum.ANDROID, themenumber, recommendGrade, realGrade, "zip",offLineBagResource.getWordSum());
-				bag.setDownsize(zipFile.length());
-				bag.setSavePath(PropertyUtils.getFileSaveDir(PropertyUtils.THEME_OFFLINE_BAG)+"/"+reldir+"/"+zipname);
-				bag.setVersion(1);
-				//开启线程删除，压缩前的文件
-				taskExecutor.execute(new DeleteFileTask(rootDir));
-				return bag;
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-				logger.error("压缩失败"+e.getMessage());
-			}
+			taskExecutor.execute(new WordElementProducer(offLineBagResource,wordResService,ismaster));
+			taskExecutor.execute(new WordElementProducer(offLineBagResource,wordResService,ismaster));
+			taskExecutor.execute(new WordElementProducer(offLineBagResource,wordResService,ismaster));
+			taskExecutor.execute(new WordElementProducer(offLineBagResource,wordResService,ismaster));
 			
-			return null;
-	}
-	
-	/**
-	 * 将document数据写入file文件中
-	 * @param xmlFile
-	 * @param document
-	 * @throws IOException 
-	 */
-	private void writeData2Xml(File xmlFile,Document document) throws IOException{
-		 
-			OutputFormat format = OutputFormat.createPrettyPrint();
-			Writer xmlwriter = new FileWriter(xmlFile);
-			XMLWriter writer = new XMLWriter(xmlwriter,format);
-			writer.write(document);
-			writer.close();
-			xmlwriter.close();
-		
-	}
-	/**
-	 * 将listWes内容填充到document中
-	 * @param document xml文档
-	 * @param listWes  填充到xml文档中的内容
-	 */
-	private void fillDocument(Document document,List<WordElement> listWes){
-		 Element root = document.addElement( "words" );
-		  if(listWes!=null)
-			for( WordElement we : listWes){
-				Element wordele = root.addElement( "word" ).addAttribute( "name", we.getName()).addAttribute("themenumber", we.getThemenumber()).addAttribute("grade", we.getGrade()+"");
-				if(we.getPropertys()!=null)
-				for(Property pe : we.getPropertys()){
-					if( pe.getName()!=null && !pe.getName().trim().equals("")){
-						Element proele =wordele.addElement("property")
-							.addAttribute("name", pe.getName());
-						if( pe.getDifficulty()!=null && !pe.getDifficulty().trim().equals(""))
-							proele.addAttribute("difficulty", pe.getDifficulty());
-						
-						if(pe.getValue()!=null && !pe.getValue().trim().equals(""))
-							proele.addAttribute("value", pe.getValue());
-						else{
-							List<Pro> list =pe.getPros();
-							if( list!=null)
-							 for(Pro pr: list){
-								 proele.addElement("pro")
-								 	    .addAttribute("grade", pr.getGrade())
-								 	    .addAttribute("value",pr.getValue())
-								 		.addAttribute("path", pr.getPath());
-							 }								
-						}													
-					}
-					
+			//4.文件转移完，开始生成xml文件
+			Document document =offLineBagResource.createDocument(rootDir, "words.xml");
+			//5.压缩文件
+				//压缩文件名
+				String zipname = offLineBagname+".zip";
+				//压缩后的文件
+				File zipFile = new File(parentdirpath,zipname);
+				//被压缩的文件
+				List<File> zipfiles = new ArrayList<>();
+				zipfiles.add(rootDir);
+				//保存压缩文件记录
+				OffLineBag bag  = null;
+				try {
+					System.out.println("开始压缩===========");
+					ZipUtils.zipFiles(zipfiles, zipFile);
+					bag= new OffLineBag(zipname, MobileStyleEnum.ANDROID, themenumber, recommendGrade, realGrade, "zip",offLineBagResource.getWordSum());
+					bag.setSize(zipFile.length());
+					bag.setSavePath(PropertyUtils.getFileSaveDir(PropertyUtils.THEME_OFFLINE_BAG)+"/"+reldir+"/"+zipname);
+					bag.setVersion(1);
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+					logger.error("压缩失败"+e.getMessage());
 				}
-			}
+				try{
+	
+					System.out.println("开启线程删除，压缩前的文件===========");
+					//开启线程删除，压缩前的文件
+					taskExecutor.execute(new DeleteFileTask(rootDir));
+				}catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+					logger.error("删除压缩前文件失败"+e.getMessage());
+				}
+				
+				return bag;
+	
 	}
-	
-	
 	/**
 	 * 离线包的的父目录路径
 	 * @return

@@ -52,9 +52,29 @@
 	    <property name="maxUploadSize" value="5242880"/> <!-- 最大文件大小5M,-1为无限止(-1) -->  
 	</bean>
     
+  <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+	   <property name="driverClass" value="${jdbc.driverClass}"/>
+	   <property name="jdbcUrl" value="${jdbc.jdbcUrl}"/>
+	   <property name="user" value="${jdbc.user}"/>
+	   <property name="password" value="${jdbc.password}"/> 
+	   
+	   <!--连接池中保留最大连接数Default:15-->
+	   <property name="maxPoolSize" value="${jdbc.maxPoolSize}"/>
+	   <!--连接池中保留最小连接数-->
+	   <property name="minPoolSize" value="${jdbc.minPoolSize}"/>
+	   <!--初始化时获取连接数取值应在minPoolSize和maxPoolSize的间Default:3-->
+	   <property name="initialPoolSize" value="${jdbc.initialPoolSize}"/>
+	   <!--定义在从数据库获取新连接失败后重复尝试的次数。Default: 30 -->
+	   <!--最大空闲时间,60秒内未使用则连接被丢弃若为0则永不丢弃Default:0-->
+	   <property name="maxIdleTime" value="${jdbc.maxIdleTime}"/>
+	   <!--当连接池中连接耗尽时候c3p0次同时获取连接数Default:3-->
+	   <property name="acquireIncrement" value="${jdbc.acquireIncrement}"/>
+	   <!--每60秒检查所有连接池中空闲连接Default:0-->
+	   <property name="idleConnectionTestPeriod" value="${jdbc.idleConnectionTestPeriod}"/>
+   </bean>
     
-    <!-- 配置数据源 -->
-	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+    <!-- 配置数据源-->
+	<!-- <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
 		destroy-method="close" 
 		p:driverClassName="${jdbc.driverClassName}"
 		p:url="${jdbc.url}" 
@@ -66,7 +86,7 @@
 		p:minEvictableIdleTimeMillis="${jdbc.minEvictableIdleTimeMillis}"
 		p:maxWait="${jdbc.maxWait}"
 		p:maxActive="${jdbc.maxActive}"
-		/>
+		/> -->
 
 <!-- AnnotationSessionFactoryBean扩展了LocalSessionFactoryBean类，可以根据实体类的注解获取ORM（关系对象映射）的配置信息，也可以混合使用Xml配置和注解配置的关系对象映射-->
 	<bean id="sessionFactory"

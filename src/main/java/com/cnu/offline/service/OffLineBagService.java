@@ -1,5 +1,7 @@
 package com.cnu.offline.service;
 
+import java.util.List;
+
 import com.cnu.offline.bean.OffLineBag;
 
 /**
@@ -16,6 +18,9 @@ public interface OffLineBagService {
 	 * @return
 	 */
 	public OffLineBag find(String themenumber,int recommendGrade,int realGrade);
+	
+
+	public OffLineBag find(String id);
 	/**
 	 * 判断主题的主离线包是否存在
 	 * @param themenumber 主题
@@ -35,5 +40,11 @@ public interface OffLineBagService {
 	 */
 	public void update(OffLineBag offLineBag);
 	
+	/**
+	 * 查询主题下所有主离线包
+	 * @param themenumber 主题编号
+	 * @return
+	 */
+	public List<OffLineBag> listMaster(String themenumber);
 	
 }

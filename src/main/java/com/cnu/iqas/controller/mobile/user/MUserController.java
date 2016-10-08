@@ -67,7 +67,7 @@ public class MUserController  implements ServletContextAware{
 	 */
 	@SuppressWarnings("finally")
 	@RequestMapping(value = "validateUserName")
-	public ModelAndView register(String userName) {
+	public ModelAndView validateUserName(String userName) {
 
 		ModelAndView mv = new ModelAndView(PageViewConstant.JSON);
 		MyStatus status = new MyStatus();

@@ -48,7 +48,7 @@ public class OfflineServiceTest {
 	
 	@Test
 	public void crateOfflineBag4Android() throws ThemeWordNotExistException{
-		offlineService.createOfflineBag(4, 4, "2-17");
+		offlineService.createMasterOfflineBag(4, "2-17");
 	}
 
 	public OfflineService getOfflineService() {

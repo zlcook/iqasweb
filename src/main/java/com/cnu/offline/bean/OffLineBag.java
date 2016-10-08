@@ -42,7 +42,7 @@ import com.cnu.offline.MobileStyleEnum;
 @Table(name="t_offlinebag")
 public class OffLineBag {
 	/**
-	 * 由移动端类型、主题编号、推荐年级的md5值所确定
+	 * 由移动端类型、主题编号、推荐年级的md5值所确定id,mobilestyle
 	 */
 	private String id;
 	/**

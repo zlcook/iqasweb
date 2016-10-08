@@ -131,4 +131,12 @@ public class StatusConstant {
 	 */
 	public static int WORD_THEME_NO_EXIST=7001;
 	
+	
+	
+	//========离线包==============
+	/**
+	 * 离线包不存在
+	 */
+	public static int OFFLINEBAG_NO_EXIST=8001;
+	
 }

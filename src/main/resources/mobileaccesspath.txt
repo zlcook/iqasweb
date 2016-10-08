@@ -127,5 +127,8 @@ http://172.19.203.92:8080/iqasweb/mobile/search/sentence.html
 	 
 	 
 
+***********离线包************************
+下载离线包
+http://localhost:8080/iqasweb/mobile/offline/offlinebag.html?realGrade=4&recommendGrade=4&themenumber=2-17&token=1472719089982@liang
 
 	 

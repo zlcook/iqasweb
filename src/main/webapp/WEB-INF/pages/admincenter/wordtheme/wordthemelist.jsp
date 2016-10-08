@@ -82,7 +82,7 @@ display: none;
 				<td align="center" width="10%">主题序号</td>
 				<td align="center" width="15%">主题内容</td>
 				<td align="center" width="20%">英文意思</td>
-				<td align="center" width="8%">离线文件</td>
+				<td align="center" width="8%">离线包</td>
 				<td align="center" width="12%">创建时间</td>
 				<!-- 只有一级目录才可以屏蔽 -->
 		        <c:if test="${themeGrade!=1 }">
@@ -119,10 +119,16 @@ display: none;
 				<td align="center" >
 				<c:if test="${themeGrade== 1}">
 				 <button type="button" id="${entity.id }&${entity.number }&${parentContent}&${entity.content}" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
-					 离线文件
+					 离线包
 				</button>
 				 <a href="admin/control/wordtheme/down.html?number=${entity.number }">下载</a>
 				</c:if>
+				
+				<!-- 一级主题离线包 -->
+				<%-- <c:if test="${themeGrade!= 1}">
+				 <a href="admin/control/wordtheme/down.html?number=${entity.number }">离线包</a>
+				</c:if> --%>
+				
 				
 				<%-- <a href="admin/control/wordtheme/createOffline.html?number=${entity.number }&parentContent=${parentContent}&content=${entity.content}">生成离线文件</a> --%>
 				</td>

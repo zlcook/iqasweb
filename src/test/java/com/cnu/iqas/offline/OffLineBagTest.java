@@ -136,58 +136,8 @@ public class OffLineBagTest {
 		//new Thread(new WordElementProducer(offLineBagResource,wordResService)).start();
 		//4.文件转移完，开始生成xml文件
 		//4.1新建Xml
-		Document document = DocumentHelper.createDocument();
-        Element root = document.addElement( "words" );
-        long st = System.currentTimeMillis();
-        long en =0L;
-		if(offLineBagResource.doover()){
-			en = System.currentTimeMillis();
-			System.out.println((en-st)+"mills开始开始生成xml文件和压缩文件");
-			long startTime= System.currentTimeMillis();
-			for( WordElement we : offLineBagResource.getListWordElements()){
-				Element wordele = root.addElement( "word" ).addAttribute( "name", we.getName()).addAttribute("themenumber", themenumber);
-				
-				if(we.getPropertys()!=null)
-				for(Property pe : we.getPropertys()){
-					if( pe.getName()!=null && !pe.getName().trim().equals("")){
-						Element proele =wordele.addElement("property")
-							.addAttribute("name", pe.getName());
-						if( pe.getDifficulty()!=null && !pe.getDifficulty().trim().equals(""))
-							proele.addAttribute("difficulty", pe.getDifficulty());
-						
-						if(pe.getValue()!=null && !pe.getValue().trim().equals(""))
-							proele.addAttribute("value", pe.getValue());
-						else{
-							List<Pro> list =pe.getPros();
-							if( list!=null)
-							 for(Pro pr: list){
-								 proele.addElement("pro")
-								 	    .addAttribute("grade", pr.getGrade())
-								 	    .addAttribute("value",pr.getValue())
-								 		.addAttribute("path", pr.getPath());
-							 }								
-						}													
-					}
-					
-				}
-
-			}
-			long endTime= System.currentTimeMillis();
-			System.out.println("生成xml耗时："+(endTime-startTime));
-		}
-
-		//4.往压缩文件夹中添加words.xml
-		File xmlFile = new File(rootDir,"words.xml");
-		 try {
-			OutputFormat format = OutputFormat.createPrettyPrint();
-			Writer xmlwriter = new FileWriter(xmlFile);
-			XMLWriter writer = new XMLWriter(xmlwriter,format);
-			writer.write(document);
-			writer.close();
-			xmlwriter.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		Document document =offLineBagResource.createDocument(rootDir, "words.xml");
+		
 		//5.压缩文件
 		//压缩文件名
 		String zipname = rootName+".zip";

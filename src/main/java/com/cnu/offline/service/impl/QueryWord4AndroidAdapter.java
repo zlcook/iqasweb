@@ -62,6 +62,16 @@ public class QueryWord4AndroidAdapter implements QueryWordFromOntology {
 			wordsMap.remove("by_school_bus");
 			wordsMap.remove("by_ship");         
 		}
+		//如果是12.饮食主题，且实际年级是4年级，一共有47个单词, 不同的单词的单词有：42，而ios端只学习37个，排除以下5个单词push、buffer、crowd、front、safety、thick
+		if(theme.equalsIgnoreCase("12.饮食") && grade==4 && wordsMap!=null)
+		{//push、buffer、crowd、front、safety、thick
+			wordsMap.remove("push");
+			wordsMap.remove("buffer");
+			wordsMap.remove("crowd");
+			wordsMap.remove("front");  
+			wordsMap.remove("safety");  
+			wordsMap.remove("thick");         
+		}
 		
 		return wordsMap;
 	}

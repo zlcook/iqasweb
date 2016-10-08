@@ -26,10 +26,17 @@
      <hibernate-validator.version>4.0.2.GA</hibernate-validator.version>
      <json.version>2.4</json.version>
      <jxl.version>2.6.12</jxl.version>
+     <c3p0.version>0.9.5.2</c3p0.version>
   </properties>
   
   <dependencies>
   
+  <!-- https://mvnrepository.com/artifact/com.mchange/c3p0 -->
+	<dependency>
+	    <groupId>com.mchange</groupId>
+	    <artifactId>c3p0</artifactId>
+	    <version>${c3p0.version}</version>
+	</dependency>
   
   <!-- 对excel的操作类 -->
   <dependency>

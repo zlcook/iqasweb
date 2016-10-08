@@ -19,12 +19,11 @@ public interface OfflineService extends IFileDownloadService{
 	
 	/**
 	 * 创建主离线包
-	 * @param recommendGrade 推荐年级，有测试得出
 	 * @param realGrade 实际年级
 	 * @param themenumber 主题编号，如：“1-1-1”
 	 * @return
 	 */
-	public OffLineBag createOfflineBag(int recommendGrade,int realGrade, String themenumber) throws ThemeWordNotExistException ;
+	public OffLineBag createMasterOfflineBag(int realGrade, String themenumber) throws ThemeWordNotExistException ;
 
 	/**
 	 * 创建从离线包，从离线包和其主离线包的参数只有recommendGrade值是不同的。

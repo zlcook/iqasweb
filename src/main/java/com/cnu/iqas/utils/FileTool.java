@@ -56,8 +56,9 @@ public class FileTool {
 			 bis = new BufferedInputStream(is);
 			 bos = new BufferedOutputStream(os);
 			byte[] buf = new byte[1024*1024];
-			while(bis.read(buf)!=-1){
-				bos.write(buf);
+			int len =0;
+			while((len=bis.read(buf))!=-1){
+				bos.write(buf, 0, len);
 			}
 			bis.close();
 			bos.close();

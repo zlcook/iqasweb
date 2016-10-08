@@ -1,5 +1,7 @@
 package com.cnu.offline.service.impl;
 
+import java.util.List;
+
 import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
@@ -40,6 +42,19 @@ public class OffLineBagServiceImpl implements OffLineBagService {
 	@Override
 	public boolean existMasterBag(String themenumber, int realGrade) {
 		return offLineBagDao.existMasterBag(themenumber, realGrade);
+	}
+
+	@Override
+	public List<OffLineBag> listMaster(String themenumber) {
+		if( themenumber ==null || themenumber.equals(""))
+			return null;
+		return offLineBagDao.getAllData("o.themenumber =?", new Object[]{themenumber});
+	}
+
+	@Override
+	public OffLineBag find(String id) {
+		// TODO Auto-generated method stub
+		return offLineBagDao.find(id);
 	}
 	
 	
