@@ -1,218 +1,159 @@
 package com.cnu.offline.utils;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Enumeration;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipException;
-import java.util.zip.ZipFile;
+import java.util.zip.ZipInputStream;
 import java.util.zip.ZipOutputStream;
+
 /**
  * Java utils 实现的Zip工具
- *@author Fly Wu
+ * zip压缩工具
+ * 
+ * zip压缩方法
+ * unzip解压方法
+ * @author
  */
 public class ZipUtils {
-  private static final int BUFF_SIZE = 1024 * 1024; // 1M Byte
-  /**
-   * 批量压缩文件（夹）
-   *
-   * @param resFileList 要压缩的文件（夹）列表
-   * @param zipFile 生成的压缩文件
-   * @throws IOException 当压缩过程出错时抛出
-   */
-  public static void zipFiles(Collection<File> resFileList, File zipFile) throws IOException {
-    ZipOutputStream zipout = new ZipOutputStream(new BufferedOutputStream(new FileOutputStream(
-        zipFile), BUFF_SIZE));
-    for (File resFile : resFileList) {
-      zipFile(resFile, zipout, "");
-    }
-    zipout.close();
-  }
-  /**
-   * 批量压缩文件（夹）
-   *
-   * @param resFileList 要压缩的文件（夹）列表
-   * @param zipFile 生成的压缩文件
-   * @param comment 压缩文件的注释
-   * @throws IOException 当压缩过程出错时抛出
-   */
-  public static void zipFiles(Collection<File> resFileList, File zipFile, String comment)
-      throws IOException {
-    ZipOutputStream zipout = new ZipOutputStream(new BufferedOutputStream(new FileOutputStream(
-        zipFile), BUFF_SIZE));
-    for (File resFile : resFileList) {
-      zipFile(resFile, zipout, "");
-    }
-    zipout.setComment(comment);
-    zipout.close();
-  }
-  /**
-   * 解压缩一个文件
-   *
-   * @param zipFile 压缩文件
-   * @param folderPath 解压缩的目标目录
-   * @throws IOException 当解压缩过程出错时抛出
-   */
-  public static void upZipFile(File zipFile, String folderPath) throws ZipException, IOException {
-    File desDir = new File(folderPath);
-    if (!desDir.exists()) {
-      desDir.mkdirs();
-    }
-    ZipFile zf = new ZipFile(zipFile);
-    for (Enumeration<?> entries = zf.entries(); entries.hasMoreElements();) {
-      ZipEntry entry = ((ZipEntry)entries.nextElement());
-      InputStream in = zf.getInputStream(entry);
-      String str = folderPath + File.separator + entry.getName();
-      str = new String(str.getBytes("8859_1"), "GB2312");
-      File desFile = new File(str);
-      if (!desFile.exists()) {
-        File fileParentDir = desFile.getParentFile();
-        if (!fileParentDir.exists()) {
-          fileParentDir.mkdirs();
-        }
-        desFile.createNewFile();
-      }
-      OutputStream out = new FileOutputStream(desFile);
-      byte buffer[] = new byte[BUFF_SIZE];
-      int realLength;
-      while ((realLength = in.read(buffer)) > 0) {
-        out.write(buffer, 0, realLength);
-      }
-      in.close();
-      out.close();
-    }
-  }
-  /**
-   * 解压文件名包含传入文字的文件
-   *
-   * @param zipFile 压缩文件
-   * @param folderPath 目标文件夹
-   * @param nameContains 传入的文件匹配名
-   * @throws ZipException 压缩格式有误时抛出
-   * @throws IOException IO错误时抛出
-   */
-  public static ArrayList<File> upZipSelectedFile(File zipFile, String folderPath,
-      String nameContains) throws ZipException, IOException {
-    ArrayList<File> fileList = new ArrayList<File>();
-  
-    File desDir = new File(folderPath);
-    if (!desDir.exists()) {
-      desDir.mkdir();
-    }
-    ZipFile zf = new ZipFile(zipFile);
-    for (Enumeration<?> entries = zf.entries(); entries.hasMoreElements();) {
-      ZipEntry entry = ((ZipEntry)entries.nextElement());
-      if (entry.getName().contains(nameContains)) {
-        InputStream in = zf.getInputStream(entry);
-        String str = folderPath + File.separator + entry.getName();
-        str = new String(str.getBytes("8859_1"), "GB2312");
-        // str.getBytes("GB2312"),"8859_1" 输出
-        // str.getBytes("8859_1"),"GB2312" 输入
-        File desFile = new File(str);
-        if (!desFile.exists()) {
-          File fileParentDir = desFile.getParentFile();
-          if (!fileParentDir.exists()) {
-            fileParentDir.mkdirs();
-          }
-          desFile.createNewFile();
-        }
-        OutputStream out = new FileOutputStream(desFile);
-        byte buffer[] = new byte[BUFF_SIZE];
-        int realLength;
-        while ((realLength = in.read(buffer)) > 0) {
-          out.write(buffer, 0, realLength);
-        }
-        in.close();
-        out.close();
-        fileList.add(desFile);
-      }
-    }
-    return fileList;
-  }
-  /**
-   * 获得压缩文件内文件列表
-   *
-   * @param zipFile 压缩文件
-   * @return 压缩文件内文件名称
-   * @throws ZipException 压缩文件格式有误时抛出
-   * @throws IOException 当解压缩过程出错时抛出
-   */
-  public static ArrayList<String> getEntriesNames(File zipFile) throws ZipException, IOException {
-    ArrayList<String> entryNames = new ArrayList<String>();
-    Enumeration<?> entries = getEntriesEnumeration(zipFile);
-    while (entries.hasMoreElements()) {
-      ZipEntry entry = ((ZipEntry)entries.nextElement());
-      entryNames.add(new String(getEntryName(entry).getBytes("GB2312"), "8859_1"));
-    }
-    return entryNames;
-  }
-  /**
-   * 获得压缩文件内压缩文件对象以取得其属性
-   *
-   * @param zipFile 压缩文件
-   * @return 返回一个压缩文件列表
-   * @throws ZipException 压缩文件格式有误时抛出
-   * @throws IOException IO操作有误时抛出
-   */
-  public static Enumeration<?> getEntriesEnumeration(File zipFile) throws ZipException,
-      IOException {
-    ZipFile zf = new ZipFile(zipFile);
-    return zf.entries();
-  }
-  /**
-   * 取得压缩文件对象的注释
-   *
-   * @param entry 压缩文件对象
-   * @return 压缩文件对象的注释
-   * @throws UnsupportedEncodingException
-   */
-  public static String getEntryComment(ZipEntry entry) throws UnsupportedEncodingException {
-    return new String(entry.getComment().getBytes("GB2312"), "8859_1");
-  }
-  /**
-   * 取得压缩文件对象的名称
-   *
-   * @param entry 压缩文件对象
-   * @return 压缩文件对象的名称
-   * @throws UnsupportedEncodingException
-   */
-  public static String getEntryName(ZipEntry entry) throws UnsupportedEncodingException {
-    return new String(entry.getName().getBytes("GB2312"), "8859_1");
-  }
-  /**
-   * 压缩文件
-   *
-   * @param resFile 需要压缩的文件（夹）
-   * @param zipout 压缩的目的文件
-   * @param rootpath 压缩的文件路径
-   * @throws FileNotFoundException 找不到文件时抛出
-   * @throws IOException 当压缩过程出错时抛出
-   */
-  private static void zipFile(File resFile, ZipOutputStream zipout, String rootpath)
-      throws FileNotFoundException, IOException {
-    rootpath = rootpath + (rootpath.trim().length() == 0 ? "" : File.separator)
-        + resFile.getName();
-    rootpath = new String(rootpath.getBytes("8859_1"), "GB2312");
-    if (resFile.isDirectory()) {
-      File[] fileList = resFile.listFiles();
-      for (File file : fileList) {
-        zipFile(file, zipout, rootpath);
-      }
-    } else {
-      byte buffer[] = new byte[BUFF_SIZE];
-      BufferedInputStream in = new BufferedInputStream(new FileInputStream(resFile),
-          BUFF_SIZE);
-      zipout.putNextEntry(new ZipEntry(rootpath));
-      int realLength;
-      while ((realLength = in.read(buffer)) != -1) {
-        zipout.write(buffer, 0, realLength);
-      }
-      in.close();
-      zipout.flush();
-      zipout.closeEntry();
-    }
-  }
+	private static final int BUFF_SIZE = 1024 * 1024; // 1M Byte
+	/**
+	 * 压缩文件或者文件夹
+	 * 
+	 * @param sourcePath
+	 *            原文件路径（将要压缩的文件）
+	 * @param outPath
+	 *            输出文件的路径
+	 * @throws IOException
+	 *             eg: sourcePath = "D:\\temp\\文件" outPaht
+	 *             ="D:\\tem\\zip\\文件.zip"
+	 */
+	public static void zip(String sourcePath, String outPath) throws IOException {
+		// 文件输出流
+		FileOutputStream fout = new FileOutputStream(outPath);
+		// zip格式的输出流
+		ZipOutputStream zout = new ZipOutputStream(fout);
+		// 要压缩的文件或者目录
+		File sourceFile = new File(sourcePath);
+		// 压缩条目
+		String zipEntryName = sourceFile.getName();
+		if (sourceFile.isFile()) {
+			// 压缩文件
+			zipFile(zout, sourceFile, zipEntryName);
+		} else {
+			// 压缩目录
+			zipDirectory(zout, sourceFile, zipEntryName);
+		}
+		zout.close();
+		fout.close();
 
+	}
+
+	/**
+	 * 压缩目录
+	 * 
+	 * @param zout
+	 *            zip格式的文件输出流
+	 * @param sourceFile
+	 *            压缩目录
+	 * @param zipEntryName
+	 *            压缩条目（实际是一个相对目录）
+	 * @throws IOException
+	 */
+	private static void zipDirectory(ZipOutputStream zout, File sourceFile, String zipEntryName) throws IOException {
+		// 压缩目录，遍历目录里的所有文件
+		for (File file : sourceFile.listFiles()) {
+			if (file.isFile()) {
+				// 如果是文件，则直接压缩
+				zipFile(zout, file, zipEntryName + "/" + file.getName());
+			} else {
+				// 说明file是目录，则将需要将该目录所有文件都压缩
+				if (file.listFiles().length > 0) {// 非空文件夹
+					// 递归调用压缩文件方法
+					zipDirectory(zout, file, zipEntryName + "/" + file.getName());
+				} else {
+					// 空文件夹，将压缩条目写入到压缩对象中
+					zout.putNextEntry(new ZipEntry(zipEntryName + "/" + file.getName() + "/"));
+					zout.closeEntry();
+				}
+			}
+		}
+	}
+
+	/**
+	 * zip压缩文件
+	 * 
+	 * @param zout
+	 *            zip格式的文件输出流
+	 * @param sourceFile
+	 *            源文件路径(将要压缩的文件)
+	 * @param zipEntryName
+	 *            压缩条目（实际是一个相对目录）
+	 * @throws IOException
+	 */
+	private static void zipFile(ZipOutputStream zout, File sourceFile, String zipEntryName) throws IOException {
+		// 将一个将要压缩的文件写入到压缩条目中
+		zout.putNextEntry(new ZipEntry(zipEntryName));
+		// 读入将要压缩的文件
+		FileInputStream fin = new FileInputStream(sourceFile);
+		byte[] buff = new byte[BUFF_SIZE];
+		int length;
+		while ((length = fin.read(buff)) > 0) {
+			zout.write(buff, 0, length);
+		}
+		fin.close();
+		zout.closeEntry();
+	}
+
+	/**
+	 * 解压缩一个文件
+	 *
+	 * @param zipFile
+	 *            压缩文件
+	 * @param folderPath
+	 *            解压缩的目标目录
+	 * @throws IOException
+	 *             当解压缩过程出错时抛出
+	 */
+	public static void upZipFile(File zipFile, String folderPath) throws ZipException, IOException {
+
+		// 解压文件存放根目录
+		File desDir = new File(folderPath);
+		if (!desDir.exists()) {
+			desDir.mkdirs();
+		}
+		// 文件读取流
+		FileInputStream fis = new FileInputStream(zipFile);
+		// 压缩读取流
+		ZipInputStream zis = new ZipInputStream(fis);
+		ZipEntry zipEntry = null;
+		// 遍历压缩条目
+		int count = 0;
+		while ((zipEntry = zis.getNextEntry()) != null) {
+			count++;
+			String zipName = zipEntry.getName();
+			// 压缩条目输出路径
+			File targetFile = new File(folderPath + File.separator + zipEntry.getName());
+			// 判断父目录是否存在
+			if (!targetFile.getParentFile().exists()) {
+				targetFile.getParentFile().mkdirs();
+			}
+			// 压缩条目是目录还是文件
+			if (zipEntry.isDirectory()) {
+				// 创建目录
+				targetFile.mkdirs();
+			} else {
+				// 输出文件
+				FileOutputStream fos = new FileOutputStream(targetFile);
+				byte buffer[] = new byte[BUFF_SIZE];
+				int realLength;
+				while ((realLength = zis.read(buffer)) > 0) {
+					fos.write(buffer, 0, realLength);
+				}
+				fos.close();
+			}
+		}
+		zis.close();
+		fis.close();
+	}
 
 }

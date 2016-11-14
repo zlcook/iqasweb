@@ -2,8 +2,8 @@
 <Configuration status="off" monitorInterval="1800">
 
     <properties>
-        <property name="LOG_HOME">logs</property>
-        <property name="FILE_NAME">mylog</property>
+        <property name="LOG_HOME">G:/logs</property>
+        <property name="FILE_NAME">iqasweblog</property>
     </properties>
 
     <Appenders>
@@ -17,7 +17,7 @@
                 pattern="%date{yyyy-MM-dd HH:mm:ss.SSS} %level [%thread][%file:%line] - %msg%n" />
             <Policies>
                 <TimeBasedTriggeringPolicy  />
-                <SizeBasedTriggeringPolicy size="10 MB" />
+                <SizeBasedTriggeringPolicy size="10MB" />
             </Policies>
             <DefaultRolloverStrategy max="20" />
         </RollingRandomAccessFile>
@@ -28,7 +28,7 @@
             additivity="true">
             <AppenderRef ref="running-log" />
         </Logger>
-        <Root level="info ">
+        <Root level="info">
             <AppenderRef ref="Console" />
         </Root>
     </Loggers>

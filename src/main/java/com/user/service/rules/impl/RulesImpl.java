@@ -385,14 +385,13 @@ public class RulesImpl implements Rules {
 			 PassInfo passInfo = passInfoDao.find(userId, topicName[i]);
 			 if(passInfo != null)
 			 { 
-				 System.out.println("--" + passInfo.getOnScene() + "/" + passInfo.getGoals() + "/" + passInfo.getMedals());
+				 //System.out.println("--" + passInfo.getOnScene() + "/" + passInfo.getGoals() + "/" + passInfo.getMedals());
 				 int onScene = passInfo.getOnScene();
 				 int goals = passInfo.getGoals();
 				 int medals = passInfo.getMedals();
 				 topicRecommend[i] = onScene*w1 + goals*w2 + medals*w3;
 			 }
 			 else topicRecommend[i] = 0;
-			 System.out.println(topicRecommend[i]);
 			 if(i > 0 && topicRecommend[max] < topicRecommend[i])
 				 max = i;
 			}

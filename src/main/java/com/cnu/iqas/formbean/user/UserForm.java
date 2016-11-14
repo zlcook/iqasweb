@@ -103,6 +103,4 @@ public class UserForm extends BaseForm{
 		this.school = school;
 	}
 	
-	
-	
 }

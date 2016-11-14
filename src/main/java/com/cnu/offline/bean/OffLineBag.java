@@ -13,6 +13,7 @@ import javax.persistence.TemporalType;
 
 import com.cnu.iqas.utils.WebUtils;
 import com.cnu.offline.MobileStyleEnum;
+import com.cnu.offline.utils.OffLineBagUntils;
 
 /**
 * @author 周亮 
@@ -131,8 +132,7 @@ public class OffLineBag {
 
 	@Id
 	public String getId() {
-		String idstr=this.themenumber+this.realGrade+this.recommendGrade;
-		return WebUtils.MD5Encode(idstr);
+		return OffLineBagUntils.createOffLineBagId(recommendGrade, realGrade, themenumber, mobilestyle);
 	}
 	public void setId(String id) {
 		this.id = id;

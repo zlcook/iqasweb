@@ -8,6 +8,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.cnu.iqas.bean.base.QueryResult;
+import com.cnu.offline.bean.ExpandWord;
 
 
 /**
@@ -41,6 +42,7 @@ public interface DAO<T> {
 	 * @param entity 实体id
 	 */
 	public void update(T entity);
+
 	/**
 	 * 删除实体
 	 * @param entityClass 实体类

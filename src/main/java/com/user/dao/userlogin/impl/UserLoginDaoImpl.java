@@ -36,8 +36,6 @@ public class UserLoginDaoImpl extends DaoSupport<UserLogin> implements UserLogin
 	public List<UserLogin> find(String userId) {
 		// TODO Auto-generated method stub
 		List<UserLogin> list = (List<UserLogin>) getHt().find("From UserLogin o where o.userId=?", userId);
-		if(list == null) System.out.println("null");
-		else System.out.println("dd");
 		return list;
 	}
 

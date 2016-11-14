@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 
 import com.cnu.iqas.bean.base.QueryResult;
 import com.cnu.iqas.dao.base.DaoSupport;
+import com.cnu.offline.MobileStyleEnum;
 import com.cnu.offline.bean.OffLineBag;
 import com.cnu.offline.dao.OffLineBagDao;
 
@@ -20,9 +21,9 @@ import com.cnu.offline.dao.OffLineBagDao;
 public class OffLineBagDaoImpl extends DaoSupport<OffLineBag>implements OffLineBagDao {
 
 	@Override
-	public OffLineBag find(String themenumber, int recommendGrade, int realGrade) {
+	public OffLineBag find(String themenumber, int recommendGrade, int realGrade,MobileStyleEnum mobile) {
 		
-		List<OffLineBag> bags= (List<OffLineBag>) getHt().find("from OffLineBag o where o.themenumber=? and o.recommendGrade=? and o.realGrade=? ", new Object[]{themenumber, recommendGrade , realGrade});
+		List<OffLineBag> bags= (List<OffLineBag>) getHt().find("from OffLineBag o where o.themenumber=? and o.recommendGrade=? and o.realGrade=? and o.mobilestyle=? ", new Object[]{themenumber, recommendGrade , realGrade,mobile});
 		if( bags!=null&& bags.size()==1)
 			return bags.get(0);
 		return null;

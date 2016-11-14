@@ -15,11 +15,13 @@ import org.springframework.web.servlet.ModelAndView;
 import com.cnu.iqas.bean.base.DateJsonValueProcessor;
 import com.cnu.iqas.bean.base.MyStatus;
 import com.cnu.iqas.bean.ios.Suser;
+import com.cnu.iqas.bean.user.User;
 import com.cnu.iqas.constant.StatusConstant;
 import com.cnu.iqas.formbean.ios.SUserRegisterForm;
 import com.cnu.iqas.service.common.IUserBaseService;
 import com.cnu.iqas.utils.JsonTool;
 import com.cnu.iqas.utils.WebUtils;
+import com.user.service.userlogin.UserLoginService;
 
 import net.sf.json.JSONObject;
 import net.sf.json.JsonConfig;
@@ -38,6 +40,7 @@ public class SLoginController {
 	 */
 	private IUserBaseService suserBaseService;
 
+	private UserLoginService userLoginService;
 	
 	/**
 	 * 登录
@@ -74,7 +77,7 @@ public class SLoginController {
 				//登录成功
 				listJson.add(userJson);
 				//添加登录记录
-				suserBaseService.addLoginRecord(user.getUserId(), userName, request.getRemoteHost());
+				userLoginService.addLoginRecord(user.getUserId(), request.getRemoteHost());
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -129,7 +132,10 @@ public class SLoginController {
 		MyStatus status = new MyStatus();
 		//校验用户名，密码
 		if( !WebUtils.isNull(userName) && !WebUtils.isNull(password)){
-		    suserBaseService.logout(userName, password, request.getRemoteHost());
+			Suser user =(Suser) suserBaseService.findUser(userName, password);
+			if( user!=null)
+			//保存登录记录
+			  userLoginService.addLoginRecord(user.getUserId(), request.getRemoteHost());
 		}else{
 			status.setStatus(StatusConstant.USER_NAME_OR_PASSWORD_ERROR);
 			status.setMessage("用户名或者密码有误");
@@ -143,6 +149,13 @@ public class SLoginController {
 	@Resource
 	public void setSuserBaseService(IUserBaseService suserBaseService) {
 		this.suserBaseService = suserBaseService;
+	}
+	public UserLoginService getUserLoginService() {
+		return userLoginService;
+	}
+	@Resource
+	public void setUserLoginService(UserLoginService userLoginService) {
+		this.userLoginService = userLoginService;
 	}
 	
 	

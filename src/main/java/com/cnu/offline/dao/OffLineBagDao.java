@@ -1,6 +1,7 @@
 package com.cnu.offline.dao;
 
 import com.cnu.iqas.dao.base.DAO;
+import com.cnu.offline.MobileStyleEnum;
 import com.cnu.offline.bean.OffLineBag;
 
 /**
@@ -11,13 +12,14 @@ import com.cnu.offline.bean.OffLineBag;
 public interface OffLineBagDao extends DAO<OffLineBag> {
 
 	/**
-	 * 根据主题、推荐年级、实际年级查询离线包记录
+	 * 根据主题、推荐年级、实际年级、移动端查询离线包记录
 	 * @param themenumber
 	 * @param recommendGrade
 	 * @param realGrade
+	 * @param mobile
 	 * @return
 	 */
-	public OffLineBag find(String themenumber,int recommendGrade,int realGrade);
+	public OffLineBag find(String themenumber, int recommendGrade, int realGrade,MobileStyleEnum mobile);
 	/**
 	 * 判断主题的主离线包是否存在
 	 * @param themenumber 主题

@@ -30,12 +30,12 @@ public class User {
 	private String password;
 	//姓名
 	private String realName;
-	//性别
+	//性别 0:女 1:男
 	private int sex;
 	//年级
-	private String grade;
+	private int grade;
 	//班级
-	private int classNum;
+	private String classNum;
 	//出生年份
 	private Date birthYear;
 	//学校
@@ -123,16 +123,17 @@ public class User {
 	public void setSex(int sex) {
 		this.sex = sex;
 	}
-	public String getGrade() {
+	
+	public int getGrade() {
 		return grade;
 	}
-	public void setGrade(String grade) {
+	public void setGrade(int grade) {
 		this.grade = grade;
 	}
-	public int getClassNum() {
+	public String getClassNum() {
 		return classNum;
 	}
-	public void setClassNum(int classNum) {
+	public void setClassNum(String classNum) {
 		this.classNum = classNum;
 	}
 	@Temporal(TemporalType.DATE)

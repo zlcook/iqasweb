@@ -14,6 +14,7 @@ import com.cnu.iqas.bean.iword.WordResource;
 import com.cnu.iqas.dao.iword.WordResDao;
 import com.cnu.iqas.service.iword.WordResService;
 import com.cnu.iqas.service.iword.WordResourceService;
+import com.cnu.iqas.utils.PropertyUtils;
 
 /**
 * @author 周亮 
@@ -51,6 +52,18 @@ public class WordResServiceImpl implements WordResService {
 	public void save(WordRes res) {
 		// TODO Auto-generated method stub
 		wordResDao.save(res);
+	}
+
+	@Override
+	public void saveOrUpdate(WordRes res) {
+		// TODO Auto-generated method stub
+		if( res==null )
+			throw new RuntimeException("操作的wordRes为null");
+		WordRes wr =find(res.getWord());
+		if(wr!=null)
+			update(res);
+		else
+			save(res);
 	}
 
 }

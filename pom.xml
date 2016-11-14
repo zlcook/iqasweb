@@ -27,9 +27,25 @@
      <json.version>2.4</json.version>
      <jxl.version>2.6.12</jxl.version>
      <c3p0.version>0.9.5.2</c3p0.version>
+     <jaxen.version>1.1.6</jaxen.version>
+     <dom4j.version>1.6</dom4j.version>
   </properties>
   
   <dependencies>
+  
+  <!-- xml解析依赖dom4j 和jaxen.jar -->
+<dependency>
+    <groupId>dom4j</groupId>
+    <artifactId>dom4j</artifactId>
+    <version>${dom4j.version}</version>
+</dependency>
+  
+<dependency>
+    <groupId>jaxen</groupId>
+    <artifactId>jaxen</artifactId>
+    <version>${jaxen.version}</version>
+</dependency>
+  
   
   <!-- https://mvnrepository.com/artifact/com.mchange/c3p0 -->
 	<dependency>
@@ -149,7 +165,11 @@
 		         <groupId>org.slf4j</groupId>
   				<artifactId>slf4j-api</artifactId>
 		        </exclusion>
-            </exclusions> 
+            	<exclusion>
+            		<artifactId>dom4j</artifactId>
+            		<groupId>dom4j</groupId>
+            	</exclusion>
+              </exclusions> 
         </dependency>
         <dependency>
             <groupId>org.hibernate</groupId>

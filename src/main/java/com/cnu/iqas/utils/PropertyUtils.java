@@ -33,17 +33,17 @@ public class PropertyUtils {
 	 */
 	public static final String JWSVERSION = "jwsversion";
 	/**
-	 * 单词图片资源路径
+	 * android单词图片资源路径
 	 */
-	public static final String WORD_IMAGE_DIR ="word.imagesavedir";
+	public static final String ANDROID_WORD_IMAGE_DIR ="android.word.picturedir";
 	/**
-	 * 单词视频资源路径
+	 * android单词视频资源路径
 	 */
-	public static final String WORD_VIDEO_DIR = "word.videosavedir";
+	public static final String ANDROID_WORD_VIDEO_DIR = "android.word.videodir";
 	/**
-	 * 单词声音资源路径
+	 * android单词声音资源路径
 	 */
-	public static final String WORD_VOICE_DIR ="word.voicesavedir";
+	public static final String ANDROID_WORD_VOICE_DIR ="android.word.pronunciationdir";
 	/**
 	 * 单词绘本资源路径
 	 */
@@ -60,7 +60,7 @@ public class PropertyUtils {
 	public static final String FIRST_USER_LOG="first.user.logosavedir";
 	
 	
-
+	
 	/**
 	 * 项目ios：学生作品图片保存相对路径
 	 */
@@ -82,7 +82,7 @@ public class PropertyUtils {
 	 * 项目ios：单词主题图片保存相对路径
 	 */
 	public static final String IOS_WORD_THEME_LOG="ios.wordtheme.logosavedir";
-	
+
 	/**
 	 * 主题离线包对应的key
 	 */

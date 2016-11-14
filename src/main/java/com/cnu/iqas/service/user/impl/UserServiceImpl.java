@@ -6,23 +6,14 @@ import java.util.List;
 import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
-import com.cnu.iqas.bean.ios.Suser;
-import com.cnu.iqas.bean.ios.SuserLogin;
 import com.cnu.iqas.bean.user.User;
-import com.cnu.iqas.bean.user.UserLogin2;
 import com.cnu.iqas.dao.user.UserDao;
-import com.cnu.iqas.dao.user.UserLoginDao2;
 import com.cnu.iqas.service.common.IUserBaseService;
 import com.cnu.iqas.utils.WebUtils;
 @Service("userService")
 public class UserServiceImpl implements IUserBaseService<User> {
 	private UserDao userDao;
-	/**
-	 * 登录记录操作表
-	 */
-	private  UserLoginDao2 userLoginDao2;
+
 	//给密码加密
 	public void save(User entity) {
 		if( entity !=null){
@@ -48,14 +39,6 @@ public class UserServiceImpl implements IUserBaseService<User> {
 		this.userDao = userDao;
 	}
 
-	public UserLoginDao2 getUserLoginDao2() {
-		return userLoginDao2;
-	}
-	@Resource
-	public void setUserLoginDao2(UserLoginDao2 userLoginDao) {
-		this.userLoginDao2 = userLoginDao;
-	}
-
 	@Override
 	public void update(User user) {
 		// TODO Auto-generated method stub
@@ -70,7 +53,7 @@ public class UserServiceImpl implements IUserBaseService<User> {
 				return null;
 	}
 
-	@Override
+	/*@Override
 	public void addLoginRecord(String userId, String userName, String ip) {
 		//添加记录之前要将上次未正常退出的记录的“登录状态”标注为非正常退出状态
 		//问题
@@ -85,7 +68,7 @@ public class UserServiceImpl implements IUserBaseService<User> {
 		entity.setUserId(userId);
 		entity.setIp(ip);
 		userLoginDao2.save(entity);
-	}
+	}*/
 	/**
 	 * 校验字符串是否为空或者空字符串
 	 * @param str
@@ -98,26 +81,11 @@ public class UserServiceImpl implements IUserBaseService<User> {
 			return true;
 	}
 
-	@Override
-	public void logout(String userName, String password, String ip) {
-		// TODO Auto-generated method stub
-		User user =findUser(userName,  password);
-		if( user !=null){ 
-			//获取当前登录记录，修改退出时间和登录状态
-			UserLogin2 loginRecord= userLoginDao2.findCurrentLogin(user.getUserId(), ip);
-			if( loginRecord!=null){
-				loginRecord.setLogoutTime(new Date());
-				//状态设置为正常退出
-				loginRecord.setLoginState(UserLogin2.NORMAL_LOGOUT);
-				userLoginDao2.update(loginRecord);
-			}
-		}
-	}
+	
 	//保存金币和场景
 	@Override
 	public void SaveCoinAndScene(User user) {
-		
 			userDao.update(user);
-		
 	}
+
 }

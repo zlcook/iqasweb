@@ -23,6 +23,7 @@
     <context:component-scan base-package="com.cnu.iqas.dao"/>
     <context:component-scan base-package="com.cnu.iqas.service"/>
     <context:component-scan base-package="com.cnu.offline.service"/>
+    <context:component-scan base-package="com.cnu.offline.excel.service"/>
     <context:component-scan base-package="com.cnu.offline.dao"/>
     <context:component-scan base-package="com.noumenon.OntologyManage"/>
     <!-- <context:component-scan base-package="com.cnu.iqas.controller"/> -->

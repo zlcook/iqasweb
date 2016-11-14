@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import com.cnu.offline.bean.Word;
 import com.noumenon.entity.PropertyEntity;
 
 /**
@@ -40,7 +41,7 @@ public class WordElement {
 	 */
 	public static WordElement instance(PropertyEntity pe,List<String> excludeFields,String themenumber,int realGrade){
 		WordElement we = new WordElement(pe.getInstanceLabel(),themenumber,realGrade);
-		List<Property> pros = Property.createFromPropertyEntity(pe, excludeFields);
+		List<Property> pros = Property.createFromObject(pe, excludeFields);
 		we.setPropertys(pros);
 		return we;
 	}
@@ -55,6 +56,7 @@ public class WordElement {
 		excludeFields.add("propertyScene");
 		excludeFields.add("propertyText");
 		excludeFields.add("instanceLabel");
+		excludeFields.add("propertySPARQLValue");
 		return instance(pe,excludeFields,themenumber,realGrade);
 	}
 	
@@ -92,7 +94,19 @@ public class WordElement {
 	public void setThemenumber(String themenumber) {
 		this.themenumber = themenumber;
 	}
-
+	/**
+	 * 根据word内容创建一个WordElement对象，但是word中有资源文件的属性会被过滤掉，比如englishmeaning、textsentence等
+	 * @param wr
+	 * @return
+	 */
+	public static WordElement createInstance(Word wr) {
+		// TODO Auto-generated method stub
+		WordElement we = new WordElement();
+		List<Property> pros = Property.createFromObject(wr, null);
+		we.setPropertys(pros);
+		return we;
+	}
+	
 	public static class Property{
 		
 		private String name;
@@ -100,16 +114,15 @@ public class WordElement {
 		private String difficulty;
 		private List<Pro> pros=new ArrayList<>();
 		
-		public static List<Property> createFromPropertyEntity(PropertyEntity pe,List<String> excludeFields){
+		public static <T> List<Property> createFromObject(T pe,List<String> excludeFields){
 			List<Property> pros = new ArrayList<>();
-			Class<? extends PropertyEntity> clazz = pe.getClass();
+			Class clazz = pe.getClass();
 		    Field[] fields =clazz.getDeclaredFields();
 		    
 		    for(Field field :fields ){
 		    	String fieldName =field.getName();
 		    	
 		    	if(excludeFields==null || excludeFields.size()<=0 || !excludeFields.contains(fieldName)){
-		    		if(!fieldName.equals("propertySPARQLValue"))
 		    		try {
 		    			field.setAccessible(true);
 		    			Object obj =field.get(pe);
@@ -164,6 +177,7 @@ public class WordElement {
 		public void setPros(List<Pro> pros) {
 			this.pros = pros;
 		}
+		
 
 
 		public static class Pro{

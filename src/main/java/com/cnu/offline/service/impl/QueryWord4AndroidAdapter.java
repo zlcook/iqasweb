@@ -7,9 +7,12 @@ import java.util.Map;
 
 import javax.annotation.Resource;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Component;
 
-import com.cnu.offline.service.QueryWordFromOntology;
+import com.cnu.iqas.listener.InitializedListener;
+import com.cnu.offline.service.QueryWordFromDataBase;
 import com.hp.hpl.jena.query.QuerySolution;
 import com.hp.hpl.jena.query.ResultSet;
 import com.noumenon.OntologyManage.OntologyManage;
@@ -20,8 +23,9 @@ import com.noumenon.entity.PropertyEntity;
 * @version 创建时间：2016年9月6日 下午10:22:22
 * 类说明
 */
-public class QueryWord4AndroidAdapter implements QueryWordFromOntology {
-
+public class QueryWord4AndroidAdapter implements QueryWordFromDataBase {
+	//private final static Logger log = LogManager.getLogger(InitializedListener.class);
+	private final Logger log = LogManager.getLogger(QueryWord4AndroidAdapter.class);
 	//操作本题库
 	private OntologyManage ontologyManage =null;
 
@@ -50,7 +54,7 @@ public class QueryWord4AndroidAdapter implements QueryWordFromOntology {
 				}
 			}
 		} else {
-			System.out.println("知识本体库中没有此实例");
+			log.error("知识本体库中没有此实例");
 			return null;
 		}
 		

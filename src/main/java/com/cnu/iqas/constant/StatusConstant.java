@@ -139,4 +139,14 @@ public class StatusConstant {
 	 */
 	public static int OFFLINEBAG_NO_EXIST=8001;
 	
+	
+	//数据同步
+	/**
+	 * 学习记录同步失败
+	 */
+	public static int SYN_STUDY_RECORD_FAILURE=9001;
+	/**
+	 * 学习记录解析失败
+	 */
+	public static int SYN_STUDY_RECORD_PARSE_FAILURE=9002;
 }

@@ -45,7 +45,7 @@ public interface IUserBaseService<T> {
 	 * @param ip   //登录ip地址
 	 * @return
 	 */
-	public void addLoginRecord(String userId,String userName,String ip);
+	//public void addLoginRecord(String userId,String userName,String ip);
 	
 	/**
 	 * 登录
@@ -60,5 +60,5 @@ public interface IUserBaseService<T> {
 	 * @param userName
 	 * @param password
 	 */
-	public void logout(String userName,String password,String ip);
+	//public void logout(String userName,String password,String ip);
 }

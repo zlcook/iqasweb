@@ -11,5 +11,11 @@ public interface WordResService {
 
 	public WordRes find(String word);
 	public void update(WordRes wordRes);
+
 	public void save(WordRes res);
+	/**
+	 * 不存在就保存存在就更新
+	 * @param res
+	 */
+	public void saveOrUpdate(WordRes res);
 }

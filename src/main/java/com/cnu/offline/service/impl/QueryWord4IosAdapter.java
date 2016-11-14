@@ -4,7 +4,7 @@ import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
 
-import com.cnu.offline.service.QueryWordFromOntology;
+import com.cnu.offline.service.QueryWordFromDataBase;
 import com.hp.hpl.jena.query.QuerySolution;
 import com.hp.hpl.jena.query.ResultSet;
 import com.noumenon.OntologyManage.OntologyManage;
@@ -15,7 +15,7 @@ import com.noumenon.entity.PropertyEntity;
 * @version 创建时间：2016年9月6日 下午10:32:17
 * 类说明
 */
-public class QueryWord4IosAdapter implements QueryWordFromOntology {
+public class QueryWord4IosAdapter implements QueryWordFromDataBase {
 	//操作本题库
 	private OntologyManage ontologyManage =null;
 
@@ -42,7 +42,7 @@ public class QueryWord4IosAdapter implements QueryWordFromOntology {
 						//listpe.add(pe);
 					}
 				}
-			}
+			}      
 		} else {
 			System.out.println("知识本体库中没有此实例");
 			return null;

@@ -9,6 +9,7 @@
   <context-param>
   	<param-name>contextConfigLocation</param-name>
   	<param-value>classpath:applicationContext.xml</param-value>  <!-- 如果有多个配置文件可用逗号（建议）、空格分隔 -->
+
   	
   </context-param>
   
@@ -62,6 +63,10 @@
 	 <servlet>
 	 	<servlet-name>viewspace</servlet-name>
 	 	<servlet-class> org.springframework.web.servlet.DispatcherServlet</servlet-class>
+	 	<init-param>
+	 		<param-name>contextConfigLocation</param-name>
+	 		<param-value>classpath:viewspace-servlet.xml</param-value>
+	 	</init-param>
 	 	<load-on-startup>2</load-on-startup>
 	 </servlet>
 	 <!-- Spring MVC处理的URL,/*处理所有请求，*.html只过滤html结尾的请求 -->
@@ -70,7 +75,7 @@
 	 	<url-pattern>*.html</url-pattern>
 	 </servlet-mapping>
 	 
-	 
+	
 	<!-- 配置访问页面资源不存在异常 -->
 	<error-page>
 		<error-code>404</error-code>

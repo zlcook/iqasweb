@@ -1,6 +1,5 @@
 package com.cnu.iqas.controller.mobile.user;
 
-import java.math.BigDecimal;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -11,11 +10,12 @@ import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
+import org.apache.jena.atlas.json.JsonObject;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.context.ServletContextAware;
@@ -24,11 +24,11 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.cnu.iqas.bean.base.DateJsonValueProcessor;
 import com.cnu.iqas.bean.base.MyStatus;
-import com.cnu.iqas.bean.ios.Suser;
 import com.cnu.iqas.bean.user.User;
 import com.cnu.iqas.constant.PageViewConstant;
 import com.cnu.iqas.constant.StatusConstant;
 import com.cnu.iqas.formbean.BaseForm;
+import com.cnu.iqas.formbean.user.RegisterForm;
 import com.cnu.iqas.formbean.user.UserForm;
 import com.cnu.iqas.service.common.IUserBaseService;
 import com.cnu.iqas.service.user.StudyDateService;
@@ -49,6 +49,7 @@ import net.sf.json.JsonConfig;
 @Controller
 @RequestMapping(value = "/mobile/user/")
 public class MUserController  implements ServletContextAware{
+	private Logger log = LogManager.getLogger(MUserController.class);
 	private ServletContext servletContext;
 	private Logger logger = LogManager.getLogger(MUserController.class);
 	private IUserBaseService<User> userService;
@@ -146,11 +147,12 @@ public class MUserController  implements ServletContextAware{
 	 * @return
 	 */
 	@RequestMapping(value = "register")
-	public ModelAndView register(@Valid UserForm formbean, BindingResult bindingResult) {
+	public ModelAndView register(@Valid RegisterForm formbean, BindingResult bindingResult,HttpServletRequest request) {
 		ModelAndView mv = new ModelAndView(PageViewConstant.JSON);
 		MyStatus status = new MyStatus();
 		// 总的json对象
 		JSONObject jsonObejct = new JSONObject();
+		String userId ="";
 		// ------------------以下为业务逻辑，此处可以采用面向切面编程
 		try {
 			// 参数校验
@@ -161,20 +163,29 @@ public class MUserController  implements ServletContextAware{
 					User u = new User();
 					WebUtils.copyBean(u, formbean);
 					userService.save(u);
+					userId=u.getUserId();
+
+					log.info("来自"+request.getRemoteHost()+"用户："+u.getUserName()+"注册成功");
 				} else {
 					status.setStatus(StatusConstant.USER_EXIST);
+					log.info("用户已存在:"+formbean.getUserName());
 				}
 			} else {
+				for( ObjectError er :bindingResult.getAllErrors())
+				{
+					log.error(er.getDefaultMessage());
+				}
 				status.setStatus(StatusConstant.PARAM_ERROR);
 			}
 		} catch (Exception e) {
 			status.setStatus(StatusConstant.UNKONWN_EXECPTION);
+			e.printStackTrace();
+			log.error(e.getMessage());
 		} 
 		// -------------------返回视图
-		JSONObject json =JSONObject.fromObject(status);
-		mv.addObject("json", json.toString());
+		String json =JsonTool.singleAttribute("userId", userId, status);
+		mv.addObject("json", json);
 		return mv;
-		
 	}
 	/**
 	 * 更新用户头像
@@ -307,9 +318,10 @@ public class MUserController  implements ServletContextAware{
 	public ModelAndView signup(String userName,String password, HttpServletRequest request) {
 		MyStatus status = new MyStatus();
 		String token = null;
+		User user = null;
 		try {
 			// 检查账号是否存在
-			User user = (User) userService.findUser(userName, password);
+			user = (User) userService.findUser(userName, password);
 			if (null == user) {
 				status.setMessage("用户名或者密码有误!");
 				status.setStatus(StatusConstant.USER_NAME_OR_PASSWORD_ERROR);
@@ -322,8 +334,9 @@ public class MUserController  implements ServletContextAware{
 				//保存登录记录
 				userLoginService.addLoginRecord(user.getUserId(), request.getRemoteHost());
 				//userService.addLoginRecord(user.getUserId(), formbean.getUserName(), request.getRemoteHost());
+				rules.topicRecommendAndroid(user.getUserId());
+				log.info("来自"+request.getRemoteHost()+"用户："+userName+"登录成功");
 			}
-			rules.topicRecommendAndroid(user.getUserId());
 		} catch (Exception e) {
 			status.setStatus(StatusConstant.UNKONWN_EXECPTION);
 			status.setMessage("未知异常");
@@ -333,8 +346,11 @@ public class MUserController  implements ServletContextAware{
 		
 		// -------------------返回视图
 		ModelAndView mv = new ModelAndView(PageViewConstant.JSON);
-		
-		mv.addObject("json", JsonTool.singleAttribute("token", token, status));
+		JSONObject json = JSONObject.fromObject(status);
+		json.put("token", token);
+		json.put("userId", user==null?"":user.getUserId());
+		json.put("grade", user==null?"":user.getGrade());
+		mv.addObject("json", json.toString());
 		return mv;
 	}
 	
@@ -350,7 +366,10 @@ public class MUserController  implements ServletContextAware{
 		MyStatus status = new MyStatus();
 		// 校验用户名，密码
 		if (!WebUtils.isNull(userName) && !WebUtils.isNull(password)) {
-			userService.logout(userName, password, request.getRemoteHost());
+			User user =userService.findUser(userName,  password);
+			if( user!=null)
+			//保存登录记录
+			  userLoginService.addLoginRecord(user.getUserId(), request.getRemoteHost());
 		} else {
 			status.setStatus(StatusConstant.USER_NAME_OR_PASSWORD_ERROR);
 			status.setMessage("用户名或者密码有误");

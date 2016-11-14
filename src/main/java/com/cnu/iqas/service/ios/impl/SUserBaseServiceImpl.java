@@ -74,8 +74,8 @@ public class SUserBaseServiceImpl implements IUserBaseService<Suser> {
 			return true;
 	}
 
-	@Override
-	public void addLoginRecord(String userId,String userName, String ip) {
+	
+	/*public void addLoginRecord(String userId,String userName, String ip) {
 		//添加记录之前要将上次未正常退出的记录的“登录状态”标注为非正常退出状态
 		//问题
 		List<SuserLogin> loginings=suserLoginDao.findLogining(userId);
@@ -91,7 +91,7 @@ public class SUserBaseServiceImpl implements IUserBaseService<Suser> {
 		loginRecord.setUserName(userName);
 		//保存
 		suserLoginDao.save(loginRecord);
-	}
+	}*/
 
 	/*@Override
 	public Suser login(String userName, String password, String ip) {
@@ -103,8 +103,8 @@ public class SUserBaseServiceImpl implements IUserBaseService<Suser> {
 		return null;
 	}
 */
-	@Override
-	public void logout(String userName, String password, String ip) {
+	
+	/*public void logout(String userName, String password, String ip) {
 		Suser user =findUser( userName,  password);
 		if( user !=null){ 
 			//获取当前登录记录，修改退出时间和登录状态
@@ -116,7 +116,7 @@ public class SUserBaseServiceImpl implements IUserBaseService<Suser> {
 				suserLoginDao.update(loginRecord);
 			}
 		}
-	}
+	}*/
 	public SUserDao getSuserDao() {
 		return suserDao;
 	}

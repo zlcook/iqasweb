@@ -10,8 +10,6 @@ import com.cnu.iqas.constant.StatusConstant;
  * message：结果说明
 */
 public class MyStatus {
-
-
 	/**
 	 * status为1表示传过来的数据有效，0为无效,默认为1
 	 */
@@ -28,12 +26,12 @@ public class MyStatus {
 		this.message = message;
 	}
 	/**
-	 * 默认构造函数，默认status=1,message="ok"
+	 * 默认构造函数，默认status=1
 	 */
 	public MyStatus() {
 		super();
 		this.status=1;
-		this.message="ok";
+		this.message="";
 	}
 	/**
 	 * status为1表示传过来的数据有效，-1为无效,默认为1
