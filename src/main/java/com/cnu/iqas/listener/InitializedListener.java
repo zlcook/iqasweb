@@ -8,7 +8,6 @@ import javax.servlet.ServletContextListener;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.cnu.iqas.test.LogTest;
 import com.cnu.iqas.utils.PropertyUtils;
 
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
@@ -44,6 +43,8 @@ public class InitializedListener implements ServletContextListener  {
 			path =path.substring(1);
 		} catch (URISyntaxException e) {
 			e.printStackTrace();
+
+			log.error("wordnet启动失败"+path);
 		}
 		log.info("------path:"+path);
 		tagger = new MaxentTagger(path);//单词属性***

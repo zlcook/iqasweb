@@ -49,13 +49,13 @@
 			<div align="center" class="form-group">
 				<label for="inputAccount" class="col-sm-2 control-label">账号</label>
 				<div class="col-sm-8">
-					<input type="text" value="liang${formbean.account }" class="form-control" id="account" name="account">
+					<input type="text" value="${formbean.account }" class="form-control" id="account" name="account">
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="inputPassword" class="col-sm-2 control-label">密码</label>
 				<div class="col-sm-8">
-					<input type="password" value="123${formbean.password }"  class="form-control" id="password" name="password">
+					<input type="password" value="${formbean.password }"  class="form-control" id="password" name="password">
 				</div>
 			</div>
 			<div class="col-sm-offset-2 col-sm-10">

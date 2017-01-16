@@ -40,10 +40,10 @@ savepath.properties：为资源实际存放路径的配置,包括项目文件存
 访问路径：http://localhost:8080/iqasweb/
 
 
-四、单元测试注意：
-1.在进行单元测试时要把applicationContext.xml中的<property name="uploadTempDir" value="/upload/temp"/>注释掉
 
                    --------------------------访问http连接----------------------------
+初始化管理员账号：
+http://localhost:8080/iqasweb/initSystem/initadmin.html
 
 网页端访问：
 用户登录：http://localhost:8080/iqasweb/user/loginUI.html

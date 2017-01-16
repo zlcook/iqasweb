@@ -8,6 +8,7 @@ import org.dom4j.Document;
 import org.dom4j.Node;
 
 import com.cnu.ds.ParseXmlCallback;
+import com.cnu.ds.untils.ParseUntils;
 import com.user.entity.UserBehaviour;
 import com.user.entity.UserResource;
 
@@ -48,7 +49,7 @@ public class UserResourceParseCallback implements ParseXmlCallback<UserResource>
 		        		String learnEndTime =row.valueOf("@learnEndTime");
 		        		String learnState =row.valueOf("@learnState");
 		        		
-		        		UserResource ur = new UserResource(userId, word, resourceId, Integer.parseInt(mediaType), sdf.parse(learnStartTime),  sdf.parse(learnEndTime), 0L,0);
+		        		UserResource ur = new UserResource(userId, word, resourceId, ParseUntils.parseInt(mediaType), ParseUntils.parseDate(learnStartTime, sdf), ParseUntils.parseDate(learnEndTime, sdf) , 0L,0);
 		        		urs.add(ur);
 		        	}
 		       }

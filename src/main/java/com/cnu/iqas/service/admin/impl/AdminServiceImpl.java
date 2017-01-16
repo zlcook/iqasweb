@@ -42,6 +42,15 @@ public class AdminServiceImpl  implements AdminService{
 	public void setAdminDao(AdminDao adminDao) {
 		this.adminDao = adminDao;
 	}
+
+	@Override
+	public boolean existAccount(String account) {
+		Admin ad =adminDao.find(account);
+		if( ad ==null)
+			return false;
+		else
+			return true;
+	}
 	
 	
 }

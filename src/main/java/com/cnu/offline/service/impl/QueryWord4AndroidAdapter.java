@@ -36,11 +36,20 @@ public class QueryWord4AndroidAdapter implements QueryWordFromDataBase {
 
 	@Override
 	public Hashtable<String, PropertyEntity> queryWordByThemeAndGrade(int grade, String theme) {
+		if(grade<=0)
+			throw new RuntimeException("本体查询的年级不在范围:grade="+grade);
+
+		if( theme==null || theme.trim().equals(""))
+			throw new RuntimeException("本体查询的主题为null:"+theme);
 		//存放单词word和单词实体,只保留不同的单词，如果有重复会只取一个。
 		Hashtable<String,PropertyEntity> wordsMap=null;
-		
 		//List<PropertyEntity> listpe = new ArrayList<>();
-		List<ResultSet> resultsAllBrother = ontologyManage.QueryBrotherIndividual(grade+"", theme);
+		List<ResultSet> resultsAllBrother=null;
+		try {
+			resultsAllBrother = ontologyManage.QueryBrotherIndividual(grade+"", theme);
+		} catch (Exception e) {
+			throw new RuntimeException(e);
+		}
 		if( resultsAllBrother!=null &resultsAllBrother.size()>0){
 			wordsMap= new Hashtable<>();
 			for (int i = 0; i < resultsAllBrother.size(); i++) {
@@ -49,7 +58,7 @@ public class QueryWord4AndroidAdapter implements QueryWordFromDataBase {
 						QuerySolution solutionEachBrother = resultsAllBrother.get(i).next();
 						PropertyEntity pe= PropertyEntity.generatePropertyEntity(solutionEachBrother);
 						wordsMap.put(pe.getInstanceLabel(), pe);
-						//listpe.add(pe);
+					
 					}
 				}
 			}

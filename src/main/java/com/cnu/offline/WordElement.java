@@ -3,8 +3,6 @@ package com.cnu.offline;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
-
 import com.cnu.offline.bean.Word;
 import com.noumenon.entity.PropertyEntity;
 

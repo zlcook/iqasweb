@@ -17,6 +17,7 @@ import java.util.Vector;
 
 import org.springframework.stereotype.Service;
 
+import com.cnu.iqas.utils.LoggerUtil;
 import com.hp.hpl.jena.query.QuerySolution;
 import com.hp.hpl.jena.query.ResultSet;
 import com.hp.hpl.jena.rdf.model.InfModel;
@@ -1489,84 +1490,65 @@ public class OntologyManageImpl implements OntologyManage {
 	// 根据单词查看所有同级单词及其属性
 	@Override
 	public List<ResultSet> QueryBrotherIndividual(String yourGrade, String yourTheme) {
-		// // 查找该单词的的主题属性值
-		// String[] theme = { "?propertyTopic", "?propertyFunction"};
-		// ResultSet resultsTopicValue = queryWithManyWays
-		// .checkTopicValue(yourWord);
-		// String yourThemeValue = null;
-		// String yourThemeValueFlag1 = null;
-		// String yourThemeValueFlag2 = null;
-		// String themeSPARQL = null;
-		// if (resultsTopicValue.hasNext()) {
-		// while (resultsTopicValue.hasNext()) {
-		// // QuerySolution next()
-		// // Moves onto the next result.
-		// // 移动到下个result上
-		// QuerySolution solutionPropertyValue = resultsTopicValue.next();
-		// for (int i = 0; i < theme.length; i++) {
-		// yourThemeValue = solutionPropertyValue.get(theme[i])
-		// .toString();
-		// if (yourThemeValue.contains("无")) {
-		// continue;
-		// } else {
-		// yourThemeValueFlag1 = substringManage3(yourThemeValue);
-		// yourThemeValueFlag2 = substringManage2(yourThemeValue);
-		// themeSPARQL = theme[i];
-		// }
-		// }
-		// System.out.println(yourWord + "的主题是： " + yourThemeValue);
-		// }
-		// } else {
-		// System.out.println("该单词无主题");
-		// }
 
-		String yourThemeValueFlag1 = null;
-		String yourThemeValueFlag2 = null;
-		ResultSet resultsAllBrotherID = null;
-		if (yourTheme.contains("-")) {
-			yourThemeValueFlag1 = substringManage2(yourTheme);
-			yourThemeValueFlag2 = substringManage3(yourTheme);
+		if( yourGrade==null || yourGrade.trim().equals(""))
+			throw new RuntimeException("本体查询的年级为null:"+yourGrade);
+		if( yourTheme==null || yourTheme.trim().equals(""))
+			throw new RuntimeException("本体查询的主题为null:"+yourTheme);
+		List<ResultSet> brotherAllResultSet=null;
+		try {
+			String yourThemeValueFlag1 = null;
+			String yourThemeValueFlag2 = null;
+			ResultSet resultsAllBrotherID = null;
+			if (yourTheme.contains("-")) {
+				yourThemeValueFlag1 = substringManage2(yourTheme);
+				yourThemeValueFlag2 = substringManage3(yourTheme);
 
-			// 根据主题属性标记，找出所有包含该标记的属性值，该属性值中包含单词ID
-			resultsAllBrotherID = queryWithManyWays.checkBrotherID(
-					yourThemeValueFlag1, yourThemeValueFlag2);
-		} else {
-			// 根据主题属性标记，找出所有包含该标记的属性值，该属性值中包含单词ID（非课标定义主题）
-			resultsAllBrotherID = queryWithManyWays.checkBrotherID2(yourTheme);
-		}
-
-		List<ResultSet> brotherAllResultSet = new ArrayList<ResultSet>();
-		if (resultsAllBrotherID.hasNext()) {
-			while (resultsAllBrotherID.hasNext()) {
-				QuerySolution solutionBrotherID = resultsAllBrotherID.next();
-				if (solutionBrotherID.get("?propertyTheme").toString()
-						.contains("|")) {
-					// 跳过，什么都不做
-				} else {
-					String brotherTheme = solutionBrotherID.get(
-							"?propertyTheme").toString();
-
-					// 提取ID
-					String brotherID = substringManage4(brotherTheme);
-					// 提取册数
-					String bookOfThisWord = interceptBook(brotherID);
-					String gradeOfThisWord = bookToGrade(bookOfThisWord);
-
-					// 判断ID的第二位，即册数，是否等于yourGrade
-					if(gradeOfThisWord.equals(yourGrade)){
-						// 若等于，则查找每个单词ID对应的所有属性
-						ResultSet resultsBrother = queryWithManyWays
-								.checkPropertyDependOnId(brotherID);
-						brotherAllResultSet.add(resultsBrother);
-					}else{
-						// 若不等于，则什么也不做
-					}
-					
-				}
-
+				// 根据主题属性标记，找出所有包含该标记的属性值，该属性值中包含单词ID
+				resultsAllBrotherID = queryWithManyWays.checkBrotherID(
+						yourThemeValueFlag1, yourThemeValueFlag2);
+			} else {
+				// 根据主题属性标记，找出所有包含该标记的属性值，该属性值中包含单词ID（非课标定义主题）
+				resultsAllBrotherID = queryWithManyWays.checkBrotherID2(yourTheme);
 			}
-		} else {
-			System.out.println("该主题无单词");
+
+			brotherAllResultSet = new ArrayList<ResultSet>();
+			if (resultsAllBrotherID.hasNext()) {
+				while (resultsAllBrotherID.hasNext()) {
+					QuerySolution solutionBrotherID = resultsAllBrotherID.next();
+					if (solutionBrotherID.get("?propertyTheme").toString()
+							.contains("|")) {
+						// 跳过，什么都不做
+					} else {
+						String brotherTheme = solutionBrotherID.get(
+								"?propertyTheme").toString();
+
+						// 提取ID
+						String brotherID = substringManage4(brotherTheme);
+						// 提取册数
+						String bookOfThisWord = interceptBook(brotherID);
+						String gradeOfThisWord = bookToGrade(bookOfThisWord);
+
+						// 判断ID的第二位，即册数，是否等于yourGrade
+						if(gradeOfThisWord.equals(yourGrade)){
+							// 若等于，则查找每个单词ID对应的所有属性
+							ResultSet resultsBrother = queryWithManyWays
+									.checkPropertyDependOnId(brotherID);
+							brotherAllResultSet.add(resultsBrother);
+						}else{
+							// 若不等于，则什么也不做
+						}
+						
+					}
+
+				}
+			} else {
+				System.out.println("该主题无单词");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			LoggerUtil.error("查询本体异常："+e.getMessage());
+			throw new RuntimeException(e);
 		}
 
 		return brotherAllResultSet;

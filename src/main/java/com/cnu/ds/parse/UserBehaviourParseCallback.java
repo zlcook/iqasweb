@@ -8,6 +8,7 @@ import org.dom4j.Document;
 import org.dom4j.Node;
 
 import com.cnu.ds.ParseXmlCallback;
+import com.cnu.ds.untils.ParseUntils;
 import com.user.entity.UserBehaviour;
 
 /**
@@ -45,7 +46,7 @@ public class UserBehaviourParseCallback implements ParseXmlCallback<UserBehaviou
 		        		String doWhat =row.valueOf("@doWhat");
 		        		String doWhen =row.valueOf("@doWhen");
 		        		String doWhere =row.valueOf("@doWhere");
-		        		UserBehaviour ub = new UserBehaviour(userId, doWhere, doWhat, sdf.parse(doWhen));
+		        		UserBehaviour ub = new UserBehaviour(userId, doWhere, doWhat,ParseUntils.parseDate(doWhen, sdf));
 		        		ubs.add(ub);
 		        	}
 		       }

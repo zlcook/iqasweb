@@ -215,4 +215,14 @@ public class OffLineBagServiceImpl implements OffLineBagService {
 		this.offLineBagDao = offLineBagDao;
 	}
 
+	@Override
+	public void saveOrUpdate(OffLineBag offLineBag) {
+		// TODO Auto-generated method stub
+		OffLineBag bag = offLineBagDao.find(offLineBag.getId());
+		if( bag ==null)
+			offLineBagDao.save(offLineBag);
+		else
+			offLineBagDao.update(offLineBag);
+	}
+
 }

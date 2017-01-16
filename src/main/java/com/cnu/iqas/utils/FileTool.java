@@ -65,7 +65,7 @@ public class FileTool {
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			throw e;
+			throw new IOException(e);
 		}finally{
 			if( bis!=null)
 				bis.close();

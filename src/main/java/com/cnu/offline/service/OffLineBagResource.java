@@ -1,33 +1,27 @@
 package com.cnu.offline.service;
 
 import java.io.File;
-import java.io.FileWriter;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
 import java.io.Writer;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.dom4j.Document;
 import org.dom4j.DocumentHelper;
-import org.dom4j.Element;
 import org.dom4j.io.OutputFormat;
 import org.dom4j.io.XMLWriter;
 
 import com.cnu.iqas.utils.FileTool;
 import com.cnu.iqas.utils.PropertyUtils;
 import com.cnu.offline.MobileStyleEnum;
-import com.cnu.offline.bean.Word;
 import com.cnu.offline.utils.OffLineBagUntils;
-import com.cnu.offline.xml.AttributeValue;
-import com.cnu.offline.xml.Unit;
-import com.cnu.offline.xml.WordNode;
-import com.cnu.offline.xml.WordNode.SlaveNode;
 
 /**
 * @author 周亮 
@@ -170,9 +164,7 @@ public class OffLineBagResource<W,E> {
 				W pe=it.next();
 				units.remove(pe);
 				consumer_uint_size++;
-				if( !it.hasNext() ){
-					unit2wordNodeisover = true;
-				}
+				
 				return pe;
 			}else{
 				unit2wordNodeisover = true;
@@ -238,12 +230,23 @@ public class OffLineBagResource<W,E> {
 	 * @throws IOException 
 	 */
 	private void writeData2Xml(File xmlFile,Document document) throws IOException{
-			OutputFormat format = OutputFormat.createPrettyPrint();
-			Writer xmlwriter = new FileWriter(xmlFile);
+			/*OutputFormat format = OutputFormat.createPrettyPrint();
+			Writer xmlwriter = new OutputStreamWriter(new FileOutputStream(xmlFile), "UTF-8");  //设置保存文件时使用的编码 = new FileWriterWithEncoding(xmlFile, "UTF-8");
+			format.setEncoding("UTF-8");//文件内容的编码
 			XMLWriter writer = new XMLWriter(xmlwriter,format);
 			writer.write(document);
 			writer.close();
-			xmlwriter.close();
+			xmlwriter.close();*/
+			
+			/*查看源码发现下面代码效果和上面代码效果一样*/
+			OutputStream out =  new FileOutputStream(xmlFile);
+			OutputFormat format2 = OutputFormat.createPrettyPrint();
+			format2.setEncoding("UTF-8");//文件内容的编码
+			XMLWriter writer2 = new XMLWriter(out,format2);
+			writer2.write(document);
+			writer2.close();
+			out.close();
+			
 	}
 
 	public String getThemenumber() {

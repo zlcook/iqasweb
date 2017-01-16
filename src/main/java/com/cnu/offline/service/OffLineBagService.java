@@ -41,7 +41,11 @@ public interface OffLineBagService extends IFileDownloadService{
 	 * @param offLineBag
 	 */
 	public void add(OffLineBag offLineBag);
-	
+	/**
+	 * 添加或更新离线包，不存在则添加，存在则更新
+	 * @param offLineBag
+	 */
+	public void saveOrUpdate(OffLineBag offLineBag);
 	/**
 	 * 更新
 	 * @param offLineBag

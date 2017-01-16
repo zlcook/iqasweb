@@ -124,38 +124,29 @@ public class OffLineController implements ResourceLoaderAware{
 			 mv.addObject("message", message);
 			 return mv;
 		}
-		
-		OffLineBag bag =offLineBagService.find(themenumber, recommendGrade, realGrade,adapter.getMobileStyleEnum());
-		if( bag ==null ){
-			//离线包不存在，则先生成离线包
-			try {
-				//判断下载的离线包是主离线包还是从离线包
-				boolean existmaster =offLineBagService.existMasterBag(themenumber,realGrade);
-				//主离线包不存在
-				if( !existmaster ){
-					//先创建主离线包
-					OffLineBag masterbag =offLineBagService.createMasterOfflineBag(realGrade, themenumber,adapter);
-					if(masterbag!=null)
-					 offLineBagService.add(masterbag);
-				}
-				if( recommendGrade!=realGrade){
-					//创建从离线包
-					bag=offLineBagService.createSlaveOfflineBag(recommendGrade, realGrade, themenumber,adapter);
-					if( bag!=null)
-						offLineBagService.add(bag);
-				}
-			} catch (ThemeWordNotExistException e) {
-				e.printStackTrace();
-				message = "本体库内容还在完善中。"+e.getMessage();
-				logger.error(message);
-				
-			}catch(Exception e1){
-				e1.printStackTrace();
-				message = e1.getMessage();
-				logger.error(message);
+		try {
+			
+			if( recommendGrade!=realGrade){//从离线包
+				//创建从离线包
+				OffLineBag bag=offLineBagService.createSlaveOfflineBag(recommendGrade, realGrade, themenumber,adapter);
+				if( bag!=null)
+					offLineBagService.saveOrUpdate(bag);
+			}else{//主离线包
+				OffLineBag masterbag =offLineBagService.createMasterOfflineBag(realGrade, themenumber,adapter);
+				if(masterbag!=null)
+				 offLineBagService.saveOrUpdate(masterbag);
 			}
-		}else
-			 message = "离线包已存在";
+		} catch (ThemeWordNotExistException e) {
+			e.printStackTrace();
+			message = "本体库内容还在完善中。"+e.getMessage();
+			logger.error(message);
+			
+		}catch(Exception e1){
+			e1.printStackTrace();
+			message ="生成离线包失败："+ e1.getMessage();
+			logger.error(message);
+		}
+		
 		mv.addObject("message", message);
 		return mv;
 	}

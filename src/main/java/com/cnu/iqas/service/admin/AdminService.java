@@ -22,6 +22,10 @@ public interface AdminService  {
 	 * @param ad
 	 */
 	public void save(Admin ad);
-	
-	
+	/**
+	 * 是否存在账号
+	 * @param account
+	 * @return  存在返回true。不存在返回false
+	 */
+	public boolean existAccount(String account);
 }

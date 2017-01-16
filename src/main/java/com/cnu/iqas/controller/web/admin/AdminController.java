@@ -8,6 +8,7 @@ import javax.validation.Valid;
 import org.apache.shiro.web.session.HttpServletSession;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
@@ -46,9 +47,10 @@ public class AdminController {
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName(PageViewConstant.ADMIN_LOGIN_UI); // 登录视图
 		// 1.校验表单数据
-		if (!bindingResult.hasErrors()) {
-			formbean.getErrors().put("result", "请填写账号和密码!");
+		if (bindingResult.hasErrors()) {
+			formbean.getErrors().put("result", "账号密码有误!");
 			mv.addObject("formbean", formbean);
+		   
 		} else {
 			// 2.检查用户是否存在
 			Admin admin = adminService.validate(formbean.getAccount(), formbean.getPassword());

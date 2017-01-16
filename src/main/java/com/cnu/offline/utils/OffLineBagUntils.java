@@ -1,6 +1,13 @@
 package com.cnu.offline.utils;
 
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+
+import org.dom4j.Document;
+import org.dom4j.io.OutputFormat;
+import org.dom4j.io.XMLWriter;
 
 import com.cnu.iqas.utils.FileTool;
 import com.cnu.iqas.utils.PropertyUtils;
@@ -76,4 +83,5 @@ public class OffLineBagUntils {
 		String idstr=themenumber+realGrade+recommendGrade+mobile.toString();
 		return WebUtils.MD5Encode(idstr);
 	}
+	
 }

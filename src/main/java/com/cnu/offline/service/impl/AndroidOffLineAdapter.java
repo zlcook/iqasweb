@@ -23,6 +23,7 @@ import com.cnu.offline.MobileStyleEnum;
 import com.cnu.offline.WordElement;
 import com.cnu.offline.WordElement.Property;
 import com.cnu.offline.WordElement.Property.Pro;
+import com.cnu.offline.exception.OntologyException;
 import com.cnu.offline.exception.ThemeWordNotExistException;
 import com.cnu.offline.service.OffLineAdapter;
 import com.cnu.offline.service.OffLineBagResource;
@@ -85,11 +86,14 @@ public class AndroidOffLineAdapter implements OffLineAdapter<PropertyEntity, Wor
 
 	@Override
 	public OffLineBagResource<PropertyEntity, WordElement> createOffLineBagResource(String themenumber, int realGrade,
-			int recommendGrade) throws ThemeWordNotExistException {
+			int recommendGrade) throws ThemeWordNotExistException{
 
 		boolean ismaster = (realGrade == recommendGrade) ? true :false;
 		//1.根据主题和推荐年级获得所有单词
-		Hashtable<String,PropertyEntity> wordsMap=getMapPropertyEntity(realGrade,themenumber);
+		Hashtable<String, PropertyEntity> wordsMap=null;
+		
+		wordsMap = getMapPropertyEntity(realGrade,themenumber);
+		
 		if( wordsMap==null ||wordsMap.size()<=0){
 			logger.info(themenumber+" 主题,"+realGrade+"年级,"+"没有单词!");
 			throw new ThemeWordNotExistException(themenumber+" 主题"+" "+realGrade+"年级没有单词");
@@ -138,12 +142,23 @@ public class AndroidOffLineAdapter implements OffLineAdapter<PropertyEntity, Wor
 	 * @param themenumber
 	 * @return
 	 */
-	private Hashtable<String,PropertyEntity> getMapPropertyEntity(int grade, String themenumber){
+	private Hashtable<String,PropertyEntity> getMapPropertyEntity(int grade, String themenumber)throws OntologyException{
 		 //1.根据主题编号获得主题："17.旅游与交通-（58）交通运输方式"
+		Hashtable<String, PropertyEntity> wordsMap=null;
+		
 		String themeContent =wordThemeDao.findByNumber(themenumber);
-		//2.根据主题和推荐年级获得所有单词
-		QueryWordFromDataBase queryWord = new QueryWord4AndroidAdapter(ontologyManage);
-		Hashtable<String,PropertyEntity> wordsMap=queryWord.queryWordByThemeAndGrade(grade, themeContent);
+		if(themeContent==null || themeContent.trim().equals("")){
+			throw new RuntimeException("主题编号不存在:"+themenumber);
+		}
+		try {
+			//2.根据主题和推荐年级获得所有单词
+			QueryWordFromDataBase queryWord = new QueryWord4AndroidAdapter(ontologyManage);
+			wordsMap = queryWord.queryWordByThemeAndGrade(grade, themeContent);
+		} catch (Exception e) {
+			e.printStackTrace();
+			logger.error("本体库异常:"+e.getMessage());
+			throw new OntologyException("本体库异常,"+e.getMessage(),e);
+		}
 		return wordsMap;
 	}
 
@@ -239,7 +254,6 @@ public class AndroidOffLineAdapter implements OffLineAdapter<PropertyEntity, Wor
 
 		  PropertyEntity pe=offLineBagResource.getUnit();
 
-		 // logger.info(Thread.currentThread().getName()+"：获取单词："+pe);
 		  if( pe!=null){
 			String word = pe.getInstanceLabel();
 			WordRes wr =wordResService.find(word);

@@ -1,6 +1,7 @@
 package com.cnu.offline.service;
 
 import com.cnu.offline.MobileStyleEnum;
+import com.cnu.offline.exception.OntologyException;
 import com.cnu.offline.exception.ThemeWordNotExistException;
 
 /**

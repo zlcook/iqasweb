@@ -124,6 +124,7 @@ public class PageViewConstant {
 	 * 生成重定向链接
 	 * @param method 要重定向的方法
 	 * @return
+	 * 如method=admin/loginUI ,返回redirect:/admin/loginUI.html
 	 */
 	public static String generatorRedirect(String method){
 		return PageViewConstant.REDIRECT+method+PageViewConstant.FILTER_SUFFIX;

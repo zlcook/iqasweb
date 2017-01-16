@@ -1,5 +1,7 @@
 package com.cnu.offline;
 
+import static org.junit.Assert.assertEquals;
+
 import java.io.File;
 
 import org.apache.logging.log4j.LogManager;
@@ -36,6 +38,7 @@ public class OffLineBagTest {
 	private static final Logger logger= LogManager.getLogger(OffLineBagTest.class);
 	@Before
 	public void init(){
+		
 		ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
 		offLineBagService=ac.getBean("iosOffLineBagService", OffLineBagService.class);
 		iosadapter =ac.getBean("iosOffLineAdapter",OffLineAdapter.class);
@@ -44,7 +47,6 @@ public class OffLineBagTest {
 	@Test
 	public void ios_createMasterOffLineBag(){
 		try {
-
 			  int realGrade=4;
 			  int recommendGrade=5;
 			 String themenumber="2-12";

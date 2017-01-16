@@ -27,6 +27,7 @@
 		        <mvc:exclude-mapping path="/mobile/user/signup*"/>
 		        <mvc:exclude-mapping path="/mobile/user/register*"/>
 		        <mvc:exclude-mapping path="/mobile/ds/*"/>
+		        <mvc:exclude-mapping path="/mobile/offline/import*"/>
 		       <bean class="com.cnu.iqas.filter.MobileAccessInterceptor"/>
 		    </mvc:interceptor>
 	 </mvc:interceptors>
