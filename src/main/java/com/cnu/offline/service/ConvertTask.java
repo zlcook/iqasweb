@@ -17,13 +17,9 @@ public class ConvertTask implements Runnable {
 	private OffLineAdapter adapter;
 	
 	/**
-	 * 
-	 * @param offLineBagResource
-	 * @param wordResService
-	 * @param ismaster  false：为从离线包准备的
-	 *  生成的wordElement是为主离线包准备的是还为从离线包准备的
-	 * true:为主离线包准备的
-	 * false:为从离线包准备的,那么wordElement中只有"propertyScene"、"propertyText"、"video"三个属性有值
+	 * 将资源文件转换成离线包
+	 * @param offLineBagResource  要转换的离线资源
+	 * @param adapter  转换适配器
 	 */
 	public ConvertTask(OffLineBagResource offLineBagResource,OffLineAdapter adapter) {
 		super();

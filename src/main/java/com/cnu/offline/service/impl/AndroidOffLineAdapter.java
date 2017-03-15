@@ -1,6 +1,7 @@
 package com.cnu.offline.service.impl;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -29,6 +30,7 @@ import com.cnu.offline.service.OffLineAdapter;
 import com.cnu.offline.service.OffLineBagResource;
 import com.cnu.offline.service.QueryWordFromDataBase;
 import com.cnu.offline.utils.OffLineBagUntils;
+import com.cnu.offline.utils.ResourceConfigParseUntils;
 import com.noumenon.OntologyManage.OntologyManage;
 import com.noumenon.entity.PropertyEntity;
 
@@ -109,8 +111,14 @@ public class AndroidOffLineAdapter implements OffLineAdapter<PropertyEntity, Wor
 			for( String key : keyset){
 				PropertyEntity pe = wordsMap.get(key);
 				listpes.add(pe);
-				//添加pe的从单词，即“联想”、“同义词”、“反义词”、“拓展”、“常用”属性中的单词
-				HashSet<PropertyEntity> subpes = pe.getSub();
+				//添加pe的从单词，从配置文件中获取从单词来源配置
+				List<String> slaveSource=null;
+				try {
+					slaveSource = ResourceConfigParseUntils.getProsByKey("a.slaveword.prosource",",");
+				} catch (IOException e) {
+					logger.error("读取android从单词来源配置失败");
+				}
+				HashSet<PropertyEntity> subpes = pe.getSub(slaveSource);
 				listpes.addAll(subpes);
 			}
 		}else{
@@ -154,10 +162,10 @@ public class AndroidOffLineAdapter implements OffLineAdapter<PropertyEntity, Wor
 			//2.根据主题和推荐年级获得所有单词
 			QueryWordFromDataBase queryWord = new QueryWord4AndroidAdapter(ontologyManage);
 			wordsMap = queryWord.queryWordByThemeAndGrade(grade, themeContent);
-		} catch (Exception e) {
-			e.printStackTrace();
-			logger.error("本体库异常:"+e.getMessage());
-			throw new OntologyException("本体库异常,"+e.getMessage(),e);
+		}catch(Exception re){
+			re.printStackTrace();
+			logger.error("本体库异常:"+re.getMessage());
+			throw new OntologyException("本体库异常,"+re.getMessage(),re);
 		}
 		return wordsMap;
 	}

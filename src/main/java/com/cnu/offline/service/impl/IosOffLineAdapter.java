@@ -220,7 +220,7 @@ public class IosOffLineAdapter implements OffLineAdapter<Unit, WordNode> {
 		}
 		
 		if(masterOffLinePackageFlage){
-			//获取单词其它年级的课文原句和情景段落
+			//获取单词其它年级的课文原句和情景段落，不包含当前学生所在年级。当前学生所在年级的课文、情景存放在i_word表中。
 			List<WordGrade> listwg =wresourceService.findWordGrade(word);
 			//生成带资源的属性englishmeaning textsentence expandsentence phase 发音 图片 视频
 			
@@ -235,6 +235,7 @@ public class IosOffLineAdapter implements OffLineAdapter<Unit, WordNode> {
 			ownwg.setTextsentencesoundUrl(resource.getTextsentencesoundUrl());
 			if( listwg==null)
 				listwg = new ArrayList<>();
+			//将本年级包含的课文原句和情景加入进来
 			listwg.add(ownwg);
 			//1.生成情景段落
 			SlaveNode  qjdlproperty = new SlaveNode(new AttributeValue("name", "phase"));
@@ -263,10 +264,10 @@ public class IosOffLineAdapter implements OffLineAdapter<Unit, WordNode> {
 			//2.1.扩展
 			SlaveNode  expandsentenceproperty = new SlaveNode(new AttributeValue("name", "expandsentence"));
 			try {
-				String soundPath=OffLineBagUntils.copyfile2offliebag(offlinebagDir,OffLineBagResource.PRONUNCIATIONDIR,resource.getExpandsentencephotoUrl());
-				String picPath=OffLineBagUntils.copyfile2offliebag(offlinebagDir,OffLineBagResource.PICTUREDIR,resource.getExpandsentencesoundUrl());
-				expandsentenceproperty.addAttribute(new AttributeValue("soundPath", soundPath))
-									  .addAttribute(new AttributeValue("value", unit.getEnglishmeaning()))
+				String soundPath=OffLineBagUntils.copyfile2offliebag(offlinebagDir,OffLineBagResource.PRONUNCIATIONDIR,resource.getExpandsentencesoundUrl());
+				String picPath=OffLineBagUntils.copyfile2offliebag(offlinebagDir,OffLineBagResource.PICTUREDIR,resource.getExpandsentencephotoUrl());
+				expandsentenceproperty.addAttribute(new AttributeValue("value", unit.getExpandsentence()))
+									  .addAttribute(new AttributeValue("soundPath", soundPath))
 									  .addAttribute(new AttributeValue("picPath", picPath));
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -369,12 +370,21 @@ public class IosOffLineAdapter implements OffLineAdapter<Unit, WordNode> {
 		return wn;
 	}
 
+	/**
+	 * 创建xml从节点描述类,如果wg的“课文原句或“情景段落”没有对应资源，则返回属性都为""
+	 * @param wg  资源信息
+	 * @param flage  true:表示获取“课文原句”的值，false:表示获取“情景段落”的值
+	 * @param offlinebagDir  资源路径信息
+	 * @return  
+	 * @throws Exception
+	 */
 	private SlaveNode createSlaveNode(WordGrade wg,boolean flage,File offlinebagDir)throws Exception{
 		//1.1获取年级内容
 		Map<String,String> realGrade=getPropertyValue(wg,flage);
 		String value = realGrade.get("value");
 		String soundPath= realGrade.get("soundPath");
-		String  picPath= realGrade.get("picPath");
+		String picPath= realGrade.get("picPath");
+		
 		//资源拷贝到压缩目录下,同时将压缩目录下资源对应的位置存放到wg中。
 		if( value!=null && soundPath!=null && picPath!=null ){
 			
@@ -395,11 +405,11 @@ public class IosOffLineAdapter implements OffLineAdapter<Unit, WordNode> {
 				//sou = ifilesystem/wordres/voices/2016/09/03/1472913772722.mp3
 				try {
 					String path =OffLineBagUntils.copyfile2offliebag(offlinebagDir,OffLineBagResource.AUDIODIR,sou);
-					valueSb.append(va).append(OffLineBagResource.WESPLITSTR);
-					soundsSb.append(path).append(OffLineBagResource.WESPLITSTR);
+					valueSb.append(va).append(OffLineBagResource.IOS_WESPLITSTR);
+					soundsSb.append(path).append(OffLineBagResource.IOS_WESPLITSTR);
 
 					String picpath =OffLineBagUntils.copyfile2offliebag(offlinebagDir,OffLineBagResource.PICTUREDIR,pic);
-					picsSb.append(picpath).append(OffLineBagResource.WESPLITSTR);
+					picsSb.append(picpath).append(OffLineBagResource.IOS_WESPLITSTR);
 				} catch (Exception e) {
 					e.printStackTrace();
 					throw e;
@@ -407,9 +417,9 @@ public class IosOffLineAdapter implements OffLineAdapter<Unit, WordNode> {
 			}
 				
 				//去掉最后的weSplitStr分隔符
-			    value =valueSb.substring(0, valueSb.lastIndexOf(OffLineBagResource.WESPLITSTR));
-				String sopath =soundsSb.substring(0, soundsSb.lastIndexOf(OffLineBagResource.WESPLITSTR));
-				String picMod=picsSb.substring(0, picsSb.lastIndexOf(OffLineBagResource.WESPLITSTR));
+			    value =valueSb.substring(0, valueSb.lastIndexOf(OffLineBagResource.IOS_WESPLITSTR));
+				String sopath =soundsSb.substring(0, soundsSb.lastIndexOf(OffLineBagResource.IOS_WESPLITSTR));
+				String picMod=picsSb.substring(0, picsSb.lastIndexOf(OffLineBagResource.IOS_WESPLITSTR));
 				SlaveNode slaveNode = new SlaveNode();
 				slaveNode.addAttribute(new AttributeValue("grade", wg.getId().getGrade()+""))
 		         		 .addAttribute(new AttributeValue("value", value))
@@ -417,7 +427,13 @@ public class IosOffLineAdapter implements OffLineAdapter<Unit, WordNode> {
 				         .addAttribute(new AttributeValue("soundPath", sopath));
 				return slaveNode;
 		}
-		return null;
+		SlaveNode nullSlave = new SlaveNode();
+		nullSlave.addAttribute(new AttributeValue("grade", wg.getId().getGrade()+""))
+		 .addAttribute(new AttributeValue("value", ""))
+       .addAttribute(new AttributeValue("picPath", ""))
+       .addAttribute(new AttributeValue("soundPath", ""));
+		
+		return nullSlave;
 	}
 	/**
 	 * 根据grade年级获取WordGrade中“课文原句”、和“情景段落”的值，以及他们对应的音频、图片的路径

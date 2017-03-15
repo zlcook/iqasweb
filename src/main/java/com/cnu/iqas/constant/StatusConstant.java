@@ -22,6 +22,12 @@ public class StatusConstant {
 	 */
 	public static final int NO_LOGIN = 2;
 	
+
+	/**
+	 * token值无效
+	 */
+	public static final  int TOKEN_INVALID=4;
+	
 	
 	/**
 	 * 参数有误

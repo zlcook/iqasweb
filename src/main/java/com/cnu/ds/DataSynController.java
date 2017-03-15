@@ -34,6 +34,8 @@ import net.sf.json.JSONObject;
 * @author 周亮 
 * @version 创建时间：2016年10月25日 上午11:24:22
 * 类说明：数据同步控制类
+* 包含方法：receive
+* 用于接收移动端传过来的xml文件，然后根据解析规则解析xml文件。
 */
   
 @Controller

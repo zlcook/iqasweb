@@ -122,18 +122,18 @@ public class OffLineBagServiceImpl implements OffLineBagService {
 	}
 	private  OffLineBag createOfflineBag(final  int recommendGrade,final  int realGrade,final  String themenumber,OffLineAdapter adapter) throws ThemeWordNotExistException {
 			//1.获取要生成的所有资源
-			OffLineBagResource iosOfflineResource=adapter.createOffLineBagResource(themenumber, realGrade, recommendGrade);
+			OffLineBagResource offlineResource=adapter.createOffLineBagResource(themenumber, realGrade, recommendGrade);
 			//3.3开启4个线程
-			taskExecutor.execute(new ConvertTask(iosOfflineResource,adapter));
-			taskExecutor.execute(new ConvertTask(iosOfflineResource,adapter));
-			taskExecutor.execute(new ConvertTask(iosOfflineResource,adapter));
+			taskExecutor.execute(new ConvertTask(offlineResource,adapter));
+			taskExecutor.execute(new ConvertTask(offlineResource,adapter));
+			taskExecutor.execute(new ConvertTask(offlineResource,adapter));
 		
-			String reldir = iosOfflineResource.getReldir();
-			String parentdirpath =iosOfflineResource.getParentdirpath();
-			String offLineBagname =iosOfflineResource.getOffLineBagname();
-			File rootDir = iosOfflineResource.getOfflinebagDir();
+			String reldir = offlineResource.getReldir();
+			String parentdirpath =offlineResource.getParentdirpath();
+			String offLineBagname =offlineResource.getOffLineBagname();
+			File rootDir = offlineResource.getOfflinebagDir();
 			//4.文件转移完，开始生成xml文件
-			Document document =iosOfflineResource.createDocument(rootDir, "words.xml",adapter);
+			Document document =offlineResource.createDocument(rootDir, "words.xml",adapter);
 			//5.压缩文件
 				//压缩文件名
 				String zipname = offLineBagname+".zip";
@@ -145,7 +145,7 @@ public class OffLineBagServiceImpl implements OffLineBagService {
 					logger.info("开始压缩文件:"+rootDir.getAbsolutePath());
 					
 					ZipUtils.zip(rootDir.getAbsolutePath(), zipFile.getAbsolutePath());
-					bag= new OffLineBag(zipname, adapter.getMobileStyleEnum(), themenumber, recommendGrade, realGrade, "zip",iosOfflineResource.getWordSum());
+					bag= new OffLineBag(zipname, adapter.getMobileStyleEnum(), themenumber, recommendGrade, realGrade, "zip",offlineResource.getWordSum());
 					bag.setSize(zipFile.length());
 					bag.setSavePath(PropertyUtils.getFileSaveDir(PropertyUtils.THEME_OFFLINE_BAG)+"/"+reldir+"/"+zipname);
 					bag.setVersion(1);
@@ -169,17 +169,15 @@ public class OffLineBagServiceImpl implements OffLineBagService {
 	@Transactional
 	@Override
 	public void downOffLineBag(String bagId, HttpServletRequest request, HttpServletResponse response) {
-		//取出用户
+		
 		try {
-			User user =(User) request.getSession().getAttribute("user");
 			String ip=request.getRemoteAddr();
 			SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd:HH:mm:ss");
-			logger.info(sdf.format(new Date())+":"+user.getUserName()+"用户来自:"+ip);
 			OffLineBag bag =offLineBagDao.find(bagId);
 
 			if( bag!=null){
 				
-				logger.info("下载:"+bag.getName());
+				logger.info(sdf.format(new Date())+"  ip:"+ip+" 开始下载:"+bag.getName());
 				
 				bag.setDownsize(bag.getDownsize()+1);
 				offLineBagDao.update(bag);
@@ -190,7 +188,7 @@ public class OffLineBagServiceImpl implements OffLineBagService {
 				Resource fileResource =resourceLoader.getResource("file:"+fileSavePath);
 				BaseForm.loadFile(response, fileResource);
 				
-				logger.info(sdf.format(new Date())+":"+user.getUserName()+"用户来自:"+ip+":下载:【"+bag.getName()+"】完毕");
+				logger.info(sdf.format(new Date())+"  ip: "+ip+" : 下载:【"+bag.getName()+"】完毕");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

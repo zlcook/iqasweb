@@ -7,14 +7,13 @@ import java.util.List;
 import org.dom4j.Document;
 import org.dom4j.Node;
 
-import com.cnu.ds.ParseXmlCallback;
 import com.cnu.ds.untils.ParseUntils;
 import com.user.entity.UserBehaviour;
 
 /**
 * @author 周亮 
 * @version 创建时间：2016年10月25日 下午7:28:14
-* 类说明
+* 类说明，针对UserBehaviour的文档解析器
 */
 public class UserBehaviourParseCallback implements ParseXmlCallback<UserBehaviour> {
 	

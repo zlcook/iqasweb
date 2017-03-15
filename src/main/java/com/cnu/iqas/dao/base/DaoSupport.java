@@ -43,6 +43,7 @@ public abstract class DaoSupport<T>   implements DAO<T>{
 	//@PersistenceContext protected EntityManager em;
 	protected HibernateTemplate  ht;
 
+	@SuppressWarnings("deprecation")
 	public HibernateTemplate getHt() {
 		return ht;
 	}
@@ -51,6 +52,7 @@ public abstract class DaoSupport<T>   implements DAO<T>{
 		this.ht = ht;
 	}
 
+	@SuppressWarnings("deprecation")
 	public void delete(Serializable...  entityids) {
 		for(Serializable id : entityids)	
 		{

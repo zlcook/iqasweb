@@ -403,26 +403,43 @@ public class PropertyEntity {
 			return false;
 		return true;
 	}
+	
 	/**
-	 * 获取该单词中的从单词，即“联想propertyAssociate”、“同义词propertyAntonym”、“反义词propertySynonyms”、“拓展propertyExtend”、“常用propertyCommonUse”属性中的单词
-	 * @return 如果没有从单词则返回的hashset中内容数量为0
+	 * 根据主单词的属性寻找从单词
+	 * @param prosourceList，主单词属性集合。可选值有5个：“associate”:联想、“antonym”:同义词、“synonyms”:反义词、“extend”:拓展、“commonUse”：常用
+	 * @return 返回值不为null
 	 */
-	public HashSet<PropertyEntity> getSub() {
+	public HashSet<PropertyEntity> getSub(List<String> prosourceList) {
 		//this.propertyAssociate
 		HashSet<String> all = new HashSet<>();
 		//String str = "burn one's boats(破釜沉舟)/in the same boat(处境相同)";
-		HashSet<String> assWords=getSubWord(this.propertyAssociate);
-		HashSet<String> synWords=getSubWord(this.propertySynonyms);
-		HashSet<String> extWords=getSubWord(this.propertyExtend);
-		HashSet<String> comWords=getSubWord(this.propertyCommonUse);
-		if( assWords!=null)
-			all.addAll(assWords);
-		if(synWords!=null)
-			all.addAll(synWords);
-		if(extWords!=null)
-			all.addAll(extWords);
-		if(comWords!=null)
-			all.addAll(comWords);
+		if(prosourceList !=null &&prosourceList.size()>0){
+			if(prosourceList.contains("associate")){
+				HashSet<String> assWords=getSubWord(this.propertyAssociate);
+				if( assWords!=null)
+					all.addAll(assWords);
+			}
+			if(prosourceList.contains("antonym")){
+				HashSet<String> antWords=getSubWord(this.propertyAntonym);
+				if(antWords!=null)
+					all.addAll(antWords);
+			}
+			if(prosourceList.contains("synonyms")){
+				HashSet<String> synWords=getSubWord(this.propertySynonyms);
+				if(synWords!=null)
+					all.addAll(synWords);
+			}
+			if(prosourceList.contains("extend")){
+				HashSet<String> extWords=getSubWord(this.propertyExtend);
+				if( extWords!=null)
+					all.addAll(extWords);
+			}
+			if(prosourceList.contains("commonUse")){
+				HashSet<String> comWords=getSubWord(this.propertyCommonUse);
+				if( comWords!=null)
+					all.addAll(comWords);
+			}
+		}
 		HashSet<PropertyEntity> hashSet = new HashSet<>();
 		for( String str :all){
 			hashSet.add(new PropertyEntity(str));

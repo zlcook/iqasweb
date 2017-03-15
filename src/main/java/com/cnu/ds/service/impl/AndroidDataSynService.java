@@ -19,7 +19,8 @@ import com.user.entity.UserWord;
 /**
 * @author 周亮 
 * @version 创建时间：2016年10月25日 下午7:10:58
-* 类说明
+* 类说明:android端数据同步服务
+* 用于将接受到的数据保存或更新到数据库
 */
 @Service("androidDataSynService")
 public class AndroidDataSynService {

@@ -28,8 +28,12 @@
 		        <mvc:exclude-mapping path="/mobile/user/register*"/>
 		        <mvc:exclude-mapping path="/mobile/ds/*"/>
 		        <mvc:exclude-mapping path="/mobile/offline/import*"/>
+		        <mvc:exclude-mapping path="/mobile/offline/getOffLineBag4ios*"/>
+		        <mvc:exclude-mapping path="/mobile/offline/downofflinebagforios*"/>
+		        <mvc:exclude-mapping path="/mobile/share/json*"/>
 		       <bean class="com.cnu.iqas.filter.MobileAccessInterceptor"/>
 		    </mvc:interceptor>
+		    
 	 </mvc:interceptors>
 	 
     <!-- 配置Spring MVC视图解析器，将ModelAndView及字符串解析为具体的页面 -->

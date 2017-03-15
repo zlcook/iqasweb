@@ -536,7 +536,7 @@ public class MainTest {
 			String yourGrade = sc.nextLine();
 			List<ResultSet> resultsAllBrother = ontologyManage
 					.QueryBrotherIndividual(yourGrade, yourTheme);
-			System.out.println("******************结果数：" + resultsAllBrother.size());
+			int count =0;
 			
 			HashMap<String,Integer> wordsMap= new HashMap<>();
 			if (resultsAllBrother.size() != 0) {
@@ -563,13 +563,14 @@ public class MainTest {
 							}
 						}
 						System.out.println("\n");
+						count++;
 					}
 				}
 			} else {
 				System.out.println("该年级没有" + yourTheme + "主题的实例");
 			}
 			
-			System.out.println("一共有单词记录："+resultsAllBrother.size()+", 不同的单词的单词有："+wordsMap.size()+" 如下："+wordsMap.toString());
+			System.out.println("一共有单词记录："+count+", 不同的单词的单词有："+wordsMap.size()+" 如下："+wordsMap.toString());
 			break;
 
 		case 16:

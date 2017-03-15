@@ -95,6 +95,8 @@ public class OffLineBagResource<W,E> {
 	private final boolean ismasterPack ;
 	//WordNode中一个属性中多个值之间的分隔符
 	public static final String WESPLITSTR="@";
+	//ios端一个属性中多个值之间的分隔符
+	public static final String IOS_WESPLITSTR="&";
 	//Word中一个属性中多个值之间的分隔符
 	public static final String PESPLITSTR="&";
 	//压缩文件中各个资源的存放的文件夹名称

@@ -7,7 +7,6 @@ import java.util.List;
 import org.dom4j.Document;
 import org.dom4j.Node;
 
-import com.cnu.ds.ParseXmlCallback;
 import com.cnu.ds.untils.ParseUntils;
 import com.user.entity.UserBehaviour;
 import com.user.entity.UserResource;
@@ -15,7 +14,7 @@ import com.user.entity.UserResource;
 /**
 * @author 周亮 
 * @version 创建时间：2016年10月25日 下午8:48:55
-* 类说明
+* 类说明，针对UserResource的文档解析器
 */
 public class UserResourceParseCallback implements ParseXmlCallback<UserResource> {
 	private SimpleDateFormat sdf;

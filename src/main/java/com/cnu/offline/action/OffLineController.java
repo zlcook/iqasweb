@@ -92,8 +92,10 @@ public class OffLineController implements ResourceLoaderAware{
 		ModelAndView mv =null;
 		
 		if(mobile!=null && mobile.equals("ios")){
+			//为ios创建离线资源包
 			mv =createofflienbag(realGrade, recommendGrade, themenumber, iosadapter);
 		}else if(mobile!=null && mobile.equals("android")){
+			//为android创建离线资源包
 			mv =createofflienbag(realGrade, recommendGrade, themenumber, androidadapter);
 		}else{
 			 mv = new ModelAndView(PageViewConstant.MESSAGE);
@@ -193,12 +195,49 @@ public class OffLineController implements ResourceLoaderAware{
 	 *  ]
 	 * }
 	 * http://localhost:8080/iqasweb/mobile/offline/getOffLineBag.html?realGrade=4&recommendGrade=5&themenumber=2-17&token=1472719089982@liang
-	 
 	 */
 	@RequestMapping(value="getOffLineBag4ios")
-	public ModelAndView getOffLineBagDownUrl4ios(@RequestParam(required=true)int realGrade,@RequestParam(required=true)int recommendGrade,@RequestParam(required=true)String themenumber,@RequestParam(required=true)boolean includeMaster){
-			ModelAndView mv = getOffLineBagDownUrl(realGrade, recommendGrade, themenumber, includeMaster, iosadapter);
-			return mv;
+	public ModelAndView getOffLineBagDownUrl4ios(@RequestParam(required=true)int realGrade,@RequestParam(required=true)String themenumber){
+		
+		logger.error("jinlail了");
+		//要下载的离线包都存在标志
+	 	boolean pack_ok = true;
+	 	JSONArray jsonOffline= new JSONArray();
+		MyStatus status = new MyStatus();
+	    //1.判断要下载的离线包是否存在
+		OffLineBag bag =offLineBagService.find(themenumber, realGrade, realGrade,iosadapter.getMobileStyleEnum());
+		if(bag!=null){
+			//将两个从包
+			OffLineBag slaveBag2 =offLineBagService.find(themenumber, realGrade+1, realGrade,iosadapter.getMobileStyleEnum());
+			OffLineBag slaveBag1 =offLineBagService.find(themenumber, realGrade-1, realGrade,iosadapter.getMobileStyleEnum());
+			 
+			JSONObject subJson = new JSONObject();
+			
+			copy2Json(subJson,slaveBag1);
+			jsonOffline.add(subJson);
+
+			copy2Json(subJson,bag);
+			jsonOffline.add(subJson);
+			
+			copy2Json(subJson,slaveBag2);
+			jsonOffline.add(subJson);
+			
+		}else{
+			status.setStatus(StatusConstant.OFFLINEBAG_NO_EXIST);
+			logger.error("主题编号："+themenumber+",实际年级为："+ realGrade+" 的离线包不存在!");
+			pack_ok = false;
+		}
+		
+		JSONObject json = new JSONObject();
+		JsonTool.putStatusJson(status, json);
+		if( pack_ok){
+			//返回离线包信息
+			json.put("data", jsonOffline);
+		}
+		ModelAndView mv = new ModelAndView(PageViewConstant.JSON);
+		logger.error(mv.getViewName()+"  :   "+json.toString());
+		mv.addObject("json", json.toString());
+		return mv;
 	}
 	/**
 	 * 获取离线包记录
@@ -273,7 +312,17 @@ public class OffLineController implements ResourceLoaderAware{
 		
 	}
 	
-
+	/**
+  	 * @param id  
+	 * @param response
+	 *  http://localhost:8080/iqasweb/mobile/offline/downofflinebag.html?id=12364&token=1472719089982@liang
+	 */
+	@RequestMapping(value="downofflinebagforios")
+	public void downOfflineBagForIos(String id,HttpServletRequest request,HttpServletResponse response){
+		if( id!=null && !id.equals(""))
+			offLineBagService.downOffLineBag(id, request, response);
+		
+	}
 	
 	private void copy2Json(JSONObject json,OffLineBag bag){
 		json.put("id", bag.getId());

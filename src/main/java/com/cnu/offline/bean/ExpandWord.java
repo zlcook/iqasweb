@@ -1,12 +1,8 @@
 package com.cnu.offline.bean;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
-import org.hibernate.annotations.GenericGenerator;
 
 /**
 * @author 周亮 
@@ -21,7 +17,7 @@ public class ExpandWord {
 	@Id
 	private String word;
 	private String photoUrl;
-	private String soundUrl;
+ 	private String soundUrl;
 	private String textsentence;
 	public String getWord() {
 		return word;
