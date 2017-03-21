@@ -106,6 +106,7 @@ public class MainTest {
 					break;
 				}
 			}
+			ArrayList d;
 			/* 判断之前是否出现过同样的DEF */
 			Iterator<String> It_2 = DEFS.iterator();
 			boolean judge_2 = false;
